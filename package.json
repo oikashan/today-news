@@ -1,0 +1,27 @@
+{
+  "name": "today-news",
+  "version": "0.0.1",
+  "description": "News for everyone.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kashan-ahmad/today-news.git"
+  },
+  "keywords": [
+    "news",
+    "letter",
+    "blog",
+    "articles",
+    "trending",
+    "trend"
+  ],
+  "author": "kashan-ahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kashan-ahmad/today-news/issues"
+  },
+  "homepage": "https://github.com/kashan-ahmad/today-news#readme"
+}
