@@ -2,4 +2,4 @@
 
 ---
 
-## Developed using React + Vite + SCSS
+## Developed using React + Vite + TypeScript + SCSS, from scratch

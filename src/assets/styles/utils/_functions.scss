@@ -1,0 +1,3 @@
+@function getRemFrom($pixels) {
+  @return #{calc($pixels / $root-font-size)}rem;
+}

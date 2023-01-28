@@ -1,0 +1,19 @@
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.text-faded {
+  opacity: 0.5;
+}
+
+@each $key, $value in map-merge($palette, $palette-light) {
+  .text-#{$key} {
+    color: var(--color-#{$key});
+  }
+
+  .bg-#{$key} {
+    background-color: var(--color-#{$key});
+  }
+}

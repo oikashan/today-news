@@ -1,0 +1,15 @@
+.button {
+  @include button(14px);
+}
+
+.button-outlined {
+  @include button-outlined(14px);
+}
+
+.button-sm {
+  @include button(10px);
+}
+
+.button-outlined-sm {
+  @include button-outlined(10px);
+}

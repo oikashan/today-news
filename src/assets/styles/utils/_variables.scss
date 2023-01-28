@@ -1,0 +1,158 @@
+$root-font-size: 16px;
+
+// Sizing.
+// Size in pixels / Root font size = Size in rems
+$size-xs: 8px;
+$size-sm: 12px;
+$size-md: 16px;
+$size-lg: 20px;
+$size-xl: 24px;
+$size-2xl: 28px;
+$size-3xl: 32px;
+$size-4xl: 36px;
+
+$sizes: (
+  xs: $size-xs,
+  sm: $size-sm,
+  md: $size-md,
+  lg: $size-lg,
+  xl: $size-xl,
+  2xl: $size-2xl,
+  3xl: $size-3xl,
+  4xl: $size-4xl,
+);
+
+// Typography.
+$font-sans: "Roboto", sans-serif;
+$font-serif: "Playfair Display", serif;
+$font-lead: "Roboto Condensed", sans-serif;
+
+// Weights.
+$weight-normal: 500;
+$weight-bold: 700;
+
+// Transitions.
+$transition-fast: all 0.1s ease;
+$transition-slow: all 0.15s ease;
+
+// Lightness.
+$lightness-hover: 15%;
+$lightness-focus: 20%;
+
+// Color palettes.
+// Each palette has an HSL variant that can be adjusted on the fly.
+$palette: (
+  accent: hsl(38, 76%, 71%),
+  failure: hsl(13, 69%, 58%),
+  success: hsl(169, 36%, 60%),
+  accent-secondary: hsl(359, 61%, 85%),
+  accent-tertiary: hsl(60, 1%, 68%),
+);
+
+$palette-hsl: (
+  accent-hsl: (
+    38,
+    76%,
+    71%,
+  ),
+  failure-hsl: (
+    13,
+    69%,
+    58%,
+  ),
+  success-hsl: (
+    169,
+    36%,
+    60%,
+  ),
+  accent-secondary-hsl: (
+    359,
+    61%,
+    85%,
+  ),
+  accent-tertiary-hsl: (
+    60,
+    1%,
+    68%,
+  ),
+);
+
+$palette-light: (
+  body: hsl(0, 0%, 0%),
+  foreground: hsl(60, 25%, 98%),
+  background: hsl(0, 0, 100%),
+  overlay: hsl(34, 53%, 94%),
+);
+
+$palette-light-hsl: (
+  body-hsl: (
+    0,
+    0%,
+    0%,
+  ),
+  foreground-hsl: (
+    60,
+    25%,
+    98%,
+  ),
+  background-hsl: (
+    60,
+    25%,
+    98%,
+  ),
+  overlay-hsl: (
+    34,
+    53%,
+    94%,
+  ),
+);
+
+$palette-dark: (
+  body: hsl(0, 0%, 100%),
+  foreground: hsl(0, 0, 24%),
+  background: hsl(0, 0%, 0%),
+  overlay: hsla(34, 53%, 94%, 0.15),
+);
+
+$palette-dark-hsl: (
+  body-hsl: (
+    0,
+    0%,
+    100%,
+  ),
+  foreground-hsl: (
+    0,
+    0,
+    24%,
+  ),
+  background-hsl: (
+    0,
+    0%,
+    0%,
+  ),
+  overlay-hsl: a(34, 53%, 94%, 0.15),
+);
+
+// Merging the palettes with their HSL variants.
+$palette-merged: map-merge($palette, $palette-hsl);
+$palette-light-merged: map-merge($palette-light, $palette-light-hsl);
+$palette-dark-merged: map-merge($palette-dark, $palette-dark-hsl);
+
+// Merging the common palette with a light or a dark palette results in a theme.
+$theme-light: map-merge($palette-merged, $palette-light-merged);
+$theme-dark: map-merge($palette-merged, $palette-dark-merged);
+
+// Applying a theme using CSS variables.
+body {
+  // The default/light theme.
+  @each $key, $value in $theme-light {
+    --color-#{$key}: #{$value};
+  }
+}
+
+[data-theme="dark"] {
+  // The dark theme.
+  @each $key, $value in $theme-dark {
+    --color-#{$key}: #{$value};
+  }
+}

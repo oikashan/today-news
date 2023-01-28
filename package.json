@@ -1,9 +1,28 @@
 {
   "name": "today-news",
   "version": "0.0.1",
-  "description": "News for everyone.",
   "main": "src/index.js",
+  "description": "News for everyone.",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@fontsource/roboto": "^4.5.8",
+    "@fontsource/roboto-condensed": "^4.5.9",
+    "@fontsource/playfair-display": "^4.5.13"
+  },
+  "devDependencies": {
+    "vite": "^4.0.4",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10"
+  },
+  "engines": {
+    "node": ">=14.17.1"
+  },
   "scripts": {
+    "server": "vite",
+    "build": "vite build",
     "test": "npm run test"
   },
   "repository": {
@@ -12,16 +31,16 @@
   },
   "keywords": [
     "news",
-    "letter",
     "blog",
+    "trend",
+    "letter",
     "articles",
-    "trending",
-    "trend"
+    "trending"
   ],
-  "author": "kashan-ahmad",
   "license": "ISC",
+  "author": "kashan-ahmad",
   "bugs": {
     "url": "https://github.com/kashan-ahmad/today-news/issues"
   },
-  "homepage": "https://github.com/kashan-ahmad/today-news#readme"
+  "homepage": "https://today-news.pages.io"
 }

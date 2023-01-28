@@ -1,0 +1,83 @@
+@mixin text-lead($font-size) {
+  font-size: getRemFrom($font-size);
+  font-family: $font-lead;
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+}
+
+@mixin text-sans($font-size) {
+  font-size: getRemFrom($font-size);
+  font-family: $font-sans;
+  font-weight: $weight-normal;
+}
+
+@mixin text-serif($font-size) {
+  font-size: getRemFrom($font-size);
+  font-family: $font-serif;
+  font-weight: $weight-normal;
+}
+
+/// A button component.
+@mixin button($font-size) {
+  @include text-sans($font-size);
+  display: inline-block;
+  text-transform: uppercase;
+  transition: $transition-fast;
+  color: var(--color-background);
+  background-color: var(--color-body);
+  padding: calc($size-xs - 2px) calc($size-sm + 2px);
+
+  // Notice that the border is always there.
+  border: 1px solid var(--color-body);
+
+  &:hover {
+    border-color: darken(#ffffff, 75%);
+    background-color: darken(#ffffff, 75%);
+  }
+
+  &:focus {
+    border-color: darken(#ffffff, 80%);
+    background-color: darken(#ffffff, 80%);
+  }
+}
+
+@mixin button($font-size) {
+  @include text-sans($font-size);
+  display: inline-block;
+  text-transform: uppercase;
+  transition: $transition-fast;
+  color: var(--color-background);
+  background-color: var(--color-body);
+  padding: calc($size-xs - 2px) calc($size-sm + 2px);
+
+  // Notice that the border is always there.
+  border: 1px solid var(--color-body);
+
+  &:hover {
+    // We're using the HSL variants of our colors and reducing their opacity
+    // with the help of the HSLA function.
+    border-color: hsla(var(--color-body-hsl), 75%);
+    background-color: hsla(var(--color-body-hsl), 75%);
+  }
+
+  &:focus {
+    border-color: hsla(var(--color-body-hsl), 80%);
+    background-color: hsla(var(--color-body-hsl), 80%);
+  }
+}
+
+@mixin button-outlined($font-size) {
+  @include button($font-size);
+
+  // Notice the color inversion as compared to the normal button.
+  color: var(--color-body);
+  background-color: var(--color-background);
+
+  &:hover {
+    background-color: hsla(var(--color-body-hsl), 15%);
+  }
+
+  &:focus {
+    background-color: hsla(var(--color-body-hsl), 20%);
+  }
+}

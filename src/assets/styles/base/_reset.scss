@@ -1,0 +1,33 @@
+:root {
+  font-size: $root-font-size;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: $root-font-size;
+  font-weight: $weight-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+.text-bold {
+  font-weight: $weight-bold;
+}
+
+a,
+button {
+  cursor: pointer;
+
+  &:is(:hover, :focus) {
+    outline: 1px dotted var(--color-accent-tertiary);
+  }
+}
