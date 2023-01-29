@@ -2,6 +2,7 @@ import LandingPage from "./LandingPage";
 import { useArticles } from "~/articles";
 import { createRoot } from "react-dom/client";
 import { HeaderComponent } from "~/widgets/header";
+import { FooterComponent } from "./widgets/footer";
 import { LoaderComponent, useLoader } from "./widgets/loader";
 
 // Assets
@@ -29,6 +30,7 @@ function App() {
               <LandingPage articles={articles.data} />
             </>
           )}
+      <FooterComponent />
     </>
   );
 }

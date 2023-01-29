@@ -1,5 +1,37 @@
 import React from "react";
-import useHeader from "./useHeader";
+
+const navItems = [
+  {
+    id: 0,
+    label: "News",
+    path: "#",
+  },
+  {
+    id: 1,
+    label: "Opinion",
+    path: "#",
+  },
+  {
+    id: 2,
+    label: "Life",
+    path: "#",
+  },
+  {
+    id: 3,
+    label: "Business",
+    path: "#",
+  },
+  {
+    id: 4,
+    label: "Magazine",
+    path: "#",
+  },
+  {
+    id: 5,
+    label: "Newsletter",
+    path: "#",
+  },
+];
 
 /**
  * Menu for the header's navigation items.
@@ -8,8 +40,6 @@ export default function HeaderMenu({
   className = "",
   ...props
 }: React.ComponentPropsWithoutRef<"ul">) {
-  const { navItems } = useHeader();
-
   return (
     <ul {...props} className={`flex ${className}`}>
       {navItems.map((navItem) => (

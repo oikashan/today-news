@@ -1,0 +1,35 @@
+.text-field {
+  display: flex;
+  background-color: var(--color-overlay);
+
+  input {
+    width: 0;
+    border: 0;
+    flex-grow: 1;
+    font-size: 12px;
+    color: var(--color-contrast);
+    background-color: transparent;
+    padding: calc($size-md) calc($size-sm + 2px);
+
+    &::placeholder {
+      color: var(--color-contrast);
+    }
+  }
+
+  button {
+    margin: calc($size-xs / 2);
+    @include button-transparent(12px);
+    padding: calc($size-xs - 2px) calc($size-sm + 2px);
+    text-transform: capitalize;
+  }
+}
+
+[data-theme="dark"] .text-field {
+  background-color: transparent;
+  border: 1px solid var(--color-contrast);
+
+  button {
+    @include button(12px);
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,47 @@
+.app-footer {
+  padding: var(--gutters) 0;
+  margin-bottom: var(--gutters);
+  border-top: $border-xl;
+  border-bottom: $border-xl;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutters);
+
+  .app-footer__row {
+    display: flex;
+    gap: var(--gutters);
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include breakpoint-md {
+      flex-direction: row;
+    }
+  }
+
+  .app-footer__menus {
+    flex-grow: 1;
+    display: grid;
+    max-width: 768px;
+    gap: var(--gutters);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .app-footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  > nav {
+    @include breakpoint-sm {
+      padding: 0 var(--gutters);
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
