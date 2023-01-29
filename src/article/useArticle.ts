@@ -11,7 +11,7 @@ import type { Fetchable } from "~/utils/types";
  *
  * @returns A set of articles that can be displayed.
  */
-export default function useArticles(): Fetchable<Article[]> {
+export default function useArticle() {
   // The state for the articles.
   // Notice the status = 'loading', that's what I call a fetchable entity.
   // By default, the articles are loading, and the effect below sets them
@@ -66,5 +66,5 @@ export default function useArticles(): Fetchable<Article[]> {
     }, 3000);
   }, []);
 
-  return articles;
+  return { articles };
 }

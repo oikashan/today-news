@@ -50,6 +50,9 @@ $breakpoints: (
   xl: $breakpoint-xl,
 );
 
+// Borders.
+$border-xl: 3px dotted var(--color-accent-tertiary);
+
 // Color palettes.
 // Each palette has an HSL variant that can be adjusted on the fly.
 $palette: (
@@ -165,5 +168,14 @@ body {
   // The dark theme.
   @each $key, $value in $theme-dark {
     --color-#{$key}: #{$value};
+  }
+}
+
+// Responsive gutters
+:root {
+  --gutters: #{$size-lg};
+
+  @media (min-width: $breakpoint-md) {
+    --gutters: #{calc($size-3xl + $size-xs)};
   }
 }

@@ -1,0 +1,16 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutters);
+
+  .section-heading {
+    @include text-lead(40px);
+    text-align: center;
+    border-top: $border-xl;
+    border-bottom: $border-xl;
+  }
+
+  .section-content.padded {
+    padding: var(--gutters);
+  }
+}
