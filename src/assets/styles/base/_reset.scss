@@ -26,8 +26,14 @@ strong,
 a,
 button {
   cursor: pointer;
+  text-decoration: none;
 
   &:is(:hover, :focus) {
     outline: 1px dotted var(--color-accent-tertiary);
   }
+}
+
+ul,
+li {
+  list-style-type: none;
 }

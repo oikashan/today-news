@@ -1,0 +1,40 @@
+.view-article__video {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+
+  @include breakpoint-md {
+    flex-direction: row;
+  }
+
+  @include breakpoint-lg {
+    gap: 110px;
+    padding: 0 var(--gutters);
+  }
+
+  .app-article {
+    gap: 30px;
+    width: 100%;
+    flex-direction: column;
+
+    .app-article__media {
+      .app-article__preview {
+        height: 340px;
+      }
+    }
+
+    .app-article__body {
+      gap: 27px;
+      flex-grow: 1;
+      align-items: center;
+
+      * {
+        text-align: center;
+      }
+
+      .app-article__description {
+        display: none !important;
+      }
+    }
+  }
+}

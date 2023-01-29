@@ -1,0 +1,65 @@
+.app-header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: var(--gutters);
+  padding-bottom: var(--gutters);
+  border-bottom: $border-xl;
+
+  .app-header__menu {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+
+    @include breakpoint-md {
+      height: 65px;
+
+      // The logo needs to be translated to the middle on the larger screens.
+      .app-logo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+  }
+
+  .app-header__nav {
+    text-align: center;
+
+    ul {
+      // Exact size seized from figma lol
+      gap: 71px;
+    }
+  }
+
+  .app-header__overlay {
+    padding: $size-md;
+    transition: $transition-slow;
+    display: grid;
+
+    // Simple fade animation bro
+    opacity: 0;
+    z-index: -1;
+
+    // Display only if selected.
+    &:target {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    grid-template-rows: auto 1fr;
+    background-color: var(--color-foreground);
+
+    // The overlay takes the whole viewport by a storm.
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    @include breakpoint-md {
+      padding: calc($size-2xl - 2px) calc($size-3xl + $size-lg);
+    }
+  }
+}

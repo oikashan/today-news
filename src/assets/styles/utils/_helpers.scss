@@ -1,7 +1,11 @@
 .sr-only {
-  position: absolute;
   top: -9999px;
   left: -9999px;
+  position: absolute;
+}
+
+[data-hidden="true"] {
+  display: none !important;
 }
 
 .text-faded {
@@ -21,59 +25,85 @@
   display: flex;
 }
 
-@include breakpoint-sm {
-  .sm\:hidden {
-    display: none;
-  }
-
-  .sm\:block {
-    display: block;
-  }
-
-  .sm\:flex {
-    display: flex;
-  }
+.row {
+  flex-direction: row;
 }
 
-@include breakpoint-md {
-  .md\:hidden {
-    display: none;
-  }
-
-  .md\:block {
-    display: block;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
+.column {
+  flex-direction: column;
 }
 
-@include breakpoint-lg {
-  .lg\:hidden {
-    display: none;
-  }
-
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:flex {
-    display: flex;
-  }
+.justify-center {
+  justify-content: center;
 }
 
-@include breakpoint-xl {
-  .xl\:hidden {
-    display: none;
-  }
+.justify-between {
+  justify-content: space-between;
+}
 
-  .xl\:block {
-    display: block;
-  }
+.align-center {
+  align-items: center;
+}
 
-  .xl\:flex {
-    display: flex;
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+// Breakpoint-specific rules.
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @media (min-width: $breakpoint-value) {
+    // Results in sm:hidden, md:hidden, lg:hidden, xl:hidden
+    .#{$breakpoint-name}\:hidden {
+      display: none;
+    }
+
+    .#{$breakpoint-name}\:block {
+      display: block;
+    }
+
+    .#{$breakpoint-name}\:flex {
+      display: flex;
+    }
+
+    .#{$breakpoint-name}\:row {
+      flex-direction: row;
+    }
+
+    .#{$breakpoint-name}\:column {
+      flex-direction: column;
+    }
+
+    .#{$breakpoint-name}\:justify-center {
+      justify-content: center;
+    }
+
+    .#{$breakpoint-name}\:justify-between {
+      justify-content: space-between;
+    }
+
+    .#{$breakpoint-name}\:align-center {
+      align-items: center;
+    }
+
+    .#{$breakpoint-name}\:align-start {
+      align-items: flex-start;
+    }
+
+    .#{$breakpoint-name}\:align-end {
+      align-items: flex-end;
+    }
   }
 }
 

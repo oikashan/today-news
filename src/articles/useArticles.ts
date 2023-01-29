@@ -4,14 +4,14 @@ import { useHttpEffect } from "~/utils/hooks";
 
 // Types
 import type { Article } from "./Article";
-import type { Fetchable } from "~/utils/types";
+import { Fetchable } from "~/utils/Types";
 
 /**
  * The articles provider.
  *
  * @returns A set of articles that can be displayed.
  */
-export default function useArticle() {
+export default function useArticles() {
   // The state for the articles.
   // Notice the status = 'loading', that's what I call a fetchable entity.
   // By default, the articles are loading, and the effect below sets them
@@ -58,12 +58,12 @@ export default function useArticle() {
 
     // Since we're fetching a local resource, this simulates the actual wait of
     // a response.
-    setTimeout(() => {
-      fetch("/articles.json")
-        .then((response) => response.json())
-        .then(onSuccess)
-        .catch(onFailure);
-    }, 3000);
+    //setTimeout(() => {
+    fetch("/articles.json")
+      .then((response) => response.json())
+      .then(onSuccess)
+      .catch(onFailure);
+    //}, 3000);
   }, []);
 
   return { articles };

@@ -1,0 +1,30 @@
+.view-article__list {
+  display: grid;
+  gap: 44px;
+
+  @include breakpoint-lg {
+    padding: 0 calc(var(--gutters) * 2);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .app-article {
+    gap: 30px;
+    width: 100%;
+
+    .app-article__media {
+      .app-article__thumbnail {
+        height: 100px;
+        width: 116px;
+      }
+    }
+
+    .app-article__body {
+      flex-grow: 1;
+
+      .app-article__description {
+        display: none !important;
+      }
+    }
+  }
+}

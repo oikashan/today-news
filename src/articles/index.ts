@@ -1,3 +1,4 @@
 export * from "./Article";
-export { default as useArticle } from "./useArticle";
+export * from "./ArticleTypes";
+export { default as useArticles } from "./useArticles";
 export { default as ArticleComponent } from "./ArticleComponent";

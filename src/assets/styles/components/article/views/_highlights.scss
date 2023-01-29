@@ -1,0 +1,94 @@
+.view-article__highlights {
+  display: grid;
+  gap: calc(var(--gutters) * 2);
+
+  @include breakpoint-lg {
+    gap: var(--gutters);
+    grid-auto-flow: dense;
+
+    // Make the columns adapt to a 2x1x1 layout.
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "highlight highlight minor1 major2"
+      "highlight highlight minor2 major2"
+      "highlight highlight major1 minor3"
+      "highlight highlight major1 minor4";
+  }
+
+  .app-article {
+    flex-direction: column;
+
+    @include breakpoint-lg {
+      // Set the grid areas straight.
+      &:nth-child(1) {
+        grid-area: highlight;
+      }
+
+      &:nth-child(2) {
+        grid-area: minor1;
+      }
+
+      &:nth-child(3) {
+        grid-area: minor2;
+      }
+
+      &:nth-child(4) {
+        grid-area: major1;
+      }
+
+      &:nth-child(5) {
+        grid-area: major2;
+      }
+
+      &:nth-child(6) {
+        grid-area: minor3;
+      }
+
+      &:nth-child(7) {
+        grid-area: minor4;
+      }
+
+      // Style the highlighted article accordingly.
+      &:nth-child(1) {
+        // The article's custom styles.
+        gap: 25px;
+
+        .app-article__media {
+          order: 1;
+          flex-grow: 1;
+
+          .app-article__thumbnail {
+            height: 100%;
+          }
+        }
+
+        .app-article__body {
+          gap: 25px;
+          align-items: center;
+        }
+      }
+
+      // Hide descriptions of all the other articles.
+      &:not(:nth-child(1)) {
+        .app-article__description {
+          display: none;
+        }
+      }
+
+      // Hide the images of all articles on the larger screens.
+      .app-article__media {
+        display: none;
+      }
+
+      // except for these certain ones.
+      &:nth-child(1),
+      &:nth-child(4),
+      &:nth-child(5) {
+        .app-article__media {
+          display: block;
+        }
+      }
+    }
+  }
+}

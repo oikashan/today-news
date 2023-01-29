@@ -1,7 +1,8 @@
-import ReactDOM from "react-dom";
-import { useTheme } from "~/theme";
-import { useArticle } from "~/article";
-import { IconMenu, IconMoon, IconStar } from "~/icons";
+import LandingPage from "./LandingPage";
+import { useArticles } from "~/articles";
+import { createRoot } from "react-dom/client";
+import { HeaderComponent } from "~/widgets/header";
+import { LoaderComponent, useLoader } from "./widgets/loader";
 
 // Assets
 import "~/assets/styles/styles.scss";
@@ -10,33 +11,26 @@ import "~/assets/styles/styles.scss";
  * Root component.
  */
 function App() {
-  const { articles } = useArticle();
-  const { toggleTheme } = useTheme();
-
-  console.log(articles);
+  const { hideLoader } = useLoader();
+  const { articles } = useArticles();
 
   return (
-    <div>
-      Here I Am
-      <section id="highlights">
-        <h2 className="section-heading">The heading goes here</h2>
-        <div className="section-content">The content goes here</div>
-      </section>
-      <IconMenu />
-      <IconMoon onClick={() => toggleTheme()} />
-      <IconStar />
-      <button className="button">Hello</button>
-      <button className="button-sm">Hello</button>
-      <button className="button-outlined">Hello</button>
-      <button className="button-outlined-sm">Hello</button>
-      <div>
-        <span className="badge">Hello</span>
-        <span className="badge-sm">Hello</span>
-        <span className="badge-outlined">Hello</span>
-        <span className="badge-outlined-sm">Hello</span>
-      </div>
-    </div>
+    <>
+      <LoaderComponent />
+      <HeaderComponent />
+      {articles.status === "erred"
+        ? // If there's an error.
+          alert("Something went wrong...")
+        : // If the articles are loaded.
+          articles.status === "loaded" && (
+            <>
+              {/* Hide the loader and rending the landing page */}
+              {hideLoader()}
+              <LandingPage articles={articles.data} />
+            </>
+          )}
+    </>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("app")!);
+createRoot(document.getElementById("app")!).render(<App />);

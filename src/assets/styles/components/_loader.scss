@@ -1,0 +1,17 @@
+.app-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: $transition-slow;
+  background-color: var(--color-foreground);
+  z-index: 1;
+  opacity: 1;
+  display: grid;
+  place-items: center;
+}
+
+.app-loader.hide {
+  opacity: 0;
+}

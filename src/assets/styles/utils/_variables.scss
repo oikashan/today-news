@@ -92,14 +92,14 @@ $palette-hsl: (
 );
 
 $palette-light: (
-  body: hsl(0, 0%, 0%),
+  contrast: hsl(0, 0%, 0%),
   foreground: hsl(60, 25%, 98%),
   background: hsl(0, 0%, 100%),
   overlay: hsl(34, 53%, 94%),
 );
 
 $palette-light-hsl: (
-  body-hsl: (
+  contrast-hsl: (
     0,
     0%,
     0%,
@@ -122,14 +122,14 @@ $palette-light-hsl: (
 );
 
 $palette-dark: (
-  body: hsl(0, 0%, 100%),
-  foreground: hsl(0, 0%, 24%),
+  contrast: hsl(0, 0%, 100%),
+  foreground: hsl(0, 0%, 14%),
   background: hsl(0, 0%, 0%),
   overlay: hsla(34, 53%, 94%, 0.15),
 );
 
 $palette-dark-hsl: (
-  body-hsl: (
+  contrast-hsl: (
     0,
     0%,
     100%,
@@ -137,7 +137,7 @@ $palette-dark-hsl: (
   foreground-hsl: (
     0,
     0%,
-    24%,
+    14%,
   ),
   background-hsl: (
     0,

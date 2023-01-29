@@ -1,0 +1,49 @@
+.view-article__inverted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 44px;
+  padding: 0 var(--gutters);
+
+  @include breakpoint-md {
+    flex-direction: row;
+  }
+
+  .app-article {
+    width: 100%;
+    gap: 26px;
+    flex-direction: column;
+
+    .app-article__body {
+      gap: 22px;
+      align-items: center;
+
+      .app-article__title {
+        text-align: center;
+      }
+
+      .app-article__description {
+        display: none;
+      }
+    }
+
+    @include breakpoint-md {
+      &:nth-child(even) {
+        .app-article__media {
+          order: 1;
+        }
+      }
+
+      .app-article__thumbnail {
+        height: 146px;
+      }
+    }
+
+    @include breakpoint-lg {
+      .app-article__thumbnail {
+        height: 346px;
+      }
+    }
+  }
+}

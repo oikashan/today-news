@@ -1,0 +1,42 @@
+.view-article__full {
+  .app-article {
+    flex-direction: column;
+    color: map-get($palette-dark, "contrast");
+
+    .app-article__media {
+      .app-article__thumbnail {
+        height: 600px;
+        filter: brightness(0.5);
+      }
+    }
+
+    .app-article__body {
+      align-items: center;
+      position: absolute;
+      gap: 29px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 768px;
+      padding: calc($size-3xl + $size-lg);
+
+      .app-article__title {
+        text-align: center;
+      }
+
+      .app-article__description {
+        display: none;
+      }
+    }
+
+    .badge {
+      left: 0;
+      position: absolute;
+      top: var(--gutters);
+      color: map-get($palette-dark, "contrast");
+      background: map-get($palette-dark, "background");
+      border-color: map-get($palette-dark, "background");
+    }
+  }
+}

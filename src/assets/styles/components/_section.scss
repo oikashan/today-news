@@ -1,16 +1,21 @@
-section {
+.app-section {
   display: flex;
   flex-direction: column;
-  gap: var(--gutters);
 
-  .section-heading {
+  .app-section__heading {
     @include text-lead(40px);
     text-align: center;
     border-top: $border-xl;
     border-bottom: $border-xl;
+    padding: 11px 0;
   }
 
-  .section-content.padded {
+  // Margin the content if heading exists.
+  .app-section__heading + .app-section__content {
+    margin-top: var(--gutters);
+  }
+
+  .app-section__content.padded {
     padding: var(--gutters);
   }
 }

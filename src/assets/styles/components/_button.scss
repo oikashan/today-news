@@ -13,3 +13,7 @@
 .button-outlined-sm {
   @include button-outlined(10px);
 }
+
+.button-transparent {
+  @include button-transparent();
+}

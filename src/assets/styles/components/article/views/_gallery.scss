@@ -1,0 +1,72 @@
+.view-article__gallery {
+  display: grid;
+  gap: calc(var(--gutters) * 2);
+
+  @include breakpoint-lg {
+    gap: var(--gutters);
+    grid-auto-flow: dense;
+
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "highlight highlight highlight"
+      "highlight highlight highlight"
+      "highlight highlight highlight"
+      "minor1 minor2 minor3";
+  }
+
+  .app-article {
+    flex-direction: column;
+
+    @include breakpoint-lg {
+      flex-direction: row;
+      align-items: center;
+
+      // Except the highlight.
+      &:not(:nth-child(1)) {
+        gap: 25px;
+        height: auto;
+
+        .app-article__title {
+          @include text-serif(16px);
+        }
+
+        .app-article__description {
+          display: none;
+        }
+
+        .app-article__thumbnail {
+          width: 170px;
+          height: 122px;
+        }
+      }
+
+      // The highlight.
+      &:nth-child(1) {
+        gap: var(--gutters);
+
+        .app-article__thumbnail {
+          width: 763px;
+          height: 517px;
+        }
+      }
+
+      // Set the grid areas straight.
+      &:nth-child(1) {
+        grid-area: highlight;
+      }
+
+      &:nth-child(2) {
+        grid-area: minor1;
+      }
+
+      &:nth-child(3) {
+        grid-area: minor2;
+      }
+
+      &:nth-child(4) {
+        grid-area: minor3;
+      }
+    }
+  }
+}
