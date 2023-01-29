@@ -58,12 +58,12 @@ export default function useArticles() {
 
     // Since we're fetching a local resource, this simulates the actual wait of
     // a response.
-    //setTimeout(() => {
-    fetch("/articles.json")
-      .then((response) => response.json())
-      .then(onSuccess)
-      .catch(onFailure);
-    //}, 3000);
+    setTimeout(() => {
+      fetch("/articles.json")
+        .then((response) => response.json())
+        .then(onSuccess)
+        .catch(onFailure);
+    }, 3000);
   }, []);
 
   return { articles };
