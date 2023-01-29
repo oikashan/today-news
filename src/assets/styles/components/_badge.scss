@@ -1,0 +1,15 @@
+.badge {
+  @include badge(14px);
+}
+
+.badge-outlined {
+  @include badge-outlined(14px);
+}
+
+.badge-sm {
+  @include badge(10px);
+}
+
+.badge-outlined-sm {
+  @include badge-outlined(10px);
+}

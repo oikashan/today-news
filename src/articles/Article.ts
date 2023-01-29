@@ -1,8 +1,9 @@
 export interface Article {
+  id: number;
   title: string;
+  label: string;
   author: string;
   description: string;
-  category: string;
   rating?: number;
   thumbnailURL?: string;
   previewURL?: string;
@@ -11,9 +12,9 @@ export interface Article {
 export function isArticle(entity: any): entity is Article {
   return (
     entity &&
+    entity.label &&
     entity.title &&
     entity.author &&
-    entity.description &&
-    entity.category
+    entity.description
   );
 }

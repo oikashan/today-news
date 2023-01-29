@@ -1,0 +1,13 @@
+#app {
+  margin: auto;
+  max-width: 1325px;
+  padding: $size-md;
+  display: flex;
+  flex-direction: column;
+  gap: $size-md;
+
+  @include breakpoint-md {
+    gap: calc($size-3xl + $size-lg);
+    padding: calc($size-2xl - 2px) calc($size-3xl + $size-lg);
+  }
+}

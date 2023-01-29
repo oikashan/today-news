@@ -91,7 +91,7 @@ $palette-hsl: (
 $palette-light: (
   body: hsl(0, 0%, 0%),
   foreground: hsl(60, 25%, 98%),
-  background: hsl(0, 0, 100%),
+  background: hsl(0, 0%, 100%),
   overlay: hsl(34, 53%, 94%),
 );
 
@@ -120,7 +120,7 @@ $palette-light-hsl: (
 
 $palette-dark: (
   body: hsl(0, 0%, 100%),
-  foreground: hsl(0, 0, 24%),
+  foreground: hsl(0, 0%, 24%),
   background: hsl(0, 0%, 0%),
   overlay: hsla(34, 53%, 94%, 0.15),
 );
@@ -133,7 +133,7 @@ $palette-dark-hsl: (
   ),
   foreground-hsl: (
     0,
-    0,
+    0%,
     24%,
   ),
   background-hsl: (

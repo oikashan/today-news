@@ -1,4 +1,4 @@
-.hidden {
+.sr-only {
   position: absolute;
   top: -9999px;
   left: -9999px;
@@ -6,6 +6,75 @@
 
 .text-faded {
   opacity: 0.5;
+}
+
+// Display rules.
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+@include breakpoint-sm {
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+}
+
+@include breakpoint-md {
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+}
+
+@include breakpoint-lg {
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+}
+
+@include breakpoint-xl {
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
 }
 
 // Utilities from the color palettes.

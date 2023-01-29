@@ -17,8 +17,8 @@
   font-weight: $weight-normal;
 }
 
-/// A button component.
-@mixin button($font-size) {
+/// A wrapped textual entity.
+@mixin badge($font-size) {
   @include text-sans($font-size);
   display: inline-flex;
   align-items: center;
@@ -31,6 +31,19 @@
 
   // Notice that the border is always there.
   border: 1px solid var(--color-body);
+}
+
+@mixin badge-outlined($font-size) {
+  @include badge($font-size);
+
+  // Notice the color inversion as compared to the normal badge.
+  color: var(--color-body);
+  background-color: var(--color-background);
+}
+
+/// A button component.
+@mixin button($font-size) {
+  @include badge($font-size);
 
   &:hover {
     // We're using the HSL variants of our colors and reducing their opacity
@@ -46,11 +59,7 @@
 }
 
 @mixin button-outlined($font-size) {
-  @include button($font-size);
-
-  // Notice the color inversion as compared to the normal button.
-  color: var(--color-body);
-  background-color: var(--color-background);
+  @include badge-outlined($font-size);
 
   &:hover {
     background-color: hsla(var(--color-body-hsl), 15%);
