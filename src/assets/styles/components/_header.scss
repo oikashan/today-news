@@ -35,6 +35,7 @@
 
   .app-header__overlay {
     padding: $size-md;
+    padding-top: 0 !important;
     transition: $transition-slow;
     display: grid;
 

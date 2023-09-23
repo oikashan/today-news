@@ -11,10 +11,16 @@ export default function HeaderOverlay({
 }: React.ComponentPropsWithoutRef<"div">) {
   return (
     <div {...props} id="overlay" className={`app-header__overlay ${className}`}>
-      <a href="#" className="button-transparent" title="Close navigation menu">
-        <IconClose />
-        <span className="text-menu-md">Close</span>
-      </a>
+      <header className="container">
+        <a
+          href="#"
+          title="Close navigation menu"
+          className="button-transparent"
+        >
+          <IconClose />
+          <span className="text-menu-md">Close</span>
+        </a>
+      </header>
       <HeaderMenu className="column align-center justify-center" />
     </div>
   );

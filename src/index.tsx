@@ -25,7 +25,7 @@ function App() {
         : // If the articles are loaded.
           articles.status === "loaded" && (
             <>
-              {/* Hide the loader and rending the landing page */}
+              {/* Hide the loader and render the landing page */}
               {hideLoader()}
               <LandingPage articles={articles.data} />
             </>
