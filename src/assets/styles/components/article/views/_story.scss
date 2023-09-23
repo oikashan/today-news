@@ -49,14 +49,8 @@
     &:nth-of-type(2) {
       order: 3;
 
-      * {
+      *:not(a, .app-article__badge, .app-article__badge *) {
         opacity: 0.5;
-      }
-
-      .app-article__label {
-        opacity: 1 !important;
-        color: var(--color-contrast);
-        background-color: transparent;
       }
     }
   }

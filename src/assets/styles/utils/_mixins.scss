@@ -19,7 +19,7 @@
 }
 
 /// A wrapped textual entity.
-@mixin badge($font-size: $root-font-size) {
+@mixin badge($font-size: $root-font-size, $bg-color: var(--color-contrast)) {
   @include text-sans($font-size);
   display: inline-flex;
   align-items: center;
@@ -27,7 +27,7 @@
   text-transform: uppercase;
   transition: $transition-fast;
   color: var(--color-background);
-  background-color: var(--color-contrast);
+  background-color: $bg-color;
   padding: calc($size-xs - 2px) calc($size-sm + 2px);
 
   // Notice that the border is always there.

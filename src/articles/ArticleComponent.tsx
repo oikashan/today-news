@@ -1,4 +1,4 @@
-import { IconStar } from "~/icons";
+import { IconArrowUpRight, IconStar } from "~/icons";
 import type { ArticleComponentProps } from "./ArticleTypes";
 
 /**
@@ -21,6 +21,7 @@ export default function ArticleComponent({
   previewProps,
   thumbnailURL,
   thumbnailProps,
+  url,
   className = "",
   children,
   ...props
@@ -55,21 +56,22 @@ export default function ArticleComponent({
         </div>
       )}
       <div className="app-article__body">
-        {/* Label */}
-        <div
-          {...labelProps}
-          className={`app-article__label ${labelProps?.className}`}
-        >
-          {label}
+        <div {...labelProps} className="app-article__badge">
+          {/* Label */}
+          <span className={`app-article__label ${labelProps?.className}`}>
+            {label}
+          </span>
+          <span className={`app-article__arrow badge badge-success`}>
+            <IconArrowUpRight width={12} height={12} />
+          </span>
         </div>
         {/* Title */}
-        <a
-          href="#"
+        <h2
           {...titleProps}
           className={`app-article__title ${titleProps?.className}`}
         >
           {title}
-        </a>
+        </h2>
         {/* Description */}
         <div
           {...descriptionProps}
@@ -86,6 +88,14 @@ export default function ArticleComponent({
           {author}
         </div>
       </div>
+      <a
+        href={url || "#"}
+        target="_blank"
+        rel="noreferrer"
+        className="app-article__anchor"
+      >
+        Read More
+      </a>
       {children}
     </article>
   );

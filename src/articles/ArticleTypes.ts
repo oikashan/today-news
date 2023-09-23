@@ -5,7 +5,7 @@ export type ArticleComponentProps = Article & {
   /**
    * Additional props for the article's title
    */
-  titleProps?: React.ComponentPropsWithoutRef<"a">;
+  titleProps?: React.ComponentPropsWithoutRef<"h2">;
 
   /**
    * Additional props for the article's label
@@ -41,3 +41,14 @@ export type ArticleComponentProps = Article & {
 export type ArticleViewProps = {
   articles: Article[];
 } & React.ComponentPropsWithoutRef<"div">;
+
+export type ArticleResponse = {
+  source: { id?: number; name: string };
+  author: string;
+  title: string;
+  description: string;
+  url: string;
+  urlToImage: string;
+  publishedAt: string;
+  content: string;
+};

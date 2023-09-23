@@ -13,3 +13,7 @@
 .badge-outlined-sm {
   @include badge-outlined(10px);
 }
+
+.badge-success {
+  @include badge(14px, var(--color-success));
+}

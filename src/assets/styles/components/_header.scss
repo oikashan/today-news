@@ -46,7 +46,7 @@
     // Display only if selected.
     &:target {
       opacity: 1;
-      z-index: 1;
+      z-index: 10;
     }
 
     grid-template-rows: auto 1fr;

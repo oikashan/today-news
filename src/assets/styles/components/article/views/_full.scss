@@ -29,14 +29,5 @@
         display: none;
       }
     }
-
-    .badge {
-      left: 0;
-      position: absolute;
-      top: var(--gutters);
-      color: map-get($palette-dark, "contrast");
-      background: map-get($palette-dark, "background");
-      border-color: map-get($palette-dark, "background");
-    }
   }
 }

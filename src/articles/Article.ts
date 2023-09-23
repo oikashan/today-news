@@ -1,5 +1,7 @@
+import { ArticleResponse } from "./ArticleTypes";
+
 export interface Article {
-  id: number;
+  id?: number;
   title: string;
   label: string;
   author: string;
@@ -7,6 +9,7 @@ export interface Article {
   rating?: number;
   thumbnailURL?: string;
   previewURL?: string;
+  url?: string;
 }
 
 export function isArticle(entity: any): entity is Article {
@@ -17,4 +20,16 @@ export function isArticle(entity: any): entity is Article {
     entity.author &&
     entity.description
   );
+}
+
+export function getArticleFromResponse(response: ArticleResponse): Article {
+  return {
+    id: response.source.id,
+    label: response.source.name,
+    title: response.title,
+    author: response.author,
+    description: response.description,
+    thumbnailURL: response.urlToImage,
+    url: response.url,
+  };
 }
