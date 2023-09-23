@@ -1,6 +1,6 @@
 [
   {
-    "source": { "id": null, "name": "Lifehacker.com" },
+    "source": { "id": "lifehacker.com-01", "name": "Lifehacker.com" },
     "author": "Daniel Oropeza",
     "title": "What to Do When an Airline Loses Your Luggage",
     "description": "You arrive at your destination, ready to finally unwind on your long-awaited vacation, only to find that your suitcase hasn’t made the trip with you. While it’s not the end of the world, it’s not a fun circumstance to find yourself in. Before you panic, keep …",
@@ -10,7 +10,10 @@
     "content": "You arrive at your destination, ready to finally unwind on your long-awaited vacation, only to find that your suitcase hasnt made the trip with you. While its not the end of the world, its not a fun … [+3665 chars]"
   },
   {
-    "source": { "id": null, "name": "Harvard Business Review" },
+    "source": {
+      "id": "harvard business review-02",
+      "name": "Harvard Business Review"
+    },
     "author": "Noémie Le Pertel",
     "title": "When Your Vacation Wasn’t Exactly Relaxing",
     "description": "Time off doesn’t always go as planned. So, what can you do when you come back to work more exhausted than when you left — especially when everyone assumes you’re well rested and raring to go but you feel just as depleted (or more) than before? The author reco…",
@@ -20,7 +23,7 @@
     "content": "What to do when you return to work more exhausted than when you left.\r\n\"&gt;\r\nVacations are meant to be rejuvenating. Time off can not only help you restore your mind, body, and soul, it also has a p… [+5136 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-03", "name": "Business Insider" },
     "author": "Brittany Chang",
     "title": "A popular tiny home maker has unveiled a new $230,000 400-square-foot home on wheels as ADU popularity continues to skyrocket — see inside",
     "description": "The Overlook Cottage was designed to be a tiny vacation home that could attract developers looking to add several of these onto their properties.",
@@ -30,7 +33,7 @@
     "content": "Movable Roots' new almost 400-square-foot model was designed to be used as a tiny vacation home.Movable Roots\r\n<ul>\n<li>Florida-based Movable Roots unveiled its newest $230,000 400-square-foot tiny h… [+4714 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-04", "name": "Business Insider" },
     "author": "Juliana Kaplan",
     "title": "Buyer beware: All those hidden fees you pay online are getting even more hidden",
     "description": "From concert and plane tickets to hotel rooms and vacation rentals, companies are making their hidden fees even harder for customers to see.",
@@ -40,7 +43,7 @@
     "content": "Companies have for years added hidden fees onto every online purchase we make — but now these nefarious fees are getting even harder for customers to see.Nicole Zaridze\r\nAll I wanted to do was attend… [+14325 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-05", "name": "Business Insider" },
     "author": "Grace Mayer",
     "title": "Jeff Bezos' fiancée, Lauren Sanchez, is embracing 'loud luxury' on the couple's European summer extravaganza",
     "description": "While quiet luxury has been gaining steam in recent fashion trend cycles, Lauren Sanchez has taken an opposite approach with her vacation style.",
@@ -50,7 +53,7 @@
     "content": "Lauren Sanchez has been flaunting some vibrant and flashy vacation looks, like this heavily logoed hat from Louis Vuitton.Mega/Getty Images, Louis Vuitton\r\n<ul>\n<li>Lauren Sanchez, Jeff Bezos' fiance… [+2667 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-06", "name": "Business Insider" },
     "author": "George Glover",
     "title": "The winners and losers from a so-so August that threatened to stop the 2023 stock market rally in its tracks",
     "description": "August's often a tough month for markets as investors head off on vacation and trading volume plunges – and 2023 proved to be no exception.",
@@ -60,7 +63,7 @@
     "content": "ANGELA WEISS/Getty Images\r\n<ul>\n<li>August has historically been a rough month for markets.</li>\n<li>This year proved no exception as the stock rally ground to a halt.</li>\n<li>Here are some of the m… [+3547 chars]"
   },
   {
-    "source": { "id": null, "name": "CNET" },
+    "source": { "id": "cnet-07", "name": "CNET" },
     "author": "Corinne Reichert",
     "title": "Disney Treasure Cruise Ship: Bookings Now Open for $9K+ Maiden Voyage - CNET",
     "description": "Don't miss out on reserving your 2024-25 cruise vacation on Disney's latest ship, the Treasure. Here are all the rooms, restaurants and experiences you need to know about.",
@@ -70,7 +73,7 @@
     "content": "Disney has now opened bookings for its next cruise liner, the Disney Treasure. \r\nThe Treasure is a stunning, themed-out ship captained by Minnie Mouse, and the sister ship to the Disney Wish, which s… [+644 chars]"
   },
   {
-    "source": { "id": null, "name": "Makezine.com" },
+    "source": { "id": "makezine.com-08", "name": "Makezine.com" },
     "author": "Maker Faire Rome",
     "title": "PlanetART: Nurturing Sustainability Through Art and Education",
     "description": "Note: If you are considering a vacation in Italy in October, remember that Maker Faire Rome The European Edition, one of the world’s largest Maker Faires, will be taking place in Rome from the 20th to the 22nd. In the heart of Europe, an exciting and enlighte…",
@@ -80,7 +83,7 @@
     "content": "Note: If you are considering a vacation in Italy in October, remember that Maker Faire Rome The European Edition, one of the worlds largest Maker Faires, will be taking place in Rome from the 20th to… [+4187 chars]"
   },
   {
-    "source": { "id": "wired", "name": "Wired" },
+    "source": { "id": "wired-09", "name": "Wired" },
     "author": "Tracey Lindeman",
     "title": "Meta's News Block Causes Chaos as Canada Burns",
     "description": "News has been removed from Facebook and Instagram after the Canadian government told Meta to pay publishers, leaving consumers unable to access vital information during wildfires.",
@@ -90,7 +93,7 @@
     "content": "Nearly every day for the past five years, Vicki Hogarth has used Facebook to keep her community informed. As the news director for CHCO-TVan independent, nonprofit television station in rural New Bru… [+2797 chars]"
   },
   {
-    "source": { "id": "wired", "name": "Wired" },
+    "source": { "id": "wired-10", "name": "Wired" },
     "author": "Kashmir Hill",
     "title": "How a ‘Digital Peeping Tom’ Unmasked Porn Actors",
     "description": "It’s like the secret identity of Batman or Superman. You’re not supposed to know who this person is, they didn’t want you to know, and somehow you found out.",
@@ -100,7 +103,7 @@
     "content": "Over 15 years on Facebook, he had befriended hundreds of women. The first person he got a hit for was a near stranger he had met one time at a club while on vacation. They had become Facebook friends… [+3048 chars]"
   },
   {
-    "source": { "id": "cnn", "name": "CNN" },
+    "source": { "id": "cnn-11", "name": "CNN" },
     "author": "Deidre McPhillips, CNN",
     "title": "It seems like everyone has Covid-19. Here’s why this wave is probably worse than official data suggests",
     "description": "Covid-19 certainly didn’t take a vacation this summer. Virus levels in the US have been on the rise for weeks, but it’s hard to know exactly how widely it’s ...",
@@ -110,7 +113,7 @@
     "content": "Covid-19 certainly didnt take a vacation this summer. Virus levels in the US have been on the rise for weeks, but its hard to know exactly how widely its spreading.\r\nFederal data suggests that the cu… [+7437 chars]"
   },
   {
-    "source": { "id": null, "name": "Slate Magazine" },
+    "source": { "id": "slate magazine-12", "name": "Slate Magazine" },
     "author": "Jenée Desmond-Harris",
     "title": "Help! My Boyfriend’s Family Tried to Starve Me During an Isolated Backwoods Vacation.",
     "description": "I’m having doubts about this relationship.",
@@ -120,7 +123,7 @@
     "content": "Dear Prudence is Slates advice column. Submit questions here.(Its anonymous!)\r\nDear Prudence,\r\nI am a vegan for a variety of reasons. I dont preach and often find it easier to bring my own food rathe… [+10116 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-13", "name": "Business Insider" },
     "author": "Tim Paradis",
     "title": "Deloitte's human-sustainability chief wants to help employees beat burnout. She says the best solutions go beyond vacation and office yoga — and involve undoing 100 years of routine.",
     "description": "Beating employee burnout can be tough. That's something Deloitte's Jen Fisher knows firsthand. Now she's working to help others overcome it.",
@@ -130,7 +133,7 @@
     "content": "Vacation and yoga classes likely aren't enough to cure burnout for many workers.studiostockart/Getty Images\r\n<ul>\n<li>Jen Fisher is the human sustainability leader at Deloitte and is focused on makin… [+5366 chars]"
   },
   {
-    "source": { "id": null, "name": "Lifehacker.com" },
+    "source": { "id": "lifehacker.com-14", "name": "Lifehacker.com" },
     "author": "Daniel Oropeza",
     "title": "You Can Book an 8-Night Trip to Thailand for $1,099 Right Now",
     "description": "Beautiful beaches, delicious—yet cheap!—food, dense jungles, and breathtaking Buddhist temples are just a few of the things that made my Thailand trip such a great time. If you’ve been priced out of visiting Thailand in the past, this could be the moment for …",
@@ -140,7 +143,7 @@
     "content": "Beautiful beaches, deliciousyet cheap!food, dense jungles, and breathtaking Buddhist temples are just a few of the things that made my Thailand trip such a great time. If youve been priced out of vis… [+4141 chars]"
   },
   {
-    "source": { "id": null, "name": "Digital Trends" },
+    "source": { "id": "digital trends-15", "name": "Digital Trends" },
     "author": "Fionna Agomuoh",
     "title": "Hackers are sending malware through seemingly innocent Microsoft Teams messages",
     "description": "Microsoft Teams is subject to a new phishing malware that disguises itself as a convincing notice about company vacation time.",
@@ -150,7 +153,7 @@
     "content": "Hackers are getting so sophisticated with malware that they are making links look like a notice about company vacation time.\r\nA new phishing scam called “DarkGate Loader” has been uncovered that targ… [+2548 chars]"
   },
   {
-    "source": { "id": null, "name": "NPR" },
+    "source": { "id": "npr-16", "name": "NPR" },
     "author": "Kirk Siegler",
     "title": "On Maui, a desperate plea to tourists: please return",
     "description": "When the deadly wildfires ignited on Maui, tourists were turned away. Three weeks later, business owners are eager for them visit — responsibly.",
@@ -160,7 +163,7 @@
     "content": "A few tourists stand under a rainbow as the clouds clear at Haleakal on the island of Maui, Hawaii. Though much of the island is untouched, tourism is down drastically.\r\nClaire Harbage/NPR\r\nPAIA, Haw… [+5715 chars]"
   },
   {
-    "source": { "id": "the-verge", "name": "The Verge" },
+    "source": { "id": "the verge-17", "name": "The Verge" },
     "author": "Charles Pulliam-Moore",
     "title": "Netflix’s fall movie lineup has a little something for everyone",
     "description": "Netflix’s impressive slate of fall movies features a new epic from Zack Snyder, a David Fincher thriller, and a gorgeous political horror from Pablo Larraín.",
@@ -170,7 +173,7 @@
     "content": "Netflixs fall movie lineup has a little something for everyone\r\nNetflixs fall movie lineup has a little something for everyone\r\n / This fall, Netflix is breaking the heat with new films from Zack Sny… [+5401 chars]"
   },
   {
-    "source": { "id": "time", "name": "Time" },
+    "source": { "id": "time-18", "name": "Time" },
     "author": "Solcyre Burga",
     "title": "Here’s How to Travel if You’re on a Budget",
     "description": "Knowing when to book a flight is key to keeping prices low.",
@@ -180,7 +183,7 @@
     "content": "For travelers, planning a vacation doesnt have to mean breaking the bank. \r\nMore than half of Gen Z adults are frequent travelers, taking at least three annual trips for leisure, according to data re… [+7227 chars]"
   },
   {
-    "source": { "id": null, "name": "Ounapuu.ee" },
+    "source": { "id": "ounapuu.ee-19", "name": "Ounapuu.ee" },
     "author": null,
     "title": "My trip to the Communication and Laptop Museum in Estonia",
     "description": "I ended up going to a small museum run by a passionate enthusiast in the beautiful countryside of south-east Estonia while on vacation, here are my notes on it.",
@@ -190,7 +193,7 @@
     "content": "While on vacation I went on a small road-trip across Estonia. During the second half of the trip I ended up being in Võrumaa,\r\nand while driving I suddenly remembered a random fact that some people m… [+3884 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-20", "name": "Business Insider" },
     "author": "Riddhi Kanetkar",
     "title": "I traveled to London to freeze my eggs after I was shamed for being childless. This is why I used a fertility tourism startup to plan my trip and get a vacation out of it.",
     "description": "An increasing number of women are travelling abroad to freeze their eggs and Rika Tajima decided to use fertility tourism startup Milvia to do just that.",
@@ -200,7 +203,7 @@
     "content": "Rika Tajima in London.Rika Tajima.\r\n<ul><li>An increasing number of women are choosing to undergo IVF and egg freezing treatments abroad.</li><li>Many also want to make a holiday out of it, and new s… [+6463 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-21", "name": "Business Insider" },
     "author": "Holly Johnson",
     "title": "I paid $3,000 for 2 people to spend a week cruising Europe, and I couldn't be happier with the value I got",
     "description": "I love the value offered by cruises, which don't come with the surprise added costs of many other vacations. Virgin Voyages is a new favorite of mine.",
@@ -210,7 +213,7 @@
     "content": "Our experts choose the best products and services to help make smart decisions with your money (here's how). In some cases, we receive a commission from our partners; however, our opinions are our ow… [+6660 chars]"
   },
   {
-    "source": { "id": null, "name": "Cheezburger.com" },
+    "source": { "id": "cheezburger.com-22", "name": "Cheezburger.com" },
     "author": "RemyMill, RemyMill",
     "title": "'No, you can't use your vacation time': Worker takes 7,200 hours of vacation time after job insists he work on holidays for decades",
     "description": "Workplaces love to advertise their great benefits, especially if they offer generous amounts of vacation days. This guy played the long game with his own workplace's plan, and it seems like he got the outcome he was hoping for. \r\nU/Yetshi shared that their da…",
@@ -220,7 +223,7 @@
     "content": "Workplaces love to advertise their great benefits, especially if they offer generous amounts of vacation days. This guy played the long game with his own workplace's plan, and it seems like he got th… [+945 chars]"
   },
   {
-    "source": { "id": "bbc-news", "name": "BBC News" },
+    "source": { "id": "bbc news-23", "name": "BBC News" },
     "author": "https://www.facebook.com/bbcnews",
     "title": "Russian general who ran Ukraine war fired - report",
     "description": "Sergei Surovikin was head of aerospace forces but has not been since a failed mutiny in June.",
@@ -230,7 +233,7 @@
     "content": "One of Russia's leading military figures, Gen Sergei Surovikin, has reportedly lost his job as air force chief after weeks of speculation his disappearance from public view.\r\nRia Novosti agency said … [+2459 chars]"
   },
   {
-    "source": { "id": null, "name": "NPR" },
+    "source": { "id": "npr-24", "name": "NPR" },
     "author": "Lauren Frayer",
     "title": "In Morocco's Atlas Mountains, survivors of the quake take stock of all they've lost",
     "description": "Survivors of the Sept. 8 earthquake return to devastated villages. \"This was our paradise,\" says a 74-year-old woman. \"Everyone in this village is like family to me, and our family is now shattered.\"",
@@ -240,7 +243,7 @@
     "content": "Brother and sister Boujemaa and Aicha Ounasser return home to their birthplace in the Atlas Mountains on Sept. 12 to view the rubble of the devastating earthquake in Tnirte, Morocco.\r\nCarol Guzy for … [+4429 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-25", "name": "Business Insider" },
     "author": "kvlamis@insider.com (Kelsey Vlamis,Hannah Getahun,Sebastian Cahill)",
     "title": "A plane passenger smuggling weapons was caught after he lit up a cigarette in the bathroom and flight attendants smelled the smoke, prosecutor says",
     "description": "After flight crew smelled smoke from the bathroom officials searched the man's bag and found brass knuckles and a stun gun, a UK prosecutor said.",
@@ -250,7 +253,7 @@
     "content": "A 51-year-old man smuggling weapons into the UK in 2021 was caught after lighting up a cigarette in an airplane lavatory, a prosecutor said in court last week, according to the Yorkshire Evening Post… [+1672 chars]"
   },
   {
-    "source": { "id": null, "name": "PetaPixel" },
+    "source": { "id": "peta-pixel-26", "name": "PetaPixel" },
     "author": "Pesala Bandara",
     "title": "The Rise of ‘Vacation Photographers’",
     "description": "Holidaymakers are hiring professional \"vacation photographers\" to document travels with their families abroad.\n[Read More]",
@@ -260,7 +263,7 @@
     "content": "Holidaymakers are hiring professional “vacation photographers” to document travels with their families abroad.\r\nIn a 2018 study, more than 40% of millennials said they prioritized “Instagrambility” a… [+3271 chars]"
   },
   {
-    "source": { "id": null, "name": "Design-milk.com" },
+    "source": { "id": "design-milk.com-27", "name": "Design-milk.com" },
     "author": "Gregory Han",
     "title": "California Vibes Shine Across Sun Ranch in Byron Bay, Australia",
     "description": "Two designers and their small circle of friends transformed a 55-acre Australian ranch into a nostalgic ode to 70s California at the Sun Ranch.",
@@ -270,7 +273,7 @@
     "content": "Squint a bit and the golden coastline of Australia’s Byron Bay hinterland does more than a convincing job conjuring a similar relaxed mountain-meets-ocean luminescence that has tempted countless free… [+3563 chars]"
   },
   {
-    "source": { "id": null, "name": "Pitchfork" },
+    "source": { "id": "pitchfork-28", "name": "Pitchfork" },
     "author": "Matthew Strauss",
     "title": "Miley Cyrus Releases Video for New Song “Used to Be Young”: Watch",
     "description": "The pop singer’s first new single since the March release of Endless Summer Vacation",
@@ -280,7 +283,7 @@
     "content": "After a great deal of teasing and anticipation, Miley Cyrus has released the new song Used to Be Young. Its the pop singers first new single since the release of Endless Summer Vacation in March. Wat… [+2105 chars]"
   },
   {
-    "source": { "id": null, "name": "Gizmodo.com" },
+    "source": { "id": "gizmodo.com-29", "name": "Gizmodo.com" },
     "author": "Gordon Jackson and James Whitbrook",
     "title": "Blue Beetle's Director Teases a Big Future For DC's New Hero",
     "description": "The BBC might have slip just when Ncuti Gatwa’s first Doctor Who season will begin. Could there be even more of Ahsoka and The Acolyte on the way? Futurama goes festive in new pictures. Plus, get another look at Invasion’s return. To me, my spoilers!Read more…",
@@ -290,7 +293,7 @@
     "content": "The BBC might have slip just when Ncuti Gatwas first Doctor Who season will begin. Could there be even more of Ahsoka and The Acolyte on the way? Futurama goes festive in new pictures. Plus, get anot… [+3629 chars]"
   },
   {
-    "source": { "id": null, "name": "Yanko Design" },
+    "source": { "id": "yanko design-30", "name": "Yanko Design" },
     "author": "Srishti Mitra",
     "title": "Top 10 Cabins Designed To Be The Ultimate Vacation Retreat For Your Family & You",
     "description": "Top 10 Cabins Designed To Be The Ultimate Vacation Retreat For Your Family & YouIf you’re looking for a stunning little cabin in the woods to get away to and simply relax, then you’ve reached the right place. Cabins...",
@@ -300,7 +303,7 @@
     "content": "If youre looking for a stunning little cabin in the woods to get away to and simply relax, then youve reached the right place. Cabins are by far the best type of vacation Ive come across. Theyre a pe… [+8825 chars]"
   },
   {
-    "source": { "id": null, "name": "ArchDaily" },
+    "source": { "id": "arch-daily-31", "name": "ArchDaily" },
     "author": "Valeria Silva",
     "title": "Oasis View Vacation Rentals / Elie Metni Architects",
     "description": "The approach behind this project was driven by the objective of revitalizing the existing structure in adherence to the city's building codes. Our approach involved both preserving and accentuating the building's key architectural features, while also introdu…",
@@ -310,7 +313,7 @@
     "content": "© Nick Jackson, Elie Metni\r\n+ 8\r\n© Nick Jackson, Elie Metni\r\nText description provided by the architects. The approach behind this project was driven by the objective of revitalizing the existing str… [+2097 chars]"
   },
   {
-    "source": { "id": null, "name": "Windows Central" },
+    "source": { "id": "windows central-32", "name": "Windows Central" },
     "author": "kevinokemwa@outlook.com (Kevin Okemwa)",
     "title": "This malicious Microsoft Teams phishing scam pretends to be harmless vacation changes",
     "description": "Truesec is investigating a new phishing scam dubbed DarkGate Loader, leveraged by hackers to send malicious messages to Microsoft Teams users.",
@@ -320,7 +323,7 @@
     "content": "<ul><li>Hackers are leveraging a new phishing campaign dubbed 'DarkGate Loader' to compromise Microsoft Teams accounts.</li><li>The technique is designed to dupe unsuspecting users into downloading a… [+3097 chars]"
   },
   {
-    "source": { "id": "engadget", "name": "Engadget" },
+    "source": { "id": "engadget-33", "name": "Engadget" },
     "author": "Andrew Tarantola",
     "title": "How a pioneering mixed-gender newsroom covered the A-bomb",
     "description": "Modern tech journalism would likely look far differently today, if not for the efforts of Dorothy Vaughan, Katherine Johnson and a host of other trailblazing female reporters who staffed the Science Service throughout the publication's history. These journali…",
@@ -330,7 +333,7 @@
     "content": "Modern tech journalism would likely look far differently today, if not for the efforts of Dorothy Vaughan, Katherine Johnson and a host of other trailblazing female reporters who staffed the Science … [+9957 chars]"
   },
   {
-    "source": { "id": "buzzfeed", "name": "Buzzfeed" },
+    "source": { "id": "buzzfeed-34", "name": "Buzzfeed" },
     "author": "Matt Stopera",
     "title": "Miley Cyrus Told The Story Behind Her Controversial 2009 Teen Choice Awards Performance, And No, It Wasn't A Stripper Pole",
     "description": "I totally agree about the hat.View Entire Post ›",
@@ -340,7 +343,7 @@
     "content": "So i do think this girl deserves a little endless summer vacation \r\n- miley cyrus reacting to her work schedule as a 13 years old insane. pic.twitter.com/QDmOb2e9co\r\n Miley Nation (@MileyNation13) Au… [+12 chars]"
   },
   {
-    "source": { "id": null, "name": "Calendar.com" },
+    "source": { "id": "calendar.com-35", "name": "Calendar.com" },
     "author": "Calendar",
     "title": "Scheduling Time on Your Calendar to Disconnect From Work",
     "description": "Work is such an integral part of our lives. As important as work is, it’s not typically our first choice […]\nThe post Scheduling Time on Your Calendar to Disconnect From Work appeared first on ReadWrite.",
@@ -350,7 +353,7 @@
     "content": "Work is such an integral part of our lives. As important as work is, its not typically our first choice of activity each day. The activities we really want to pursue, such as hobbies, entertainment, … [+6582 chars]"
   },
   {
-    "source": { "id": null, "name": "NPR" },
+    "source": { "id": "npr-36", "name": "NPR" },
     "author": "Juliana Kim",
     "title": "Burger King gave candy to a worker who never called in sick. The internet gave $400k",
     "description": "Over the past 20 years, Kevin Ford from Las Vegas virtually never took a sick day because his job didn't offer paid sick leave. People across social media chipped in for him to finally afford a break.",
@@ -360,7 +363,7 @@
     "content": "Kevin Ford attributes his work ethic to his father who worked in the Air Force, as well as his mother who raised him and his six siblings.\r\nKevin Ford\r\nBurger King cook and cashier Kevin Ford was hap… [+4401 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-37", "name": "Business Insider" },
     "author": "Alyshia Hull",
     "title": "I’m an American who moved to Sweden and was shocked the first time I saw a baby alone in a stroller",
     "description": "Bridget Borden moved from the US to Sweden. She describes the culture shocks that surprised her most.",
@@ -370,7 +373,7 @@
     "content": "Bridget Borden moved from the US to Sweden. One of the biggest things she misses about the US is the small talk among strangers.Bridget Borden\r\n<ul>\n<li>Bridget Borden was originally from New Jersey … [+5068 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-38", "name": "Business Insider" },
     "author": "Brittany Chang",
     "title": "Jimmy Buffet's 'Margaritaville' has built an empire. Here's what it's like to visit its resorts and RV parks, and sail on its cruise line.",
     "description": "The Margaritaville hospitality empire gives vacationers, diners, and retirees an immersion into the world of Jimmy Buffett's music.",
@@ -380,7 +383,7 @@
     "content": "Before his death, musician and entrepreneur Jimmy Buffett helped build THE sprawling Margaritaville empire that now includes retirement communities, a cruise line, restaurants, and even RV parks.Marg… [+6201 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-39", "name": "Business Insider" },
     "author": "Polly Thompson,Grace Dean",
     "title": "Elon Musk once caught malaria on safari and was 'hours from death,' book says",
     "description": "Walter Isaacson's new biography of Elon Musk gives more insight into why the Tesla and SpaceX billionaire seems to dislike taking time off.",
@@ -390,7 +393,7 @@
     "content": "Elon Musk did take some time off in July 2022 when he visited the Greek island of Mykonos.MEGA/GC/Getty Images\r\n<ul><li>Walter Isaacson's biography of Elon Musk shines new light on the world's riches… [+4228 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-40", "name": "Business Insider" },
     "author": "Grace Mayer",
     "title": "French restaurants are reportedly requiring a $5,000 minimum spend per table and refusing reservations for returning diners who didn't spend enough at their last visit",
     "description": "Tensions over tipping and additional dining fees have been cropping up all year. These staggering charges at some French restaurants may top them all.",
@@ -400,7 +403,7 @@
     "content": "Some restaurants in St Tropez are demanding larger tips or flat-out refusing reservations to returning customers.Willie B. Thomas/Getty Images\r\n<ul>\n<li>Tensions over tipping and dining fees have bee… [+2069 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-41", "name": "Business Insider" },
     "author": "Sawdah Bhaimiya",
     "title": "Salesforce gave former employees stuffed toys wearing boomerang shirts as the company seeks to bring back ex-staff amid a hiring drive",
     "description": "Salesforce held an alumni event with 50 former executives last week who were gifted with stuffed animals and greeted by current executives.",
@@ -410,7 +413,10 @@
     "content": "Salesforce CEO Marc Benioff speaks at the Dreamforce 2023 keynote.Salesforce\r\n<ul><li>Salesforce held an alumni event last week with 50 former executives who were gifted with stuffed animals.</li><li… [+2556 chars]"
   },
   {
-    "source": { "id": null, "name": "Small Business Trends" },
+    "source": {
+      "id": "small business trends-42",
+      "name": "Small Business Trends"
+    },
     "author": "Annie Pilon",
     "title": "Spotlight: SkyRun Provides a Unique Solution for Vacation Property Owners",
     "description": "SkyRun provides a unique solution for vacation property owners by delivering a local mom and pop shop feel with a national brand reliability.",
@@ -420,7 +426,7 @@
     "content": "Vacation rentals are becoming increasingly popular in communities around the country. But its not always possible for property owners. Luckily, SkyRun Vacation Rentals offers a solution. Read about t… [+3775 chars]"
   },
   {
-    "source": { "id": null, "name": "The Points Guy" },
+    "source": { "id": "the points guy-43", "name": "The Points Guy" },
     "author": "Tarah Chieffi",
     "title": "Forgetting to do this 1 thing could ruin your Disney trip",
     "description": "For an admitted Type A vacation planner like me, I enjoy the ins and outs of planning a Disney World vacation. When my alarm goes off 60 days before my vacation, signaling it’s time to begin booking my Disney dining reservations, I pop out of bed full of exci…",
@@ -430,7 +436,7 @@
     "content": "For an admitted Type A vacation planner like me, I enjoy the ins and outs of planning a Disney World vacation. When my alarm goes off 60 days before my vacation, signaling it's time to begin booking … [+5499 chars]"
   },
   {
-    "source": { "id": null, "name": "Cheezburger.com" },
+    "source": { "id": "cheezburger.com-44", "name": "Cheezburger.com" },
     "author": "RemyMill, RemyMill",
     "title": "Update: '[My] friend wants use me as her backup ATM': Traveller tells friend she's only bringing $300 on Caribbean vacation, friend takes internet's advice to avoid paying extra",
     "description": "While planning a vacation for two, this woman had no idea her friend would suddenly expect her to foot the bill. That's not how travelling with friends works — everyone has to pay their own share, unless you plan on a different way to split the costs that eve…",
@@ -440,7 +446,7 @@
     "content": "While planning a vacation for two, this woman had no idea her friend would suddenly expect her to foot the bill. That's not how travelling with friends works everyone has to pay their own share, unle… [+1262 chars]"
   },
   {
-    "source": { "id": null, "name": "Cheezburger.com" },
+    "source": { "id": "cheezburger.com-45", "name": "Cheezburger.com" },
     "author": "BenWeiss, BenWeiss",
     "title": "'If you don't come in, you're fired': Boss calls vacationing employee's wife to get her husband to come in, threatens termination",
     "description": "What part of \"time OFF\" do these employers not understand? This technician had been working at the same HVAC company for 15 years and saw it expand from virtually nothing to a business that employed over 100 other technicians. Unfortunately, the dynamics with…",
@@ -450,7 +456,7 @@
     "content": "What part of \"time OFF\" do these employers not understand? This technician had been working at the same HVAC company for 15 years and saw it expand from virtually nothing to a business that employed … [+1532 chars]"
   },
   {
-    "source": { "id": null, "name": "Slate Magazine" },
+    "source": { "id": "slate magazine-46", "name": "Slate Magazine" },
     "author": "Steven Lubet",
     "title": "Clarence Thomas’ Corrected Ethics Disclosure Form Is Not Actually Correct",
     "description": "Thomas’ motivation for the categorization seems obvious.",
@@ -460,7 +466,7 @@
     "content": "If there was any doubt about Supreme Court Justice Clarence Thomas identification with the Republican establishment, it dissolved last week when he filed his annual financial disclosure report, which… [+5994 chars]"
   },
   {
-    "source": { "id": null, "name": "Cheezburger.com" },
+    "source": { "id": "cheezburger.com-47", "name": "Cheezburger.com" },
     "author": "bradpdickson, bradpdickson",
     "title": "'They still scheduled me': Employer refuses to honor new worker's negotiated leave, refusing to remove them from the schedule",
     "description": "Usually, when we negotiate leave dates when starting a new job, we'd expect those dates to be honored—not thrown to the wayside as soon as we're locked into our employment. After all, that's all part of the bargaining process, and once a bargain is struck, ev…",
@@ -470,7 +476,7 @@
     "content": "Usually, when we negotiate leave dates when starting a new job, we'd expect those dates to be honorednot thrown to the wayside as soon as we're locked into our employment. After all, that's all part … [+1132 chars]"
   },
   {
-    "source": { "id": null, "name": "Cheezburger.com" },
+    "source": { "id": "cheezburger.com-48", "name": "Cheezburger.com" },
     "author": "Jesse Kessenheimer, Jesse Kessenheimer",
     "title": "'He [only offered] 10% off of a future stay': Vacationer gets denied a refund when his rental home becomes uninhabitable; guest goes straight to the top and gets 30% off",
     "description": "They say that by the age of 40, you should have a vendetta against at least one vacation rental company. For some reason, travel always make people turn extra greedy and with all this cash floating around, sometimes hosts of vacation homes lose a sense of gen…",
@@ -480,7 +486,7 @@
     "content": "They say that by the age of 40, you should have a vendetta against at least one vacation rental company. For some reason, travel always make people turn extra greedy and with all this cash floating a… [+1216 chars]"
   },
   {
-    "source": { "id": null, "name": "Yahoo Entertainment" },
+    "source": { "id": "yahoo entertainment-49", "name": "Yahoo Entertainment" },
     "author": "WAYNE PARRY",
     "title": "Aerosmith singer and Maui homeowner Steven Tyler urges tourists to return to the island",
     "description": "He's most often associated with Boston, the hometown of his legendary rock band, but Aerosmith singer Steven Tyler has a soft spot in his heart for the...",
@@ -490,7 +496,10 @@
     "content": "PHILADELPHIA (AP) He's most often associated with Boston, the hometown of his legendary rock band, but Aerosmith singer Steven Tyler has a soft spot in his heart for the Hawaiian island of Maui.\r\nThe… [+1769 chars]"
   },
   {
-    "source": { "id": null, "name": "Fort Worth Star-Telegram" },
+    "source": {
+      "id": "fort worth star-telegram-50",
+      "name": "Fort Worth Star-Telegram"
+    },
     "author": "Mitchell Willetts",
     "title": "‘I could’ve died.’ Steering wheel stops spear thrown into woman’s car, Texas video shows",
     "description": "The attack appears to be random, according to police.",
@@ -500,7 +509,7 @@
     "content": "A Texas woman says she almost died after a spear suddenly came crashing through her windshield, nearly hitting her as she was driving, video shows.\r\nThe woman was driving in San Antonio on the night … [+1334 chars]"
   },
   {
-    "source": { "id": null, "name": "Android Central" },
+    "source": { "id": "android central-51", "name": "Android Central" },
     "author": "techkritiko@gmail.com (Jay Bonggolto)",
     "title": "Bard now taps into the brains of Google apps to get even smarter",
     "description": "Google's ChatGPT rival is now feasting on Maps, YouTube, Flights, Hotels, and other first-party apps to expand its knowledge.",
@@ -510,7 +519,7 @@
     "content": "<ul><li>Bard is now a supercharged AI assistant, with real-time info from Maps, YouTube, Hotels, and Flights at its fingertips, though you can disable these extensions anytime.</li><li>Bard will also… [+2475 chars]"
   },
   {
-    "source": { "id": null, "name": "Boing Boing" },
+    "source": { "id": "boing boing-52", "name": "Boing Boing" },
     "author": "Carla Sinclair",
     "title": "Florida man pumps opioids into neighbors' home to keep them quiet (video)",
     "description": "A Florida man was caught on camera injecting chemicals underneath the front door of the apartment above his home after complaining that his neighbors — who had just had a baby — were too loud. (See video below, posted by Law & Crime Network.) — Read the rest",
@@ -520,7 +529,7 @@
     "content": "A Florida man was caught on camera injecting chemicals underneath the front door of the apartment above his home after complaining that his neighbors who had just had a baby were too loud. (See video… [+2017 chars]"
   },
   {
-    "source": { "id": null, "name": "Boing Boing" },
+    "source": { "id": "boing boing-53", "name": "Boing Boing" },
     "author": "Jason Weisberger",
     "title": "Karine Jean-Pierre gets fed up, shoves Doocy in a corner",
     "description": "\"Your question is wrong, it's flawed in many, many ways and I would advise you to go speak to the governor and the local and state officials in Hawaii.\"\n\n\n\nGenerally convivial, White House Press Secretary Karine Jean-Pierre was not having any of Fox News' Pet…",
@@ -530,7 +539,7 @@
     "content": "\"Your question is wrong, it's flawed in many, many ways and I would advise you to go speak to the governor and the local and state officials in Hawaii.\"Generally convivial, White House Press Secretar… [+1795 chars]"
   },
   {
-    "source": { "id": null, "name": "Boing Boing" },
+    "source": { "id": "boing boing-54", "name": "Boing Boing" },
     "author": "Boing Boing's Shop",
     "title": "Say bye to tweezers and waxing! You can get a personal laser hair remover for just $59.99",
     "description": "We thank our sponsor for making this content possible; it is not written by the editorial staff nor does it necessarily reflect its views\n\n\n\nTL;DR: Looking for a way to remove body hair and keep your skin silky smooth? Get the Face to Feet Laser Hair Remover,…",
@@ -540,7 +549,7 @@
     "content": "We thank our sponsor for making this content possible; it is not written by the editorial staff nor does it necessarily reflect its views\r\nTL;DR: Looking for a way to remove body hair and keep your s… [+2068 chars]"
   },
   {
-    "source": { "id": null, "name": "Boing Boing" },
+    "source": { "id": "boing boing-55", "name": "Boing Boing" },
     "author": "Boing Boing's Shop",
     "title": "Get this Lenovo touchscreen Chromebook for under $100!",
     "description": "We thank our sponsor for making this content possible; it is not written by the editorial staff nor does it necessarily reflect its views.\n\n\n\nTL;DR: Is your current laptop giving you trouble? You know what they say, \"Out with the old and in with the new!\" — R…",
@@ -550,7 +559,7 @@
     "content": "We thank our sponsor for making this content possible; it is not written by the editorial staff nor does it necessarily reflect its views.\r\nTL;DR: Is your current laptop giving you trouble? You know … [+1994 chars]"
   },
   {
-    "source": { "id": null, "name": "Cheezburger.com" },
+    "source": { "id": "cheezburger.com-56", "name": "Cheezburger.com" },
     "author": "BenWeiss, BenWeiss",
     "title": "'They canceled my two weeks off': HR approves employee's PTO for her mother's funeral, then cancels request, employee has an outburst",
     "description": "Every human resources department has been known for some shady behavior to protect the interests of the company rather than the interests of the actual humans who work there. Ironic, much? \r\n \r\nWe all have these kinds of stories, particularly ones that involv…",
@@ -560,7 +569,7 @@
     "content": "Every human resources department has been known for some shady behavior to protect the interests of the company rather than the interests of the actual humans who work there. Ironic, much? \r\nWe all h… [+1347 chars]"
   },
   {
-    "source": { "id": "bbc-news", "name": "BBC News" },
+    "source": { "id": "bbc news-57", "name": "BBC News" },
     "author": "https://www.facebook.com/bbcnews",
     "title": "The Nigerians learning to speak with British accents",
     "description": "For some Nigerians, the English language is not perfect unless spoken with a British accent.",
@@ -570,7 +579,7 @@
     "content": "Even though many Nigerians speak perfect English in everyday conversations with family, friends and colleagues, some are taking extra classes to learn to speak with a polished British accent.\r\nIt is … [+7213 chars]"
   },
   {
-    "source": { "id": null, "name": "Younghouselove.com" },
+    "source": { "id": "younghouselove.com-58", "name": "Younghouselove.com" },
     "author": "John Petersik",
     "title": "Two Days In St. Petersburg Florida With Kids",
     "description": "Rather than take one big vacation this summer, we opted instead for a few short trips so we could experience more new places. We kicked things off with this 3-night trip to Charleston, SC, we met up my parents in the Georgia mountains in July, and then capped…",
@@ -580,7 +589,7 @@
     "content": "Rather than take one big vacation this summer, we opted instead for a few short trips so we could experience more new places. We kicked things off with this 3-night trip to Charleston, SC, we met up … [+10132 chars]"
   },
   {
-    "source": { "id": null, "name": "The Points Guy" },
+    "source": { "id": "the points guy-59", "name": "The Points Guy" },
     "author": "Tarah Chieffi",
     "title": "The magic of Disney on the beach: What it’s like staying at Disney’s Hilton Head Island Resort",
     "description": "[circuit type=review circuit_id=”20420168241″] I’ve been eyeing a stay at Disney’s Hilton Head Island Resort for quite a long while. As an unabashed adult who loves Disney (though not a Disney adult, there’s a difference), I was intrigued by the idea of combi…",
@@ -590,7 +599,7 @@
     "content": "I've been eyeing a stay at Disney's Hilton Head Island Resort for quite a long while. As an unabashed adult who loves Disney (though not a Disney adult, there's a difference), I was intrigued by the … [+10168 chars]"
   },
   {
-    "source": { "id": null, "name": "NPR" },
+    "source": { "id": "npr-60", "name": "NPR" },
     "author": "Washington Desk",
     "title": "Justices Thomas, Alito file 2022 financial disclosure forms with new trips and gifts",
     "description": "In a statement accompanying Thursday's disclosure, a lawyer for Thomas said there had been \"no willful ethics transgressions\" and called prior reporting errors \"strictly inadvertent.\"",
@@ -600,7 +609,7 @@
     "content": "Associate Justice Clarence Thomas, left, talks to Chief Justice John Roberts during the formal group photograph at the Supreme Court in Washington, D.C., on Oct. 7, 2022.\r\nBloomberg/Bloomberg via Get… [+3359 chars]"
   },
   {
-    "source": { "id": null, "name": "Boing Boing" },
+    "source": { "id": "boing boing-61", "name": "Boing Boing" },
     "author": "Boing Boing's Shop",
     "title": "Score a grade \"A\" refurbished iPad with Beats headphones with this Labor Day Sale bundle",
     "description": "We thank our sponsor for making this content possible; it is not written by the editorial staff nor does it necessarily reflect its views.\n\n\n\nTL;DR: From now through September 4th, you can get this Apple iPad Air Bundle w/ Beats Flex Headphones for just $99.9…",
@@ -610,7 +619,7 @@
     "content": "We thank our sponsor for making this content possible; it is not written by the editorial staff nor does it necessarily reflect its views.\r\nTL;DR: From now through September 4th, you can get this App… [+1622 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-62", "name": "Business Insider" },
     "author": "Aaron Mok",
     "title": "The cofounder of Google's AI division DeepMind says everybody will have their own AI-powered 'chief of staff' over the next five years",
     "description": "Mustafa Suleyman said AI will \"intimately know your personal information\" and be able to serve you 24-7.",
@@ -620,7 +629,7 @@
     "content": "Mustafa Suleyman, the cofounder of Google's AI division, told CNBC that everybody will have their own AI-powered personal assistant that could serve as one's \"chief of staff\" over the next five years… [+3649 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-63", "name": "Business Insider" },
     "author": "Grace Mayer",
     "title": "It's easier than ever to get a tiny home. Home Depot, Amazon, and Costco are selling kits, and some will cost you under $50,000.",
     "description": "Major retailers, including Amazon, Home Depot, and Costco, are stocking tiny-home kits on their websites. Take a look at some of the tiny homes.",
@@ -630,7 +639,7 @@
     "content": "Home Depot, Amazon, and Costco are among the retailers selling do-it-yourself kits that allow people to build tiny homes similar to this one.Kenneth K. Lam/Baltimore Sun/Tribune News Service via Gett… [+3152 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-64", "name": "Business Insider" },
     "author": "Grace Dean",
     "title": "Tourists call a restaurant in Greece 'cheaters and thieves' after accusing it of charging them $776 for a cocktail, 3 glasses of OJ, and some squid and shrimp",
     "description": "Reviewers have called the restaurant a \"scam\" and claimed they weren't able to see prices before they ordered.",
@@ -640,7 +649,7 @@
     "content": "The reviewers claimed they got a $776 bill for a cocktail, 3 glasses of orange juice, and some squid and shrimp.PanosKarapanagiotis/Getty Images, Oleg Begunenco/500px via Getty Images\r\n<ul><li>A Trip… [+3666 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-65", "name": "Business Insider" },
     "author": "Dan Latu",
     "title": "The golden years for NYC Airbnb hosts are over",
     "description": "Listings have plummeted 77% since June. With the loss of short-term-rental income, some homeowners are weighing what's next.",
@@ -650,7 +659,7 @@
     "content": "A street in Brooklyn, New York.Alexander Spatari/Getty Images\r\n<ul>\n<li>On September 5, NYC began enforcing a 2022 law that bans whole-home rentals and caps guests at two.</li>\n<li>Airbnb listings in… [+3481 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-66", "name": "Business Insider" },
     "author": "Hugh Langley",
     "title": "Google is turning its Bard AI chatbot into a personal assistant by tapping into products like Gmail and Maps, giving it a key advantage in the AI race",
     "description": "Google is supercharging its Bard chatbot by integrating apps such as Gmail and YouTube. It's also seeking to make it clearer when Bard \"hallucinates.\"",
@@ -660,7 +669,7 @@
     "content": "Sundar Pichai onstage at Google I/O 2023.Google\r\n<ul><li>Google is supercharging Bard by giving it access to its most popular apps.</li><li>It's a big leap forward as the company continues to chase O… [+3211 chars]"
   },
   {
-    "source": { "id": "engadget", "name": "Engadget" },
+    "source": { "id": "engadget-67", "name": "Engadget" },
     "author": "Andrew Tarantola",
     "title": "Hitting the Books: Meet Richard Akrwright, the world's first tech titan",
     "description": "You didn't actually believe all those founder's myths about tech billionaires like Bezos, Jobs and Musk pulling themselves up by their bootstraps from some suburban American garage, did you? In reality, our corporate kings have been running the same playbook …",
@@ -670,7 +679,7 @@
     "content": "You didn't actually believe all those founder's myths about tech billionaires like Bezos, Jobs and Musk pulling themselves up by their bootstraps from some suburban American garage, did you? In reali… [+14031 chars]"
   },
   {
-    "source": { "id": "engadget", "name": "Engadget" },
+    "source": { "id": "engadget-68", "name": "Engadget" },
     "author": "Andrew Tarantola",
     "title": "Hitting the Books: Meet Richard Akrwright, the world's first tech titan",
     "description": "You didn't actually believe all those founder's myths about tech billionaires like Bezos, Jobs and Musk pulling themselves up by their bootstraps from some suburban American garage, did you? In reality, our corporate kings have been running the same playbook …",
@@ -680,7 +689,7 @@
     "content": "You didn't actually believe all those founder's myths about tech billionaires like Bezos, Jobs and Musk pulling themselves up by their bootstraps from some suburban American garage, did you? In reali… [+14055 chars]"
   },
   {
-    "source": { "id": null, "name": "Cheezburger.com" },
+    "source": { "id": "cheezburger.com-69", "name": "Cheezburger.com" },
     "author": "RemyMill, RemyMill",
     "title": "'All four kids… agreed to not invite us to the baby shower': Stepparents cancel vacation plans for stepkids after paying for baby shower they weren't invited to",
     "description": "This family drama came to a boiling point after this stepmom finally said \"no.\" \r\nIt's hard for parents to say no to what their kids want. After all, you want to give your precious children the world! Parents work so hard to put food on the table, keep their …",
@@ -690,7 +699,7 @@
     "content": "This family drama came to a boiling point after this stepmom finally said \"no.\" \r\nIt's hard for parents to say no to what their kids want. After all, you want to give your precious children the world… [+1312 chars]"
   },
   {
-    "source": { "id": null, "name": "INSIDER" },
+    "source": { "id": "insider-70", "name": "INSIDER" },
     "author": "Marielle Descalsota",
     "title": "A plane took off from Switzerland with 111 people on board and 0 of their suitcases",
     "description": "People waited in vain for more than two hours at a conveyor belt in the Bilbao airport for their suitcases to arrive.",
@@ -700,7 +709,7 @@
     "content": "A Swiss plane left passengers' suitcases in Switzerland, who waited at the conveyor belt for two hours.MICHAEL BUHOLZER/AFP via Getty Images\r\n<ul><li>A Swiss Airlines plane departed for Bilbao, Spain… [+2288 chars]"
   },
   {
-    "source": { "id": null, "name": "Stereogum" },
+    "source": { "id": "stereogum-71", "name": "Stereogum" },
     "author": "Tom Breihan",
     "title": "Miley Cyrus – “Used To Be Young”",
     "description": "Earlier this year, the suddenly resurgent Miley Cyrus released her album Endless Summer Vacation. Lead single “Flowers” debuted at #1 and stayed there for eight weeks. It’s Miley’s biggest hit ever, and it’s the year’s second-biggest chart hit after Morgan Wa…",
@@ -710,7 +719,7 @@
     "content": "Earlier this year, the suddenly resurgent Miley Cyrus released her album Endless Summer Vacation. Lead single “Flowers” debuted at #1 and stayed there for eight weeks. It’s Miley’s biggest hit ever, … [+977 chars]"
   },
   {
-    "source": { "id": null, "name": "Quartz India" },
+    "source": { "id": "quartz india-72", "name": "Quartz India" },
     "author": "Yucheng Tang, Associated Press",
     "title": "Thailand's LGBTQ+ community draws tourists from China looking to be themselves",
     "description": "BANGKOK (AP) — Xinyu Wen traveled to Thailand in June, planning a two-week vacation around Bangkok's Pride parade. Read more...",
@@ -720,7 +729,7 @@
     "content": "BANGKOK (AP) Xinyu Wen traveled to Thailand in June, planning a two-week vacation around Bangkok's Pride parade. \r\nInstead, the 28-year-old stayed a month and a half, as her experience at the parade … [+5386 chars]"
   },
   {
-    "source": { "id": null, "name": "Design-milk.com" },
+    "source": { "id": "design-milk.com-73", "name": "Design-milk.com" },
     "author": "Gregory Han",
     "title": "Glacial Grandeur Takes Center Stage at The Bolder Lodges, Lysefjord, Norway",
     "description": "Situated at the edge of Norway's Lysefjorden, what awaits is the majestic confluence of architecture with nature at its most grandiose.",
@@ -730,7 +739,7 @@
     "content": "Located at the southernmost end of a series of majestic Norwegian fjords and encircled by a mountainous stretch exists a landscape where even the most oversized personality can be made to feel humble… [+3766 chars]"
   },
   {
-    "source": { "id": null, "name": "Thedailyupside.com" },
+    "source": { "id": "thedailyupside.com-74", "name": "Thedailyupside.com" },
     "author": "newsfeedback@fool.com (Brian Boyle from The Daily Upside)",
     "title": "Economic Anxiety Isn't Stopping Anyone's Vacation Plans",
     "description": "We’re not sure if Americans are vacationing to escape the stress of budgeting, or if they’re stressed about budgeting because of the cost of vacations. Either way, Americans continue to take vacations. According to Conference Board survey data released Tuesda…",
@@ -740,7 +749,7 @@
     "content": "Were not sure if Americans are vacationing to escape the stress of budgeting, or if theyre stressed about budgeting because of the cost of vacations.\r\nEither way, Americans continue to take vacations… [+2460 chars]"
   },
   {
-    "source": { "id": "bleacher-report", "name": "Bleacher Report" },
+    "source": { "id": "bleacher report-75", "name": "Bleacher Report" },
     "author": "Lyle Fitzsimmons",
     "title": "Ciryl Gane and The Real Winners and Losers from UFC Fight Night 226",
     "description": "We're in the final few weeks of summer. So what better time for Dana White and Co. to load up the family truckster and take the gang on a European vacation?…",
@@ -750,7 +759,7 @@
     "content": "Josh Hedges/Zuffa LLC via Getty Images\r\nSometimes, a star turn simply begs for hyperbole.\r\nAnalyst Paul Felder called it an \"almost flawless victory.\" Cohort Michael Bisping upped the ante and deemed… [+2718 chars]"
   },
   {
-    "source": { "id": null, "name": "TMZ" },
+    "source": { "id": "tmz-76", "name": "TMZ" },
     "author": "TMZ Staff",
     "title": "Tom Brady Ditches Shirt Amid Irina Shayk's Topless Vacation With Bradley Cooper",
     "description": "Tom Brady channeled his inner Irina Shayk while chilling on his yacht this week ... ditching his shirt and showing off his shredded bod just days after his apparent new lady went topless on vacation with Bradley Cooper. TB12 has been hanging in…",
@@ -760,7 +769,7 @@
     "content": "Tom Bradychanneled his inner Irina Shayk while chilling on his yacht this week ... ditching his shirt and showing off his shredded bod just days after his apparent new lady went topless on vacation w… [+1155 chars]"
   },
   {
-    "source": { "id": null, "name": "TMZ" },
+    "source": { "id": "tmz-77", "name": "TMZ" },
     "author": "TMZ Staff",
     "title": "Zac Efron Shares Shirtless Thirst Traps From Idaho Vacation With Brother Dylan",
     "description": "Zac Efron's got one of the best bods in all of Hollywood ... though he's got some serious competition within his own family. The actor just shared a series of shirtless thirst traps from a recent getaway to Idaho with his brother Dylan, who is…",
@@ -770,7 +779,7 @@
     "content": "Zac Efron's got one of the best bods in all of Hollywood ... though he's got some serious competition within his own family.\r\nThe actor just shared a series of shirtless thirst traps from a recent ge… [+793 chars]"
   },
   {
-    "source": { "id": null, "name": "TMZ" },
+    "source": { "id": "tmz-78", "name": "TMZ" },
     "author": "TMZ Staff",
     "title": "Lamar Odom Hires Kids to Work for Him At Odom Recovery Group, Company Vacation",
     "description": "Lamar Odom's keeping it in the family ... he hired his son and daughter to work for his substance abuse treatment company, and he treated them to a company getaway. Sources close to Lamar tell TMZ ... he's focused on strengthening his bond with his…",
@@ -780,7 +789,7 @@
     "content": "Lamar Odom's keeping it in the family ... he hired his son and daughter to work for his substance abuse treatment company, and he treated them to a company getaway.\r\nSources close to Lamar tell TMZ .… [+1490 chars]"
   },
   {
-    "source": { "id": null, "name": "Boing Boing" },
+    "source": { "id": "boing boing-79", "name": "Boing Boing" },
     "author": "Boing Boing's Shop",
     "title": "Anker's sleek and powerful new power bank is a game changer, and only $130",
     "description": "We thank our sponsor for making this content possible; it is not written by the editorial staff nor does it necessarily reflect its views.\n\n\n\nTL;DR: Anker's latest 20,000mAh power bank, Anker Prime, features super-fast recharging capabilities and a smart digi…",
@@ -790,7 +799,7 @@
     "content": "We thank our sponsor for making this content possible; it is not written by the editorial staff nor does it necessarily reflect its views.\r\nTL;DR: Anker's latest 20,000mAh power bank, Anker Prime, fe… [+2595 chars]"
   },
   {
-    "source": { "id": null, "name": "Grist" },
+    "source": { "id": "grist-80", "name": "Grist" },
     "author": "Jake Bittle",
     "title": "The end of summer vacation",
     "description": "With scorching temperatures, are we losing our ability to have fun in the sun?",
@@ -800,7 +809,7 @@
     "content": "Hello, and welcome to this weeks edition of Record High. Im Jake Bittle, and today were going to talk about not having fun in the sun.\r\nWe recently asked Record High readers to tell us about how extr… [+6579 chars]"
   },
   {
-    "source": { "id": "fox-news", "name": "Fox News" },
+    "source": { "id": "fox news-81", "name": "Fox News" },
     "author": "Kurt Knutsson, CyberGuy Report",
     "title": "Holiday travel alert: Don't get duped by scammers",
     "description": "As you begin to book and plan your holiday travel, it is important that you are cognizant of scammers looking to swindle customers out of last minute deals.",
@@ -810,7 +819,7 @@
     "content": "While the holiday season may be months away, now is the best time to book your travel to visit family and friends for those winter months. Typically, the further in advance you are able to firm up yo… [+6386 chars]"
   },
   {
-    "source": { "id": null, "name": "The Points Guy" },
+    "source": { "id": "the points guy-82", "name": "The Points Guy" },
     "author": "Cameron Sperance",
     "title": "What a nearly $16 trillion travel economy means for your future vacation",
     "description": "Anyone who has taken a trip this summer can tell the tourism sector is exploding with packed flights, soaring hotel rates and cruise ships buzzing with passengers. Tourism remains the bright spot even in China, which is facing economic turmoil at the moment. …",
@@ -820,7 +829,7 @@
     "content": "Anyone who has taken a trip this summer can tell the tourism sector is exploding with packed flights, soaring hotel rates and cruise ships buzzing with passengers.\r\nTourism remains the bright spot ev… [+3880 chars]"
   },
   {
-    "source": { "id": null, "name": "The Points Guy" },
+    "source": { "id": "the points guy-83", "name": "The Points Guy" },
     "author": "Tarah Chieffi",
     "title": "These new Disney World discounts can save you up to $1,000 on your next vacation",
     "description": "Like most things we spend money on in 2023, Disney World vacations continue to go up in price. A one-day ticket for the Magic Kingdom can cost as much as $189 (though purchasing multiday tickets does bring the per-day cost down), and even the cheapest on-site…",
@@ -830,7 +839,7 @@
     "content": "Like most things we spend money on in 2023, Disney World vacations continue to go up in price. A one-day ticket for the Magic Kingdom can cost as much as $189 (though purchasing multiday tickets does… [+5835 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-84", "name": "Business Insider" },
     "author": "James Pasley",
     "title": "A look inside Jackie Kennedy Onassis' luxurious homes, from sprawling estates to full-floor apartments",
     "description": "Since she was young, Jackie Kennedy Onassis lived in some of the grandest houses in the US, including New York apartments and East Coast mansions.",
@@ -840,7 +849,7 @@
     "content": "Jackie Kennedy walks down the steps from her new home in Georgetown.Bettmann/Getty Images\r\n<ul>\n<li>Jacqueline Kennedy Onassis lived all over, from New York apartments to East Coast mansions.</li>\n<l… [+9624 chars]"
   },
   {
-    "source": { "id": "espn", "name": "ESPN" },
+    "source": { "id": "espn-85", "name": "ESPN" },
     "author": null,
     "title": "Police eye IG videos in search for ex-NFL player",
     "description": "Police are checking on the authenticity of Instagram videos that appear to show missing former NFL player Sergio Brown discussing the recent death of his mother.",
@@ -850,7 +859,10 @@
     "content": "Sep 20, 2023, 10:39 AM ET\r\nMAYWOOD, Ill. -- Police in suburban Chicago are checking on the authenticity of Instagram videos that appear to show missing former NFL player Sergio Brown discussing the r… [+2096 chars]"
   },
   {
-    "source": { "id": null, "name": "Small Business Trends" },
+    "source": {
+      "id": "small business trends-86",
+      "name": "Small Business Trends"
+    },
     "author": "Rob Starr",
     "title": "What is Vrbo?",
     "description": "What is a VRBO? VRBO Is a platform for Finding and renting homes and condos for trips away. Here's everything you need to know.",
@@ -860,7 +872,7 @@
     "content": "This is an online marketplace specializing in different rentals. Vrbo vacation rentals have been around since 1995. These vacation rental properties can be found in 190 different countries with over … [+6426 chars]"
   },
   {
-    "source": { "id": "abc-news", "name": "ABC News" },
+    "source": { "id": "abc news-87", "name": "ABC News" },
     "author": "Max Zahn",
     "title": "Four-day workweek, 46% raise: UAW makes 'audacious' demands ahead of possible strike",
     "description": "Automakers Ford, GM and Stellantis have largely rejected the demands of the UAW.",
@@ -870,7 +882,7 @@
     "content": "A four-day workweek at full-time pay, a 46% wage increase and a share of company profits are among the demands of the union representing approximately 150,000 workers at the Big 3 U.S. automakers -- … [+5499 chars]"
   },
   {
-    "source": { "id": "abc-news", "name": "ABC News" },
+    "source": { "id": "abc news-88", "name": "ABC News" },
     "author": "Meredith Deliso",
     "title": "Opening remarks set to begin in final trial over alleged plot to kidnap governor",
     "description": "Opening statements are set to begin Wednesday in a trial involving three of the men charged in connection with the alleged plot to kidnap Michigan Gov. Gretchen Whitmer.",
@@ -880,7 +892,7 @@
     "content": "Opening statements are set to begin Wednesday in the final trial involving the alleged plot to kidnap Michigan Gov. Gretchen Whitmer.\r\nEric Molitor and brothers William Null and Michael Null were amo… [+2351 chars]"
   },
   {
-    "source": { "id": null, "name": "Yahoo Entertainment" },
+    "source": { "id": "yahoo entertainment-89", "name": "Yahoo Entertainment" },
     "author": "ED WHITE",
     "title": "Man charged with aiding Whitmer kidnap plot says he should have called police",
     "description": "A man charged with assisting the leaders of a plan to kidnap Michigan's governor denied any role Monday but conceded he should have contacted police when...",
@@ -890,7 +902,7 @@
     "content": "A man charged with assisting the leaders of a plan to kidnap Michigan's governor denied any role Monday but conceded he should have contacted police when talk turned to obtaining explosives.\r\nIt seem… [+2518 chars]"
   },
   {
-    "source": { "id": null, "name": "Sacramento Bee" },
+    "source": { "id": "sacramento bee-90", "name": "Sacramento Bee" },
     "author": "Angela Rodriguez",
     "title": "Can I legally stop a neighbor from smoking weed if smoke drifts to my California property?",
     "description": "What rights do California residents have when their neighbor’s weed smoke crosses fence lines?",
@@ -900,7 +912,7 @@
     "content": "Not everyone partakes in the legal use of marijuana in California, so when the pungent aroma of a neighbors joint crosses fence lines, a cloud of controversy hovers in the air.\r\nA reader asked The Sa… [+2946 chars]"
   },
   {
-    "source": { "id": null, "name": "ReadWrite" },
+    "source": { "id": "read-write-91", "name": "ReadWrite" },
     "author": "Aleksey Salaz",
     "title": "Hiboy MAX Pro Electric Scooter | Review",
     "description": "Experience an exhilarating ride on the Hiboy MAX Pro Electric Scooter, the contraption that is redefining urban mobility. In this […]\nThe post Hiboy MAX Pro Electric Scooter | Review appeared first on ReadWrite.",
@@ -910,7 +922,7 @@
     "content": "Experience an exhilarating ride on the Hiboy MAX Pro Electric Scooter, the contraption that is redefining urban mobility. In this article, we delve into the exceptional features and superior performa… [+9152 chars]"
   },
   {
-    "source": { "id": null, "name": "Quartz India" },
+    "source": { "id": "quartz india-92", "name": "Quartz India" },
     "author": "David Koenig, AP Airlines Writer",
     "title": "Travelers hoping to enjoy one last summer fling over Labor Day weekend should expect lots of company",
     "description": "DALLAS (AP) — By some measures, air travelers have enjoyed a less stressful summer than last year, but canceled flights remain elevated as airlines face their last big test of the prime vacation season: Labor Day weekend.Read more...",
@@ -920,7 +932,7 @@
     "content": "DALLAS (AP) By some measures, air travelers have enjoyed a less stressful summer than last year, but canceled flights remain elevated as airlines face their last big test of the prime vacation season… [+3072 chars]"
   },
   {
-    "source": { "id": null, "name": "Techdirt" },
+    "source": { "id": "techdirt-93", "name": "Techdirt" },
     "author": "Gretchen Heckmann",
     "title": "Daily Deal: uTalk Language Learning",
     "description": "uTalk can help you start speaking like a native within minutes. Using the uTalk learning App you can listen to real native speakers to help you navigate through your next vacation or business trip. With more than 2,500 words and phrases to learn in each of ou…",
@@ -930,7 +942,7 @@
     "content": "from the good-deals-on-cool-stuff dept\r\nuTalk can help you start speaking like a native within minutes. Using the uTalk learning App you can listen to real native speakers to help you navigate throug… [+463 chars]"
   },
   {
-    "source": { "id": null, "name": "NPR" },
+    "source": { "id": "npr-94", "name": "NPR" },
     "author": "Scott Horsley",
     "title": "Yes, people often forget to cancel their monthly subscriptions — and the costs add up",
     "description": "From streaming TV to razor blades by mail, Americans are buying more goods and services through pay-by-the-month plans. New research shows they often keep paying long after they want to.",
@@ -940,7 +952,7 @@
     "content": "Pay-by-the-month subscriptions are increasingly popular. But research suggests people often keep paying long after they intend to.\r\nJGalione/Getty Images\r\nSoccer fan Neale Mahoney's goal when he subs… [+4968 chars]"
   },
   {
-    "source": { "id": null, "name": "NPR" },
+    "source": { "id": "npr-95", "name": "NPR" },
     "author": "Dustin Jones",
     "title": "Owner reunited with her dog that roamed the Atlanta airport for 3 weeks",
     "description": "Maia the dog escaped from her carrier last month while being loaded onto a plane at the busiest airport in the world. An online community banded together to reunite her with her owner.",
@@ -950,7 +962,7 @@
     "content": "Paula Rodriguez and her dog, Maia, were separated while on their way from the Dominican Republic to San Francisco on Aug. 18. Rodriguez was turned away by border agents and forced to catch a flight h… [+4506 chars]"
   },
   {
-    "source": { "id": null, "name": "The Atlantic" },
+    "source": { "id": "the atlantic-96", "name": "The Atlantic" },
     "author": "Devorah Heitner",
     "title": "The Very Common, Very Harmful Thing Well-Meaning Parents Do",
     "description": "Surveilling your kids will only backfire.",
@@ -960,7 +972,7 @@
     "content": "A few years ago, I gave a talk about raising kids in the digital age at a public high school in an affluent suburb on Chicago’s North Shore. During the Q&A session, a father stood up and spontaneousl… [+7440 chars]"
   },
   {
-    "source": { "id": null, "name": "NPR" },
+    "source": { "id": "npr-97", "name": "NPR" },
     "author": "Suzanne Nuyen",
     "title": "Up First briefing: Florida evacuations; summer COVID wave; how to beat jet lag",
     "description": "Florida residents brace for Hurricane Idalia, which is expected to become a hurricane before landfall. COVID cases are rising in the U.S. The NPR international desk's best tips for beating jet lag.",
@@ -970,7 +982,7 @@
     "content": "Good morning. You're reading the Up First newsletter. Subscribe here to get it delivered to your inbox, and listen to the Up First podcast for all the news you need to start your day.\r\nToday's top st… [+4323 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-98", "name": "Business Insider" },
     "author": "Business Insider",
     "title": "Savings Account Rates Today: August 28, 2023 | Earn Over 5%",
     "description": "If you're considering opening a savings account today and want a competitive rate, Insider did the research to help you find the best rate across popular savings accounts.",
@@ -980,7 +992,7 @@
     "content": "Our experts answer readers' banking questions and write unbiased product reviews (here's how we assess banking products). In some cases, we receive a commission from our partners; however, our opinio… [+4445 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-99", "name": "Business Insider" },
     "author": "Taryn Williams",
     "title": "My 3 high-yield savings accounts have helped me meet goals that seemed impossible on a teacher's salary",
     "description": "I have 3 high-yield savings accounts at different banks. I use each one for different goals and my emergency fund.",
@@ -990,7 +1002,7 @@
     "content": "Our experts answer readers' banking questions and write unbiased product reviews (here's how we assess banking products). In some cases, we receive a commission from our partners; however, our opinio… [+4597 chars]"
   },
   {
-    "source": { "id": "business-insider", "name": "Business Insider" },
+    "source": { "id": "business insider-100", "name": "Business Insider" },
     "author": "Amanda Loudin",
     "title": "I regret moving to Boulder, Colorado. I thought I'd fit right in, but it was the loneliest two years of my life.",
     "description": "Moving to Boulder, Colorado from Maryland was tougher than Amanda Loudin thought. If you're considering a cross-country move, here's what she learned.",

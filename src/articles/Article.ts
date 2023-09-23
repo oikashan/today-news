@@ -22,7 +22,7 @@ export function isArticle(entity: any): entity is Article {
   );
 }
 
-export function getArticleFromResponse(response: ArticleResponse): Article {
+export function getArticleFromResponse(response: ArticleResponse[0]): Article {
   return {
     id: response.source.id,
     label: response.source.name,

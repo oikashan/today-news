@@ -13,86 +13,92 @@ import {
 
 // Assets
 import "~/assets/styles/styles.scss";
+import { getShuffled } from "./utils/functions";
 
 /**
  * Landing page.
  */
-export default function LandingPage({ articles }: { articles: Article[] }) {
+export default function LandingPage({
+  articles,
+  headings,
+}: {
+  headings: string[];
+  articles: Article[];
+}) {
+  // This array is spliced to avoid mutating the original array and shuffled to
+  // ensure that the articles are in a different order every time the page is
+  // refreshed.
+  const slicedArticles = getShuffled([...articles]);
+
   return (
     <>
       <section id="highlights" className="app-section">
         <div className="app-section__content">
-          <HighlightedArticlesView articles={articles.slice(0, 7)} />
+          <HighlightedArticlesView articles={slicedArticles.splice(0, 7)} />
         </div>
       </section>
       <section id="circles" className="app-section">
-        <h2 className="app-section__heading text-accent">
-          1 row: 5 circles with bg
-        </h2>
+        <h2 className="app-section__heading text-accent">{headings[0]}</h2>
         <div className="app-section__content padded bg-overlay">
-          <CircledArticlesView articles={articles.slice(0, 5)} />
+          <CircledArticlesView articles={slicedArticles.splice(0, 5)} />
         </div>
       </section>
       <section id="gallery" className="app-section">
         <h2 className="app-section__heading text-accent-secondary">
-          2 rows: 1 x 3
+          {headings[1]}
         </h2>
         <div className="app-section__content">
-          <GalleriedArticlesView articles={articles.slice(0, 4)} />
+          <GalleriedArticlesView articles={slicedArticles.splice(0, 4)} />
         </div>
       </section>
       <section id="squares" className="app-section">
-        <h2 className="app-section__heading text-success">1 row: 4 with bg</h2>
+        <h2 className="app-section__heading text-success">{headings[2]}</h2>
         <div className="app-section__content padded bg-overlay">
-          <SquaredArticlesView articles={articles.slice(0, 4)} />
+          <SquaredArticlesView articles={slicedArticles.splice(0, 4)} />
         </div>
       </section>
       <section id="fullWidth" className="app-section">
-        <h2 className="app-section__heading text-failure">
-          1 full width article
-        </h2>
+        <h2 className="app-section__heading text-failure">{headings[3]}</h2>
         <div className="app-section__content">
-          <FullWidthArticlesView articles={articles.slice(0, 1)} />
+          <FullWidthArticlesView articles={slicedArticles.splice(0, 1)} />
         </div>
       </section>
       <section id="inverted" className="app-section">
-        <h2 className="app-section__heading text-accent">
-          1 row: 2 x 1 inverted
-        </h2>
+        <h2 className="app-section__heading text-accent">{headings[4]}</h2>
         <div className="app-section__content">
-          <InvertedArticlesView articles={articles.slice(0, 3)} />
+          <InvertedArticlesView articles={slicedArticles.splice(0, 3)} />
         </div>
       </section>
       <section id="stories" className="app-section">
         <h2 className="app-section__heading text-accent-secondary">
-          1 row: 2 stories with bg
+          {headings[5]}
         </h2>
         <div className="app-section__content padded bg-overlay">
-          <StoryArticlesView articles={articles.slice(0, 2)} />
+          <StoryArticlesView articles={slicedArticles.splice(0, 2)} />
         </div>
       </section>
       <section id="squares" className="app-section">
-        <h2 className="app-section__heading text-success">1 row: 4 reviews</h2>
+        <h2 className="app-section__heading text-success">{headings[6]}</h2>
         <div className="app-section__content padded bg-overlay">
           <SquaredArticlesView
             hasRating
             className="not-centered"
-            articles={articles.slice(0, 4)}
+            articles={slicedArticles.splice(0, 4)}
           />
         </div>
       </section>
       <section id="list" className="app-section">
-        <h2 className="app-section__heading text-failure">2 rows: 3 x 3</h2>
+        <h2 className="app-section__heading text-failure">{headings[7]}</h2>
         <div className="app-section__content">
-          <ListArticlesView articles={articles.slice(0, 6)} />
+          <ListArticlesView articles={slicedArticles.splice(0, 6)} />
         </div>
       </section>
       <section id="videos" className="app-section">
         <h2 className="app-section__heading text-accent-secondary">
-          1 row: 3 video
+          {headings[8]}
         </h2>
         <div className="app-section__content">
-          <VideoArticlesView articles={articles.slice(0, 3)} />
+          <VideoArticlesView articles={slicedArticles.splice(0, 3)} />
         </div>
       </section>
     </>

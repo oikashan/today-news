@@ -1,17 +1,18 @@
 import { useState } from "react";
-import { isArticle } from "./Article";
+import { getArticleFromResponse, isArticle } from "./Article";
 import { useHttpEffect } from "~/utils/hooks";
 
 // Types
 import type { Article } from "./Article";
 import { Fetchable } from "~/utils/Types";
+import { ArticleCategory, ArticleResponse } from "./ArticleTypes";
 
 /**
  * The articles provider.
  *
  * @returns A set of articles that can be displayed.
  */
-export default function useArticles() {
+export default function useArticles(category: ArticleCategory) {
   // The state for the articles.
   // Notice the status = 'loading', that's what I call a fetchable entity.
   // By default, the articles are loading, and the effect below sets them
@@ -42,24 +43,27 @@ export default function useArticles() {
      * Callback for a successful request.
      * @param data The potential `Article[]` that we're looking for.
      */
-    function onSuccess(data: any) {
-      // Data must contain valid `Article` entities for us to proceed.
-      if (data && Array.isArray(data) && isArticle(data[0])) {
-        setArticles({
-          data,
-          status: "loaded",
-        });
+    function onSuccess(data: ArticleResponse) {
+      // Data must be an array.
+      if (!Array.isArray(data)) {
+        onFailure("TypeScriptError: Fetched data isn't an array.");
         return;
       }
 
-      // Otherwise.
-      onFailure("TypeScriptError: Fetched data isn't a valid Article.");
+      // Convert the data to `Article[]`.
+      const articles = data.map((article) => getArticleFromResponse(article));
+
+      // Filter out the articles that aren't articles (duh).
+      setArticles({
+        status: "loaded",
+        data: articles.filter(isArticle),
+      });
     }
 
     // Since we're fetching a local resource, this simulates the actual wait of
     // a response.
     setTimeout(() => {
-      fetch("/articles.json")
+      fetch(`/articles/${category}.json`)
         .then((response) => response.json())
         .then(onSuccess)
         .catch(onFailure);

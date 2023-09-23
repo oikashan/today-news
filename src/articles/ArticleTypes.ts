@@ -1,6 +1,14 @@
 import React from "react";
 import type { Article } from "./Article";
 
+export type ArticleCategory =
+  | "astrology"
+  | "business"
+  | "lifestyle"
+  | "philanthropy"
+  | "technology"
+  | "vacation";
+
 export type ArticleComponentProps = Article & {
   /**
    * Additional props for the article's title
@@ -51,4 +59,4 @@ export type ArticleResponse = {
   urlToImage: string;
   publishedAt: string;
   content: string;
-};
+}[];
