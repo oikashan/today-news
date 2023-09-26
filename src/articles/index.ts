@@ -12,3 +12,11 @@ export const articleCategories: ArticleCategory[] = [
   "technology",
   "vacation",
 ];
+
+export const defaultArticleCategory: ArticleCategory = "astrology";
+
+export function isArticleCategory(
+  category: string
+): category is ArticleCategory {
+  return articleCategories.includes(category as ArticleCategory);
+}

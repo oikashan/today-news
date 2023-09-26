@@ -15,8 +15,14 @@ export default function useHttpEffect(
   useEffect(() => {
     const controller = new AbortController();
 
-    effectHandler();
+    const handler = effectHandler();
 
-    return () => controller.abort();
+    return () => {
+      controller.abort();
+
+      if (typeof handler === "function") {
+        handler();
+      }
+    };
   }, deps);
 }

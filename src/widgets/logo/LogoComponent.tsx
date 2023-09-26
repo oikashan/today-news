@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function LogoComponent(
   props: React.ComponentPropsWithoutRef<"a">
 ) {
   return (
-    <a {...props} href="#" className="app-logo">
+    <Link {...props} to="/" className="app-logo">
       <img alt="The logo of today" src="/logo.svg" />
-    </a>
+    </Link>
   );
 }
