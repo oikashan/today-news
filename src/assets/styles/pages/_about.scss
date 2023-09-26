@@ -1,0 +1,30 @@
+// About.scss
+.about-container {
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  h1 {
+    @include text-serif(64px);
+
+    @include breakpoint-md {
+      @include text-serif(96px);
+    }
+
+    @include breakpoint-lg {
+      @include text-serif(160px);
+    }
+  }
+
+  p,
+  a {
+    max-width: 60ch;
+    @include text-serif(18px);
+  }
+}

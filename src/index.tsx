@@ -8,12 +8,15 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 // Assets
 import "~/assets/styles/styles.scss";
 import PageNotFound from "./PageNotFound";
+import About from "./About";
 
 function App() {
   return (
     <>
       <HeaderComponent />
-      <Outlet />
+      <div className="container">
+        <Outlet />
+      </div>
       <FooterComponent />
     </>
   );
@@ -34,6 +37,11 @@ createRoot(document.getElementById("app")!).render(
               path: basename,
               element: <News category={category} />,
             })),
+            // About
+            {
+              path: "about",
+              element: <About />,
+            },
             // 404
             {
               path: "*",
