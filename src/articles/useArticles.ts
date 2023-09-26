@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { useHttpEffect } from "~/utils/hooks";
 import { getArticleFromResponse, isArticle } from "./Article";
-import { defaultArticleCategory, isArticleCategory } from ".";
+import {
+  articleCategoryHeadings,
+  defaultArticleCategory,
+  isArticleCategory,
+} from ".";
 
 // Types
 import type { Article } from "./Article";
@@ -89,5 +93,5 @@ export default function useArticles(category?: string) {
     return () => clearTimeout(timeout);
   }, [articleCategory]);
 
-  return { articles };
+  return { articles, headings: articleCategoryHeadings[articleCategory] };
 }

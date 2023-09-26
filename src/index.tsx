@@ -14,9 +14,7 @@ function App() {
   return (
     <>
       <HeaderComponent />
-      <div className="container">
-        <Outlet />
-      </div>
+      <Outlet />
       <FooterComponent />
     </>
   );
