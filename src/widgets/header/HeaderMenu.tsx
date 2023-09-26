@@ -18,6 +18,11 @@ export default function HeaderMenu({
           </Link>
         </li>
       ))}
+      <li>
+        <Link to="/about" className="text-menu text-contrast">
+          About
+        </Link>
+      </li>
     </ul>
   );
 }

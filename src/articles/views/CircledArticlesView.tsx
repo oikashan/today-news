@@ -18,9 +18,7 @@ export default function CircledArticlesView({
           // Hidden elements
           authorProps={{ className: "hidden" }}
           descriptionProps={{ className: "hidden" }}
-        >
-          <span className="text-body-sm circle__index">{index + 1}</span>
-        </ArticleComponent>
+        />
       ))}
     </div>
   );
