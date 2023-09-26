@@ -1,54 +1,56 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { articleCategoryNavItems } from "~/articles";
 
 const navItems = [
   {
     id: 0,
-    label: "quick",
+    label: "Hey",
     path: "#",
   },
   {
     id: 1,
-    label: "road",
+    label: "There",
     path: "#",
   },
   {
     id: 2,
-    label: "shoe",
+    label: "Cowboy",
     path: "#",
   },
   {
     id: 3,
-    label: "why",
+    label: "You're",
     path: "#",
   },
   {
     id: 4,
-    label: "triangle",
+    label: "On",
     path: "#",
   },
   {
     id: 5,
-    label: "military",
+    label: "The",
     path: "#",
   },
   {
     id: 6,
-    label: "breathing",
+    label: "Wrong",
     path: "#",
   },
   {
     id: 7,
-    label: "quickly",
+    label: "Page",
     path: "#",
   },
   {
     id: 8,
-    label: "excellent",
+    label: "Partner",
     path: "#",
   },
   {
     id: 9,
-    label: "dropped",
+    label: "Giddyup",
     path: "#",
   },
 ];
@@ -57,6 +59,12 @@ export default function FooterComponent({
   className = "",
   ...props
 }: React.ComponentPropsWithoutRef<"footer">) {
+  const navigate = useNavigate();
+
+  const getNavItems = (amount: number) => {
+    return amount == -1 ? navItems : navItems.splice(0, amount);
+  };
+
   return (
     <footer {...props} className={`app-footer ${className}`}>
       <div className="app-footer__row">
@@ -64,7 +72,7 @@ export default function FooterComponent({
           <div className="app-footer__menu">
             <div className="text-menu-sm">News</div>
             <ul>
-              {navItems.slice(0, 2).map((navItem) => (
+              {getNavItems(3).map((navItem) => (
                 <li key={navItem.id}>
                   <a href={navItem.path} className="text-body-xs text-contrast">
                     {navItem.label}
@@ -76,7 +84,7 @@ export default function FooterComponent({
           <div className="app-footer__menu">
             <div className="text-menu-sm">Life</div>
             <ul>
-              {navItems.slice(0, 6).map((navItem) => (
+              {getNavItems(5).map((navItem) => (
                 <li key={navItem.id}>
                   <a href={navItem.path} className="text-body-xs text-contrast">
                     {navItem.label}
@@ -88,7 +96,7 @@ export default function FooterComponent({
           <div className="app-footer__menu">
             <div className="text-menu-sm">Business</div>
             <ul>
-              {navItems.slice(0, 4).map((navItem) => (
+              {getNavItems(-1).map((navItem) => (
                 <li key={navItem.id}>
                   <a href={navItem.path} className="text-body-xs text-contrast">
                     {navItem.label}
@@ -103,23 +111,40 @@ export default function FooterComponent({
           <div className="text-body-xs">
             Get fresh updates about the fashion, beauty, and trends
           </div>
-          <form>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+
+              if (
+                window.confirm(
+                  "Just kidding partner, this is a dummy website. You can visit the about page for more info. Press OK to continue."
+                )
+              ) {
+                navigate("/about");
+              }
+            }}
+          >
             <div className="text-field">
-              <input type="text" placeholder="Enter your email below" />
-              <button type="button">Submit</button>
+              <input type="text" placeholder="Enter your email" />
+              <button type="submit">Submit</button>
             </div>
           </form>
         </div>
       </div>
       <nav>
         <ul>
-          {navItems.slice(0, 6).map((navItem) => (
-            <li key={navItem.id}>
-              <a href={navItem.path} className="text-menu-sm text-contrast">
-                {navItem.label}
-              </a>
+          {articleCategoryNavItems.map(({ to, label }, index) => (
+            <li key={index}>
+              <Link to={to} className="text-menu-sm text-contrast">
+                {label}
+              </Link>
             </li>
           ))}
+          <li>
+            <Link to="/about" className="text-menu-sm text-contrast">
+              About
+            </Link>
+          </li>
         </ul>
       </nav>
     </footer>

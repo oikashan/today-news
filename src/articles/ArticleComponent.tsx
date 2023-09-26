@@ -34,7 +34,12 @@ export default function ArticleComponent({
           {/* Thumbnail */}
           {thumbnailURL && (
             <div className="app-article__thumbnail">
-              <img loading="lazy" src={thumbnailURL} {...thumbnailProps} />
+              <img
+                alt={title}
+                loading="lazy"
+                src={thumbnailURL}
+                {...thumbnailProps}
+              />
             </div>
           )}
           {/* Preview */}

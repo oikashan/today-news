@@ -37,6 +37,14 @@ input {
   }
 }
 
+[data-theme="dark"] p a {
+  color: var(--color-success);
+
+  &:visited {
+    color: var(--color-failure);
+  }
+}
+
 ul,
 li {
   list-style-type: none;

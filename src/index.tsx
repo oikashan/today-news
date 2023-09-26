@@ -1,14 +1,19 @@
 import News from "./News";
+import About from "./About";
+import PageNotFound from "./PageNotFound";
 import { createRoot } from "react-dom/client";
 import { articleCategoryRoutes } from "./articles";
 import { HeaderComponent } from "~/widgets/header";
 import { FooterComponent } from "./widgets/footer";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Outlet,
+  RouterProvider,
+  ScrollRestoration,
+  createBrowserRouter,
+} from "react-router-dom";
 
 // Assets
 import "~/assets/styles/styles.scss";
-import PageNotFound from "./PageNotFound";
-import About from "./About";
 
 function App() {
   return (
@@ -16,6 +21,7 @@ function App() {
       <HeaderComponent />
       <Outlet />
       <FooterComponent />
+      <ScrollRestoration />
     </>
   );
 }
