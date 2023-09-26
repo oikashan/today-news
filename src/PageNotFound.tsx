@@ -1,12 +1,11 @@
-import { FooterComponent } from "./widgets/footer";
-import { HeaderComponent } from "./widgets/header";
-
 export default function PageNotFound() {
   return (
-    <>
-      <HeaderComponent />
-      404 - Not Found
-      <FooterComponent />
-    </>
+    <div className="not-found-container">
+      <div className="not-found-content">
+        <h1>404</h1>
+        <p>Page Not Found</p>
+        <p>Sorry, the news you are looking for does not exist.</p>
+      </div>
+    </div>
   );
 }

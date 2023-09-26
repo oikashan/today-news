@@ -1,0 +1,26 @@
+// NotFound.scss
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80svh;
+}
+
+.not-found-content {
+  text-align: center;
+
+  h1 {
+    font-size: 10rem;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    color: var(--color-contrast);
+  }
+
+  p {
+    @include text-serif(32px);
+  }
+
+  p:last-child {
+    font-size: 18px;
+  }
+}

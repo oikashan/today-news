@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { articleCategories } from "~/articles";
+import { articleCategoryNavItems } from "~/articles";
 
 /**
  * Menu for the header's navigation items.
@@ -11,10 +11,10 @@ export default function HeaderMenu({
 }: React.ComponentPropsWithoutRef<"ul">) {
   return (
     <ul {...props} className={`flex ${className}`}>
-      {articleCategories.map((category, index) => (
+      {articleCategoryNavItems.map(({ to, label }, index) => (
         <li key={index}>
-          <Link to={`/${category}`} className="text-menu text-contrast">
-            {category}
+          <Link to={to} className="text-menu text-contrast">
+            {label}
           </Link>
         </li>
       ))}
