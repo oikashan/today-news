@@ -1,5 +1,30 @@
 import { Variant } from "framer-motion";
 
+export let defaultDelay = 0.5;
+export const defaultDuration = 1;
+
+export function getFadeInMotionProps(delay?: number) {
+  return {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+    transition: { delay, duration: getMotionDuration() },
+  };
+}
+
+export function getMotionDelay() {
+  return {
+    delay: defaultDelay,
+    getNextDelay: () => {
+      defaultDelay = defaultDelay + 0.5;
+      return defaultDelay;
+    },
+  };
+}
+
+export function getMotionDuration(): number {
+  return defaultDuration;
+}
+
 /**
  * Shuffles array in place. ES6 version
  * @param {Array} array items An array containing the items.
@@ -25,14 +50,16 @@ export function getListMotionVariants(): Record<string, Variant> {
     visible: {
       opacity: 1,
       transition: {
-        when: "beforeChildren",
         staggerChildren: 0.3,
+        when: "beforeChildren",
+        duration: getMotionDuration(),
       },
     },
     hidden: {
       opacity: 0,
       transition: {
         when: "afterChildren",
+        duration: getMotionDuration(),
       },
     },
   };
@@ -46,11 +73,15 @@ export function getListItemMotionVariants(): Record<string, Variant> {
   return {
     visible: {
       opacity: 1,
-      y: 0,
+      transition: {
+        duration: getMotionDuration(),
+      },
     },
     hidden: {
       opacity: 0,
-      y: -10,
+      transition: {
+        duration: getMotionDuration(),
+      },
     },
   };
 }

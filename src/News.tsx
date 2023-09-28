@@ -7,20 +7,19 @@ export default function News({ category }: { category: ArticleCategory }) {
 
   return (
     <>
-      {articles.status === "erred" ? (
-        // If there's an error.
-        alert("Something went wrong...")
-      ) : // If the articles are loading.
-      articles.status === "loading" ? (
-        <LoaderComponent />
-      ) : (
-        // If the articles are loaded.
-        articles.status === "loaded" && (
-          <>
-            <LandingPage headings={headings} articles={articles.data} />
-          </>
-        )
-      )}
+      {articles.status === "erred"
+        ? // If there's an error.
+          alert("Something went wrong...")
+        : // If the articles are loading.
+          // articles.status === "loading" ? (
+          //   <LoaderComponent />
+          // ) :
+          // If the articles are loaded.
+          articles.status === "loaded" && (
+            <>
+              <LandingPage headings={headings} articles={articles.data} />
+            </>
+          )}
     </>
   );
 }

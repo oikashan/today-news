@@ -1,10 +1,6 @@
 import { IconClose } from "~/icons";
 import HeaderMenu from "./HeaderMenu";
 import { MotionProps, motion } from "framer-motion";
-import {
-  getListMotionVariants,
-  getListItemMotionVariants,
-} from "~/utils/functions";
 
 type Props = MotionProps & {
   onClose: () => void;
@@ -38,13 +34,7 @@ export default function HeaderOverlay({
           <span className="text-menu-md">Close</span>
         </button>
       </header>
-      <HeaderMenu
-        initial="hidden"
-        animate="visible"
-        variants={getListMotionVariants()}
-        childVariants={getListItemMotionVariants()}
-        className="column align-center justify-center"
-      />
+      <HeaderMenu className="column align-center justify-center" />
     </motion.div>
   );
 }
