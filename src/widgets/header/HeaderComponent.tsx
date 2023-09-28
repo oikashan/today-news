@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { useThemes } from "~/themes";
 import { LogoComponent } from "../logo";
 import { IconMenu, IconMoon } from "~/icons";
+import { AnimatePresence, motion } from "framer-motion";
 
 // Features.
 import HeaderMenu from "./HeaderMenu";
 import HeaderOverlay from "./HeaderOverlay";
+import HeaderOverlayController from "./HeaderOverlayController";
 
 export default function HeaderComponent({
   className = "",
@@ -18,14 +20,25 @@ export default function HeaderComponent({
       <header {...props} className={`app-header ${className}`}>
         <div className="app-header__menu">
           <div>
-            <a
-              href="#overlay"
-              title="Show navigation menu"
-              className="button-transparent"
-            >
-              <IconMenu />
-              <span className="text-menu-md">Menu</span>
-            </a>
+            <HeaderOverlayController>
+              {({ isOverlayOpen, setIsOverlayOpen }) => (
+                <>
+                  <button
+                    title="Show navigation menu"
+                    className="button-transparent"
+                    onClick={() => setIsOverlayOpen(!isOverlayOpen)}
+                  >
+                    <IconMenu />
+                    <span className="text-menu-md">Menu</span>
+                  </button>
+                  <AnimatePresence>
+                    {isOverlayOpen && (
+                      <HeaderOverlay onClose={() => setIsOverlayOpen(false)} />
+                    )}
+                  </AnimatePresence>
+                </>
+              )}
+            </HeaderOverlayController>
             <button
               title="Toggle theme"
               className="button-transparent"
@@ -41,7 +54,6 @@ export default function HeaderComponent({
         <nav className="app-header__nav hidden md:block">
           <HeaderMenu className="justify-center" />
         </nav>
-        <HeaderOverlay />
       </header>
     </>
   );

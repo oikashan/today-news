@@ -2,64 +2,64 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { articleCategoryNavItems } from "~/articles";
 
-const navItems = [
-  {
-    id: 0,
-    label: "Hey",
-    path: "#",
-  },
-  {
-    id: 1,
-    label: "There",
-    path: "#",
-  },
-  {
-    id: 2,
-    label: "Cowboy",
-    path: "#",
-  },
-  {
-    id: 3,
-    label: "You're",
-    path: "#",
-  },
-  {
-    id: 4,
-    label: "On",
-    path: "#",
-  },
-  {
-    id: 5,
-    label: "The",
-    path: "#",
-  },
-  {
-    id: 6,
-    label: "Wrong",
-    path: "#",
-  },
-  {
-    id: 7,
-    label: "Page",
-    path: "#",
-  },
-  {
-    id: 8,
-    label: "Partner",
-    path: "#",
-  },
-  {
-    id: 9,
-    label: "Giddyup",
-    path: "#",
-  },
-];
-
 export default function FooterComponent({
   className = "",
   ...props
 }: React.ComponentPropsWithoutRef<"footer">) {
   const navigate = useNavigate();
+
+  const navItems = [
+    {
+      id: 0,
+      label: "Hey",
+      path: "#",
+    },
+    {
+      id: 1,
+      label: "There",
+      path: "#",
+    },
+    {
+      id: 2,
+      label: "Cowboy",
+      path: "#",
+    },
+    {
+      id: 3,
+      label: "You're",
+      path: "#",
+    },
+    {
+      id: 4,
+      label: "On",
+      path: "#",
+    },
+    {
+      id: 5,
+      label: "The",
+      path: "#",
+    },
+    {
+      id: 6,
+      label: "Wrong",
+      path: "#",
+    },
+    {
+      id: 7,
+      label: "Page",
+      path: "#",
+    },
+    {
+      id: 8,
+      label: "Partner",
+      path: "#",
+    },
+    {
+      id: 9,
+      label: "Giddyup",
+      path: "#",
+    },
+  ];
 
   const getNavItems = (amount: number) => {
     return amount == -1 ? navItems : navItems.splice(0, amount);

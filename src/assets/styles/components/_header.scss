@@ -34,21 +34,9 @@
   }
 
   .app-header__overlay {
-    padding: $size-md;
-    padding-top: 0 !important;
-    transition: $transition-slow;
+    z-index: 10;
     display: grid;
-
-    // Simple fade animation bro
-    opacity: 0;
-    z-index: -1;
-
-    // Display only if selected.
-    &:target {
-      opacity: 1;
-      z-index: 10;
-    }
-
+    transition: $transition-slow;
     grid-template-rows: auto 1fr;
     background-color: var(--color-foreground);
 
@@ -58,9 +46,5 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-
-    @include breakpoint-md {
-      padding: calc($size-2xl - 2px) calc($size-3xl + $size-lg);
-    }
   }
 }

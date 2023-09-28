@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { LogoComponent } from "../logo";
-import useLoader from "./useLoader";
 
 export default function Loader({
   className = "",

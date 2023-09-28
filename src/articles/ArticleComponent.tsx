@@ -35,10 +35,13 @@ export default function ArticleComponent({
           {thumbnailURL && (
             <div className="app-article__thumbnail">
               <img
+                {...thumbnailProps}
                 alt={title}
                 loading="lazy"
                 src={thumbnailURL}
-                {...thumbnailProps}
+                onError={(e) => {
+                  e.currentTarget.src = "https://picsum.photos/1000/1000";
+                }}
               />
             </div>
           )}

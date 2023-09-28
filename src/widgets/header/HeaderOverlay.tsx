@@ -1,27 +1,50 @@
-import React from "react";
-import HeaderMenu from "./HeaderMenu";
 import { IconClose } from "~/icons";
+import HeaderMenu from "./HeaderMenu";
+import { MotionProps, motion } from "framer-motion";
+import {
+  getListMotionVariants,
+  getListItemMotionVariants,
+} from "~/utils/functions";
+
+type Props = MotionProps & {
+  onClose: () => void;
+  className?: string;
+};
 
 /**
  * Overlay for the header to show it's menu on a smaller screen.
  */
 export default function HeaderOverlay({
+  onClose,
   className = "",
   ...props
-}: React.ComponentPropsWithoutRef<"div">) {
+}: Props) {
   return (
-    <div {...props} id="overlay" className={`app-header__overlay ${className}`}>
+    <motion.div
+      {...props}
+      id="overlay"
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className={`app-header__overlay ${className}`}
+    >
       <header className="container">
-        <a
-          href="#"
+        <button
+          onClick={onClose}
           title="Close navigation menu"
           className="button-transparent"
         >
           <IconClose />
           <span className="text-menu-md">Close</span>
-        </a>
+        </button>
       </header>
-      <HeaderMenu className="column align-center justify-center" />
-    </div>
+      <HeaderMenu
+        initial="hidden"
+        animate="visible"
+        variants={getListMotionVariants()}
+        childVariants={getListItemMotionVariants()}
+        className="column align-center justify-center"
+      />
+    </motion.div>
   );
 }
