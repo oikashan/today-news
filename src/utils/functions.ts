@@ -1,4 +1,4 @@
-import { Variant } from "framer-motion";
+import { Transition, Variant } from "framer-motion";
 
 export let defaultDelay = 0.5;
 export const defaultDuration = 1;
@@ -12,6 +12,8 @@ export function getFadeInMotionProps(delay?: number) {
 }
 
 export function getMotionDelay() {
+  defaultDelay = 0.5;
+
   return {
     delay: defaultDelay,
     getNextDelay: () => {
@@ -45,11 +47,14 @@ export function getShuffled<T>(array: T[]): T[] {
  * Returns the framer motion variants for a list of items.
  * @returns {Record<string, Variant>} The variants.
  */
-export function getListMotionVariants(): Record<string, Variant> {
+export function getListMotionVariants(
+  transition?: Transition
+): Record<string, Variant> {
   return {
     visible: {
       opacity: 1,
       transition: {
+        ...transition,
         staggerChildren: 0.3,
         when: "beforeChildren",
         duration: getMotionDuration(),
@@ -69,7 +74,9 @@ export function getListMotionVariants(): Record<string, Variant> {
  * Returns the framer motion variants for the items of a list.
  * @returns {Record<string, Variant>} The variants.
  */
-export function getListItemMotionVariants(): Record<string, Variant> {
+export function getListItemMotionVariants(
+  transition?: Transition
+): Record<string, Variant> {
   return {
     visible: {
       opacity: 1,

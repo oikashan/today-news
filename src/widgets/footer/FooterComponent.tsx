@@ -1,12 +1,15 @@
-import React from "react";
+import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
 import { articleCategoryNavItems } from "~/articles";
+import { MotionComponentProps } from "~/utils/Types";
+import { getFadeInMotionProps, getMotionDelay } from "~/utils/functions";
 
 export default function FooterComponent({
   className = "",
   ...props
-}: React.ComponentPropsWithoutRef<"footer">) {
+}: MotionComponentProps) {
   const navigate = useNavigate();
+  const { delay, getNextDelay } = getMotionDelay();
 
   const navItems = [
     {
@@ -66,7 +69,14 @@ export default function FooterComponent({
   };
 
   return (
-    <footer {...props} className={`app-footer ${className}`}>
+    <motion.footer
+      {...props}
+      {...getFadeInMotionProps()}
+      animate={{ opacity: 0 }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1 }}
+      className={`app-footer ${className}`}
+    >
       <div className="app-footer__row">
         <div className="app-footer__menus">
           <div className="app-footer__menu">
@@ -147,6 +157,6 @@ export default function FooterComponent({
           </li>
         </ul>
       </nav>
-    </footer>
+    </motion.footer>
   );
 }

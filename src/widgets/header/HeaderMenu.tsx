@@ -20,22 +20,17 @@ export default function HeaderMenu({
       {...props}
       initial="hidden"
       animate="visible"
-      transition={transition}
       className={`flex ${className}`}
-      variants={getListMotionVariants()}
+      variants={getListMotionVariants(transition)}
     >
       {articleCategoryNavItems.map(({ to, label }, index) => (
-        <motion.li
-          key={index}
-          transition={transition}
-          variants={getListItemMotionVariants()}
-        >
+        <motion.li key={index} variants={getListItemMotionVariants(transition)}>
           <Link to={to} className="text-menu text-contrast">
             {label}
           </Link>
         </motion.li>
       ))}
-      <motion.li transition={transition} variants={getListItemMotionVariants()}>
+      <motion.li variants={getListItemMotionVariants(transition)}>
         <Link to="/about" className="text-menu text-contrast">
           About
         </Link>

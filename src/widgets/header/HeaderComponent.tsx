@@ -38,7 +38,7 @@ export default function HeaderComponent({
                   <motion.button
                     title="Show navigation menu"
                     className="button-transparent"
-                    {...getFadeInMotionProps(getNextDelay())}
+                    {...getFadeInMotionProps(delay)}
                     onClick={() => setIsOverlayOpen(!isOverlayOpen)}
                   >
                     <IconMenu />
@@ -56,12 +56,12 @@ export default function HeaderComponent({
               title="Toggle theme"
               className="button-transparent"
               onClick={() => toggleTheme()}
-              {...getFadeInMotionProps(getNextDelay())}
+              {...getFadeInMotionProps(delay)}
             >
               <IconMoon />
             </motion.button>
           </div>
-          <motion.div {...getFadeInMotionProps(delay)}>
+          <motion.div {...getFadeInMotionProps(getNextDelay())}>
             <LogoComponent />
           </motion.div>
         </div>
@@ -69,7 +69,7 @@ export default function HeaderComponent({
           <HeaderMenu
             className="justify-center"
             transition={{
-              delay: getNextDelay(),
+              delay: getNextDelay() - delay,
             }}
           />
         </nav>
