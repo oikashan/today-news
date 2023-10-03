@@ -1,24 +1,29 @@
 .view-article__full {
   .app-article {
+    min-height: 600px;
     flex-direction: column;
     color: map-get($palette-dark, "contrast");
 
     .app-article__media {
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+
       .app-article__thumbnail {
-        height: 600px;
+        height: 100%;
         filter: brightness(0.5);
       }
     }
 
     .app-article__body {
-      align-items: center;
-      position: absolute;
+      z-index: 1;
       gap: 29px;
-      left: 0;
-      right: 0;
-      bottom: 0;
       margin: auto;
       max-width: 768px;
+      align-items: center;
       padding: calc($size-3xl + $size-lg);
 
       .app-article__title {

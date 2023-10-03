@@ -18,7 +18,8 @@
     flex-direction: column;
 
     .app-article__media {
-      .app-article__preview {
+      .app-article__preview,
+      .app-article__thumbnail {
         height: 340px;
       }
     }

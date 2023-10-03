@@ -13,9 +13,6 @@ export default function VideoArticlesView({
           key={article.id}
           {...article}
           rating={undefined}
-          thumbnailURL={undefined}
-          previewURL="/building.mp4"
-          previewProps={{ controls: true }}
           labelProps={{ className: "badge" }}
           authorProps={{ className: "text-body-xs" }}
           titleProps={{ className: "text-subtitle" }}

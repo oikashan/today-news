@@ -19,6 +19,10 @@
   .app-article {
     flex-direction: column;
 
+    &__thumbnail {
+      aspect-ratio: 16 / 9;
+    }
+
     @include breakpoint-lg {
       // Set the grid areas straight.
       &:nth-child(1) {
@@ -60,6 +64,7 @@
 
           .app-article__thumbnail {
             height: 100%;
+            aspect-ratio: auto;
           }
         }
 

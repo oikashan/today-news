@@ -15,6 +15,10 @@
     gap: 26px;
     flex-direction: column;
 
+    .app-article__thumbnail {
+      aspect-ratio: 16/9;
+    }
+
     .app-article__body {
       gap: 22px;
       align-items: center;
@@ -37,6 +41,7 @@
 
       .app-article__thumbnail {
         height: 146px;
+        aspect-ratio: auto;
       }
     }
 
