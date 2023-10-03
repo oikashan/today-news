@@ -6,6 +6,7 @@ export type Fetchable<T> = {
 };
 
 export type MotionComponentProps = MotionProps & {
+  src?: string;
   className?: string;
   children?: React.ReactNode;
 };

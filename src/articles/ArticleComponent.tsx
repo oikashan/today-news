@@ -5,6 +5,8 @@ import {
   getListItemMotionVariants,
 } from "~/utils/functions";
 import type { ArticleComponentProps } from "./ArticleTypes";
+import ArticleThumbnail from "./components/ArticleThumbnail";
+import ArticleImage from "./components/ArticleImage";
 
 /**
  * The component that renders an article.
@@ -28,6 +30,7 @@ export default function ArticleComponent({
   thumbnailProps,
   url,
   className = "",
+  isLoading = false,
   children,
   ...props
 }: ArticleComponentProps) {
@@ -53,24 +56,16 @@ export default function ArticleComponent({
     <motion.article
       {...props}
       {...motionProps}
-      className={`app-article ${className}`}
+      className={`app-article ${className} ${isLoading ? "loading" : ""}`}
     >
       {/* Render if there's at least one of these. */}
       {(rating !== undefined || previewURL || thumbnailURL) && (
         <motion.div className="app-article__media">
           {/* Thumbnail */}
           {thumbnailURL && (
-            <motion.div className="app-article__thumbnail" {...motionItemProps}>
-              <motion.img
-                {...thumbnailProps}
-                alt={title}
-                loading="lazy"
-                src={thumbnailURL}
-                onError={(e) => {
-                  e.currentTarget.src = "https://picsum.photos/seed/1000";
-                }}
-              />
-            </motion.div>
+            <ArticleThumbnail {...motionItemProps}>
+              <ArticleImage {...thumbnailProps} src={thumbnailURL} />
+            </ArticleThumbnail>
           )}
           {/* Preview */}
           {previewURL && (
