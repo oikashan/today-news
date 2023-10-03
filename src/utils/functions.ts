@@ -1,13 +1,28 @@
-import { Transition, Variant } from "framer-motion";
+import { AnimationProps, Variant, TargetAndTransition } from "framer-motion";
 
 export let defaultDelay = 0.5;
 export const defaultDuration = 1;
 
-export function getFadeInMotionProps(delay?: number) {
+export function isObject(value: any): value is object {
+  return value && typeof value === "object" && Object.keys(value).length > 0;
+}
+
+export function getFadeInMotionProps({
+  initial,
+  animate,
+  transition,
+}: {
+  initial?: AnimationProps["initial"];
+  animate?: AnimationProps["animate"];
+  transition?: AnimationProps["transition"];
+} = {}) {
   return {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 },
-    transition: { delay, duration: getMotionDuration() },
+    initial: { ...(isObject(initial) ? initial : {}), opacity: 0 },
+    animate: { ...(isObject(animate) ? animate : {}), opacity: 1 },
+    transition: {
+      ...(isObject(transition) ? transition : {}),
+      duration: getMotionDuration(),
+    },
   };
 }
 
@@ -45,26 +60,37 @@ export function getShuffled<T>(array: T[]): T[] {
 
 /**
  * Returns the framer motion variants for a list of items.
- * @returns {Record<string, Variant>} The variants.
  */
-export function getListMotionVariants(
-  transition?: Transition
-): Record<string, Variant> {
+export function getListMotionVariants({
+  initial,
+  animate,
+  transition,
+}: {
+  initial?: TargetAndTransition;
+  animate?: TargetAndTransition;
+  transition?: TargetAndTransition["transition"];
+}) {
   return {
-    visible: {
-      opacity: 1,
-      transition: {
-        ...transition,
-        staggerChildren: 0.3,
-        when: "beforeChildren",
-        duration: getMotionDuration(),
+    initial: "hidden",
+    animate: "visible",
+    variants: {
+      visible: {
+        ...(isObject(animate) ? animate : {}),
+        opacity: 1,
+        transition: {
+          ...transition,
+          staggerChildren: 0.3,
+          when: "beforeChildren",
+          duration: getMotionDuration(),
+        },
       },
-    },
-    hidden: {
-      opacity: 0,
-      transition: {
-        when: "afterChildren",
-        duration: getMotionDuration(),
+      hidden: {
+        ...(isObject(initial) ? initial : {}),
+        opacity: 0,
+        transition: {
+          when: "afterChildren",
+          duration: getMotionDuration(),
+        },
       },
     },
   };
@@ -72,22 +98,32 @@ export function getListMotionVariants(
 
 /**
  * Returns the framer motion variants for the items of a list.
- * @returns {Record<string, Variant>} The variants.
  */
-export function getListItemMotionVariants(
-  transition?: Transition
-): Record<string, Variant> {
+export function getListItemMotionVariants({
+  initial,
+  animate,
+  transition,
+}: {
+  initial?: TargetAndTransition;
+  animate?: TargetAndTransition;
+  transition?: TargetAndTransition["transition"];
+}) {
   return {
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: getMotionDuration(),
+    variants: {
+      visible: {
+        ...(isObject(animate) ? animate : {}),
+        opacity: 1,
+        transition: {
+          ...transition,
+          duration: getMotionDuration(),
+        },
       },
-    },
-    hidden: {
-      opacity: 0,
-      transition: {
-        duration: getMotionDuration(),
+      hidden: {
+        ...(isObject(initial) ? initial : {}),
+        opacity: 0,
+        transition: {
+          duration: getMotionDuration(),
+        },
       },
     },
   };

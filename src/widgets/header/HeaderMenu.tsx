@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { MotionComponentProps } from "~/utils/types";
 import { articleCategoryNavItems } from "~/articles";
-import { MotionComponentProps } from "~/utils/Types";
 import {
   getListItemMotionVariants,
   getListMotionVariants,
@@ -15,22 +15,26 @@ export default function HeaderMenu({
   className = "",
   ...props
 }: MotionComponentProps) {
+  const motionItemProps = getListItemMotionVariants({
+    transition,
+  });
+
   return (
     <motion.ul
       {...props}
-      initial="hidden"
-      animate="visible"
       className={`flex ${className}`}
-      variants={getListMotionVariants(transition)}
+      {...getListMotionVariants({
+        transition,
+      })}
     >
       {articleCategoryNavItems.map(({ to, label }, index) => (
-        <motion.li key={index} variants={getListItemMotionVariants(transition)}>
+        <motion.li key={index} {...motionItemProps}>
           <Link to={to} className="text-menu text-contrast">
             {label}
           </Link>
         </motion.li>
       ))}
-      <motion.li variants={getListItemMotionVariants(transition)}>
+      <motion.li {...motionItemProps}>
         <Link to="/about" className="text-menu text-contrast">
           About
         </Link>

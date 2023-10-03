@@ -1,4 +1,9 @@
+import { motion } from "framer-motion";
 import { IconArrowUpRight, IconStar } from "~/icons";
+import {
+  getListMotionVariants,
+  getListItemMotionVariants,
+} from "~/utils/functions";
 import type { ArticleComponentProps } from "./ArticleTypes";
 
 /**
@@ -26,15 +31,37 @@ export default function ArticleComponent({
   children,
   ...props
 }: ArticleComponentProps) {
+  const motionProps = getListMotionVariants({
+    initial: {
+      y: 50,
+    },
+    animate: {
+      y: 0,
+    },
+  });
+
+  const motionItemProps = getListItemMotionVariants({
+    initial: {
+      y: 50,
+    },
+    animate: {
+      y: 0,
+    },
+  });
+
   return (
-    <article {...props} className={`app-article ${className}`}>
+    <motion.article
+      {...props}
+      {...motionProps}
+      className={`app-article ${className}`}
+    >
       {/* Render if there's at least one of these. */}
       {(rating !== undefined || previewURL || thumbnailURL) && (
-        <div className="app-article__media">
+        <motion.div className="app-article__media">
           {/* Thumbnail */}
           {thumbnailURL && (
-            <div className="app-article__thumbnail">
-              <img
+            <motion.div className="app-article__thumbnail" {...motionItemProps}>
+              <motion.img
                 {...thumbnailProps}
                 alt={title}
                 loading="lazy"
@@ -43,68 +70,73 @@ export default function ArticleComponent({
                   e.currentTarget.src = "https://picsum.photos/1000/1000";
                 }}
               />
-            </div>
+            </motion.div>
           )}
           {/* Preview */}
           {previewURL && (
-            <div className="app-article__preview">
-              <video {...previewProps} src={previewURL} />
-            </div>
+            <motion.div className="app-article__preview" {...motionItemProps}>
+              <motion.video {...previewProps} src={previewURL} />
+            </motion.div>
           )}
           {/* Rating */}
           {rating !== undefined && (
-            <div
+            <motion.div
               {...ratingProps}
+              {...motionItemProps}
               className={`app-article__rating badge ${ratingProps?.className}`}
             >
               <IconStar width={16} height={16} />
               {rating}
-            </div>
+            </motion.div>
           )}
-        </div>
+        </motion.div>
       )}
-      <div className="app-article__body">
-        <div {...labelProps} className="app-article__badge">
+      <motion.div className="app-article__body">
+        <motion.div {...labelProps} className="app-article__badge">
           {/* Label */}
-          <span className={`app-article__label ${labelProps?.className}`}>
+          <motion.span
+            className={`app-article__label ${labelProps?.className}`}
+          >
             {label}
-          </span>
-          <span className={`app-article__arrow badge badge-success`}>
+          </motion.span>
+          <motion.span className={`app-article__arrow badge badge-success`}>
             <IconArrowUpRight width={12} height={12} />
-          </span>
-        </div>
+          </motion.span>
+        </motion.div>
         {/* Title */}
-        <h2
+        <motion.h2
           {...titleProps}
           className={`app-article__title ${titleProps?.className}`}
         >
           {title}
-        </h2>
+        </motion.h2>
         {/* Description */}
-        <div
+        <motion.div
           {...descriptionProps}
           className={`app-article__description ${descriptionProps?.className}`}
         >
           {description}
-        </div>
+        </motion.div>
 
         {/* Author */}
-        <div
-          {...authorProps}
-          className={`app-article__author ${authorProps?.className}`}
-        >
-          {author}
-        </div>
-      </div>
-      <a
-        href={url || "#"}
+        {author && (
+          <motion.div
+            {...authorProps}
+            className={`app-article__author ${authorProps?.className}`}
+          >
+            {author.split(" ").slice(0, 2).join(" ")}
+          </motion.div>
+        )}
+      </motion.div>
+      <motion.a
         target="_blank"
         rel="noreferrer"
+        href={url || "#"}
         className="app-article__anchor"
       >
         Read More
-      </a>
+      </motion.a>
       {children}
-    </article>
+    </motion.article>
   );
 }

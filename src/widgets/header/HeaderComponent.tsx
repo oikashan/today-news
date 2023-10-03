@@ -1,11 +1,11 @@
 import { useThemes } from "~/themes";
 import { LogoComponent } from "../logo";
 import { IconMenu, IconMoon } from "~/icons";
-import { MotionComponentProps } from "~/utils/Types";
+import { MotionComponentProps } from "~/utils/types";
 import {
-  getFadeInMotionProps,
   getMotionDelay,
   getMotionDuration,
+  getFadeInMotionProps,
 } from "~/utils/functions";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -38,7 +38,11 @@ export default function HeaderComponent({
                   <motion.button
                     title="Show navigation menu"
                     className="button-transparent"
-                    {...getFadeInMotionProps(delay)}
+                    {...getFadeInMotionProps({
+                      transition: {
+                        delay,
+                      },
+                    })}
                     onClick={() => setIsOverlayOpen(!isOverlayOpen)}
                   >
                     <IconMenu />
@@ -56,12 +60,22 @@ export default function HeaderComponent({
               title="Toggle theme"
               className="button-transparent"
               onClick={() => toggleTheme()}
-              {...getFadeInMotionProps(delay)}
+              {...getFadeInMotionProps({
+                transition: {
+                  delay,
+                },
+              })}
             >
               <IconMoon />
             </motion.button>
           </div>
-          <motion.div {...getFadeInMotionProps(getNextDelay())}>
+          <motion.div
+            {...getFadeInMotionProps({
+              transition: {
+                delay: getNextDelay(),
+              },
+            })}
+          >
             <LogoComponent />
           </motion.div>
         </div>
@@ -69,7 +83,7 @@ export default function HeaderComponent({
           <HeaderMenu
             className="justify-center"
             transition={{
-              delay: getNextDelay() - delay,
+              delay: getNextDelay() - delay * 2,
             }}
           />
         </nav>
