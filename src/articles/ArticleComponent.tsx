@@ -67,7 +67,7 @@ export default function ArticleComponent({
                 loading="lazy"
                 src={thumbnailURL}
                 onError={(e) => {
-                  e.currentTarget.src = "https://picsum.photos/1000/1000";
+                  e.currentTarget.src = "https://picsum.photos/seed/1000";
                 }}
               />
             </motion.div>
@@ -91,7 +91,7 @@ export default function ArticleComponent({
           )}
         </motion.div>
       )}
-      <motion.div className="app-article__body">
+      <motion.div {...motionItemProps} className="app-article__body">
         <motion.div {...labelProps} className="app-article__badge">
           {/* Label */}
           <motion.span
