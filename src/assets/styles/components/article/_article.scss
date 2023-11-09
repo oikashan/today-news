@@ -26,17 +26,22 @@
       object-fit: cover;
       position: relative;
       transform-origin: center;
-      transition: $transition-slow;
+      transition: $transition-slow !important;
 
-      &::after {
-        content: "";
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: white;
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   z-index: 2;
+      //   top: 0;
+      //   left: 0;
+      //   width: 100%;
+      //   height: 100%;
+      //   background: white;
+      // }
+
+      // Opacity is 0 while loading.
+      &.loading {
+        opacity: 0;
       }
     }
 

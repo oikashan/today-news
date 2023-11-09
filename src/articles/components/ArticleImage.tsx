@@ -33,14 +33,14 @@ export default function ArticleImage({
 
           loader.onload = () => {
             imgEl.src = src;
-            imgEl.dataset.src = "";
+            imgEl.removeAttribute("data-src");
             imgEl.classList.remove("loading");
             observer.unobserve(imgEl);
           };
 
           loader.onerror = () => {
             imgEl.src = "https://picsum.photos/seed/johncena/1000";
-            imgEl.dataset.src = "";
+            imgEl.removeAttribute("data-src");
             imgEl.classList.remove("loading");
             observer.unobserve(imgEl);
           };
@@ -51,7 +51,11 @@ export default function ArticleImage({
     observer.observe(imgEl);
 
     return () => {
-      observer.unobserve(imgRef.current!);
+      if (imgEl) {
+        observer.unobserve(imgEl);
+      } else {
+        observer.disconnect();
+      }
     };
   }, []);
 
@@ -59,7 +63,6 @@ export default function ArticleImage({
     <img
       {...props}
       ref={imgRef}
-      loading="lazy"
       data-src={src}
       className={`loading ${className}`}
     />
