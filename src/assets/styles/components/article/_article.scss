@@ -20,11 +20,24 @@
 
     img,
     video {
+      z-index: 1;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      position: relative;
       transform-origin: center;
       transition: $transition-slow;
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+      }
     }
 
     .app-article__rating {
