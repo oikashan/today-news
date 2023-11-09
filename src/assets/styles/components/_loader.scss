@@ -10,9 +10,5 @@
   gap: 1rem;
   font-family: $font-serif;
   font-size: $size-xl;
-  height: 20rem;
-
-  @include breakpoint-md {
-    height: 40rem;
-  }
+  height: calc(100vh - 20rem);
 }

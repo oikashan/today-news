@@ -82,7 +82,6 @@ export default function LandingPage({
         <div className="app-section__content padded bg-overlay">
           <SquaredArticlesView
             hasRating
-            className="not-centered"
             articles={slicedArticles.splice(0, 4)}
           />
         </div>

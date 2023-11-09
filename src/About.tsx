@@ -10,7 +10,7 @@ export default function About() {
         </p>
         <p>
           Just Kidding! This is a fun side project of{" "}
-          <a href="https://kashanahmad.me/">Kashan</a>, built with React,
+          <a href="https://oikashan.com/">Kashan</a>, built with React,
           TypeScript, and Vite. The news articles are real&mdash;they're coming
           from <a href="https://www.newsapi.org">NewsAPI</a>
           &mdash;but the rest of the site is just a dummy.{" "}
