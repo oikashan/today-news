@@ -8,6 +8,7 @@ export default function Loader({
   return (
     <div {...props} className={`app-loader ${className}`}>
       <LogoComponent />
+      Loading...
     </div>
   );
 }

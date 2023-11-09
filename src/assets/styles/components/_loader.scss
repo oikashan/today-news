@@ -1,17 +1,18 @@
 .app-loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   transition: $transition-slow;
   background-color: var(--color-foreground);
-  z-index: 1;
-  opacity: 1;
-  display: grid;
-  place-items: center;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: $font-serif;
+  font-size: $size-xl;
+  height: 20rem;
 
-.app-loader.hide {
-  opacity: 0;
+  @include breakpoint-md {
+    height: 40rem;
+  }
 }

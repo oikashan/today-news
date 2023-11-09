@@ -21,10 +21,14 @@
 
   .app-footer__menus {
     flex-grow: 1;
-    display: grid;
     max-width: 768px;
     gap: var(--gutters);
     grid-template-columns: repeat(3, 1fr);
+    display: none;
+
+    @include breakpoint-md {
+      display: grid;
+    }
   }
 
   .app-footer__menu {

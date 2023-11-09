@@ -25,15 +25,11 @@ export default function ArticleComponent({
   thumbnailProps,
   url,
   className = "",
-  isLoading = false,
   children,
   ...props
 }: ArticleComponentProps) {
   return (
-    <article
-      {...props}
-      className={`app-article ${className} ${isLoading ? "loading" : ""}`}
-    >
+    <article {...props} className={`app-article ${className}`}>
       {/* Render if there's at least one of these. */}
       {(rating !== undefined || previewURL || thumbnailURL) && (
         <div className="app-article__media">

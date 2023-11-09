@@ -6,7 +6,7 @@ import {
   SquaredArticlesView,
   CircledArticlesView,
   InvertedArticlesView,
-  GalleriedArticlesView,
+  // GalleriedArticlesView,
   FullWidthArticlesView,
   HighlightedArticlesView,
 } from "./articles/views";
@@ -21,11 +21,9 @@ import { getShuffled } from "./utils/functions";
 export default function LandingPage({
   articles,
   headings,
-  isLoading = false,
 }: {
   headings: string[];
   articles: Article[];
-  isLoading?: boolean;
 }) {
   // This array is spliced to avoid mutating the original array and shuffled to
   // ensure that the articles are in a different order every time the page is
@@ -36,19 +34,13 @@ export default function LandingPage({
     <>
       <section id="highlights" className="app-section">
         <div className="app-section__content">
-          <HighlightedArticlesView
-            isLoading={isLoading}
-            articles={slicedArticles.splice(0, 7)}
-          />
+          <HighlightedArticlesView articles={slicedArticles.splice(0, 7)} />
         </div>
       </section>
       <section id="circles" className="app-section">
         <h2 className="app-section__heading text-accent">{headings[0]}</h2>
         <div className="app-section__content padded bg-overlay">
-          <CircledArticlesView
-            isLoading={isLoading}
-            articles={slicedArticles.splice(0, 5)}
-          />
+          <CircledArticlesView articles={slicedArticles.splice(0, 5)} />
         </div>
       </section>
       {/* <section id="gallery" className="app-section">
@@ -56,34 +48,25 @@ export default function LandingPage({
           {headings[1]}
         </h2>
         <div className="app-section__content">
-          <GalleriedArticlesView isLoading={isLoading} articles={slicedArticles.splice(0, 4)} />
+          <GalleriedArticlesView  articles={slicedArticles.splice(0, 4)} />
         </div>
       </section> */}
       <section id="squares" className="app-section">
         <h2 className="app-section__heading text-success">{headings[2]}</h2>
         <div className="app-section__content padded bg-overlay">
-          <SquaredArticlesView
-            isLoading={isLoading}
-            articles={slicedArticles.splice(0, 4)}
-          />
+          <SquaredArticlesView articles={slicedArticles.splice(0, 4)} />
         </div>
       </section>
       <section id="fullWidth" className="app-section">
         <h2 className="app-section__heading text-failure">{headings[3]}</h2>
         <div className="app-section__content">
-          <FullWidthArticlesView
-            isLoading={isLoading}
-            articles={slicedArticles.splice(0, 1)}
-          />
+          <FullWidthArticlesView articles={slicedArticles.splice(0, 1)} />
         </div>
       </section>
       <section id="inverted" className="app-section">
         <h2 className="app-section__heading text-accent">{headings[4]}</h2>
         <div className="app-section__content">
-          <InvertedArticlesView
-            isLoading={isLoading}
-            articles={slicedArticles.splice(0, 3)}
-          />
+          <InvertedArticlesView articles={slicedArticles.splice(0, 3)} />
         </div>
       </section>
       <section id="stories" className="app-section">
@@ -91,10 +74,7 @@ export default function LandingPage({
           {headings[5]}
         </h2>
         <div className="app-section__content padded bg-overlay">
-          <StoryArticlesView
-            isLoading={isLoading}
-            articles={slicedArticles.splice(0, 2)}
-          />
+          <StoryArticlesView articles={slicedArticles.splice(0, 2)} />
         </div>
       </section>
       <section id="squares" className="app-section">
@@ -103,7 +83,6 @@ export default function LandingPage({
           <SquaredArticlesView
             hasRating
             className="not-centered"
-            isLoading={isLoading}
             articles={slicedArticles.splice(0, 4)}
           />
         </div>
@@ -111,10 +90,7 @@ export default function LandingPage({
       <section id="list" className="app-section">
         <h2 className="app-section__heading text-failure">{headings[7]}</h2>
         <div className="app-section__content">
-          <ListArticlesView
-            isLoading={isLoading}
-            articles={slicedArticles.splice(0, 6)}
-          />
+          <ListArticlesView articles={slicedArticles.splice(0, 6)} />
         </div>
       </section>
       <section id="videos" className="app-section">
@@ -122,10 +98,7 @@ export default function LandingPage({
           {headings[8]}
         </h2>
         <div className="app-section__content">
-          <VideoArticlesView
-            isLoading={isLoading}
-            articles={slicedArticles.splice(0, 3)}
-          />
+          <VideoArticlesView articles={slicedArticles.splice(0, 3)} />
         </div>
       </section>
     </>

@@ -10,8 +10,6 @@ export type ArticleCategory =
   | "vacation";
 
 export type ArticleComponentProps = Article & {
-  isLoading?: boolean;
-
   /**
    * Additional props for the article's title
    */
@@ -50,7 +48,6 @@ export type ArticleComponentProps = Article & {
 
 export type ArticleViewProps = {
   articles: Article[];
-  isLoading?: boolean;
 } & React.ComponentPropsWithoutRef<"div">;
 
 export type ArticleResponse = {
