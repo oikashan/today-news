@@ -1,12 +1,10 @@
 import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { MotionComponentProps } from "~/utils/types";
 
 export default function ArticleImage({
   src,
   className = "",
   ...props
-}: MotionComponentProps) {
+}: React.ComponentPropsWithoutRef<"img">) {
   const imgRef = useRef<HTMLImageElement>(null);
 
   /**
@@ -58,7 +56,7 @@ export default function ArticleImage({
   }, []);
 
   return (
-    <motion.img
+    <img
       {...props}
       ref={imgRef}
       loading="lazy"

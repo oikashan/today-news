@@ -1,6 +1,5 @@
 import React from "react";
 import type { Article } from "./Article";
-import type { MotionComponentProps } from "~/utils/types";
 
 export type ArticleCategory =
   | "astrology"
@@ -16,38 +15,38 @@ export type ArticleComponentProps = Article & {
   /**
    * Additional props for the article's title
    */
-  titleProps?: MotionComponentProps;
+  titleProps?: React.ComponentPropsWithoutRef<"div">;
 
   /**
    * Additional props for the article's label
    */
-  labelProps?: MotionComponentProps;
+  labelProps?: React.ComponentPropsWithoutRef<"div">;
 
   /**
    * Additional props for the article's author
    */
-  authorProps?: MotionComponentProps;
+  authorProps?: React.ComponentPropsWithoutRef<"div">;
 
   /**
    * Additional props for the article's rating
    */
-  ratingProps?: MotionComponentProps;
+  ratingProps?: React.ComponentPropsWithoutRef<"div">;
 
   /**
    * Additional props for the article's description
    */
-  descriptionProps?: MotionComponentProps;
+  descriptionProps?: React.ComponentPropsWithoutRef<"div">;
 
   /**
    * Additional props for the article's preview video
    */
-  previewProps?: MotionComponentProps;
+  previewProps?: React.ComponentPropsWithoutRef<"video">;
 
   /**
    * Additional props for the article's thumbnail image
    */
-  thumbnailProps?: MotionComponentProps;
-} & MotionComponentProps;
+  thumbnailProps?: React.ComponentPropsWithoutRef<"img">;
+} & React.ComponentPropsWithoutRef<"div">;
 
 export type ArticleViewProps = {
   articles: Article[];

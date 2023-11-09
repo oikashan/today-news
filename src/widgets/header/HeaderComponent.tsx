@@ -1,13 +1,7 @@
 import { useThemes } from "~/themes";
 import { LogoComponent } from "../logo";
 import { IconMenu, IconMoon } from "~/icons";
-import { MotionComponentProps } from "~/utils/types";
-import {
-  getMotionDelay,
-  getMotionDuration,
-  getFadeInMotionProps,
-} from "~/utils/functions";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 // Features.
 import HeaderMenu from "./HeaderMenu";
@@ -17,37 +11,25 @@ import HeaderOverlayController from "./HeaderOverlayController";
 export default function HeaderComponent({
   className = "",
   ...props
-}: MotionComponentProps) {
+}: React.ComponentPropsWithoutRef<"header">) {
   const { toggleTheme } = useThemes();
-  const { delay, getNextDelay } = getMotionDelay();
 
   return (
     <>
-      <motion.header
-        {...props}
-        className={`app-header ${className}`}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: getMotionDuration() }}
-      >
+      <header {...props} className={`app-header ${className}`}>
         <div className="app-header__menu">
           <div>
             <HeaderOverlayController>
               {({ isOverlayOpen, setIsOverlayOpen }) => (
                 <>
-                  <motion.button
+                  <button
                     title="Show navigation menu"
                     className="button-transparent"
-                    {...getFadeInMotionProps({
-                      transition: {
-                        delay,
-                      },
-                    })}
                     onClick={() => setIsOverlayOpen(!isOverlayOpen)}
                   >
                     <IconMenu />
                     <span className="text-menu-md">Menu</span>
-                  </motion.button>
+                  </button>
                   <AnimatePresence>
                     {isOverlayOpen && (
                       <HeaderOverlay onClose={() => setIsOverlayOpen(false)} />
@@ -56,38 +38,22 @@ export default function HeaderComponent({
                 </>
               )}
             </HeaderOverlayController>
-            <motion.button
+            <button
               title="Toggle theme"
               className="button-transparent"
               onClick={() => toggleTheme()}
-              {...getFadeInMotionProps({
-                transition: {
-                  delay,
-                },
-              })}
             >
               <IconMoon />
-            </motion.button>
+            </button>
           </div>
-          <motion.div
-            {...getFadeInMotionProps({
-              transition: {
-                delay: getNextDelay(),
-              },
-            })}
-          >
+          <div>
             <LogoComponent />
-          </motion.div>
+          </div>
         </div>
         <nav className="app-header__nav hidden md:block">
-          <HeaderMenu
-            className="justify-center"
-            transition={{
-              delay: getNextDelay() - delay * 2,
-            }}
-          />
+          <HeaderMenu className="justify-center" />
         </nav>
-      </motion.header>
+      </header>
     </>
   );
 }

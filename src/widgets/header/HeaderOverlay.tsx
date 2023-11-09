@@ -1,8 +1,7 @@
 import { IconClose } from "~/icons";
 import HeaderMenu from "./HeaderMenu";
-import { MotionProps, motion } from "framer-motion";
 
-type Props = MotionProps & {
+type Props = React.ComponentPropsWithoutRef<"div"> & {
   onClose: () => void;
   className?: string;
 };
@@ -16,14 +15,7 @@ export default function HeaderOverlay({
   ...props
 }: Props) {
   return (
-    <motion.div
-      {...props}
-      id="overlay"
-      exit={{ opacity: 0 }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className={`app-header__overlay ${className}`}
-    >
+    <div {...props} id="overlay" className={`app-header__overlay ${className}`}>
       <header className="container">
         <button
           onClick={onClose}
@@ -35,6 +27,6 @@ export default function HeaderOverlay({
         </button>
       </header>
       <HeaderMenu className="column align-center justify-center" />
-    </motion.div>
+    </div>
   );
 }

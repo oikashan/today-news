@@ -1,9 +1,4 @@
-import { motion } from "framer-motion";
 import { IconArrowUpRight, IconStar } from "~/icons";
-import {
-  getListMotionVariants,
-  getListItemMotionVariants,
-} from "~/utils/functions";
 import type { ArticleComponentProps } from "./ArticleTypes";
 import ArticleThumbnail from "./components/ArticleThumbnail";
 import ArticleImage from "./components/ArticleImage";
@@ -34,104 +29,82 @@ export default function ArticleComponent({
   children,
   ...props
 }: ArticleComponentProps) {
-  const motionProps = getListMotionVariants({
-    initial: {
-      y: 50,
-    },
-    animate: {
-      y: 0,
-    },
-  });
-
-  const motionItemProps = getListItemMotionVariants({
-    initial: {
-      y: 50,
-    },
-    animate: {
-      y: 0,
-    },
-  });
-
   return (
-    <motion.article
+    <article
       {...props}
-      {...motionProps}
       className={`app-article ${className} ${isLoading ? "loading" : ""}`}
     >
       {/* Render if there's at least one of these. */}
       {(rating !== undefined || previewURL || thumbnailURL) && (
-        <motion.div className="app-article__media">
+        <div className="app-article__media">
           {/* Thumbnail */}
           {thumbnailURL && (
-            <ArticleThumbnail {...motionItemProps}>
+            <ArticleThumbnail>
               <ArticleImage {...thumbnailProps} src={thumbnailURL} />
             </ArticleThumbnail>
           )}
           {/* Preview */}
           {previewURL && (
-            <motion.div className="app-article__preview" {...motionItemProps}>
-              <motion.video {...previewProps} src={previewURL} />
-            </motion.div>
+            <div className="app-article__preview">
+              <video {...previewProps} src={previewURL} />
+            </div>
           )}
           {/* Rating */}
           {rating !== undefined && (
-            <motion.div
+            <div
               {...ratingProps}
-              {...motionItemProps}
               className={`app-article__rating badge ${ratingProps?.className}`}
             >
               <IconStar width={16} height={16} />
               {rating}
-            </motion.div>
+            </div>
           )}
-        </motion.div>
+        </div>
       )}
-      <motion.div {...motionItemProps} className="app-article__body">
-        <motion.div {...labelProps} className="app-article__badge">
+      <div className="app-article__body">
+        <div {...labelProps} className="app-article__badge">
           {/* Label */}
-          <motion.span
-            className={`app-article__label ${labelProps?.className}`}
-          >
+          <span className={`app-article__label ${labelProps?.className}`}>
             {label}
-          </motion.span>
-          <motion.span className={`app-article__arrow badge badge-success`}>
+          </span>
+          <span className={`app-article__arrow badge badge-success`}>
             <IconArrowUpRight width={12} height={12} />
-          </motion.span>
-        </motion.div>
+          </span>
+        </div>
         {/* Title */}
-        <motion.h2
+        <h2
           {...titleProps}
           className={`app-article__title ${titleProps?.className}`}
         >
           {title}
-        </motion.h2>
+        </h2>
         {/* Description */}
-        <motion.div
+        <div
           {...descriptionProps}
           className={`app-article__description ${descriptionProps?.className}`}
         >
           {description}
-        </motion.div>
+        </div>
 
         {/* Author */}
         {author && (
-          <motion.div
+          <div
             {...authorProps}
             className={`app-article__author ${authorProps?.className}`}
           >
             {author.split(" ").slice(0, 2).join(" ")}
-          </motion.div>
+          </div>
         )}
-      </motion.div>
-      <motion.a
+      </div>
+      <a
         target="_blank"
         rel="noreferrer"
         href={url || "#"}
         className="app-article__anchor"
       >
         Read More
-      </motion.a>
+      </a>
       {children}
-    </motion.article>
+    </article>
   );
 }

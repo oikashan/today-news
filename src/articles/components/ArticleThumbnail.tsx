@@ -6,8 +6,8 @@ export default function ArticleThumbnail({
   ...props
 }: MotionComponentProps) {
   return (
-    <motion.div className="app-article__thumbnail" {...props}>
+    <div className="app-article__thumbnail" {...props}>
       {children}
-    </motion.div>
+    </div>
   );
 }

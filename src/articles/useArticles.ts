@@ -9,7 +9,7 @@ import {
 
 // Types
 import type { Article } from "./Article";
-import type { Fetchable } from "~/utils/Types";
+import type { Fetchable } from "~/utils/types";
 import type { ArticleResponse } from "./ArticleTypes";
 
 /**

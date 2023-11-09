@@ -23,7 +23,7 @@
     "node": ">=14.18.0"
   },
   "scripts": {
-    "server": "vite",
+    "dev": "vite",
     "build": "vite build",
     "test": "npm run test"
   },
