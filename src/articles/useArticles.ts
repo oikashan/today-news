@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useHttpEffect } from "~/utils/hooks";
 import { getArticleFromResponse, isArticle } from "./Article";
 import {
-  articleCategoryHeadings,
-  defaultArticleCategory,
   isArticleCategory,
+  defaultArticleCategory,
+  articleCategoryHeadings,
 } from ".";
 
 // Types
@@ -36,7 +36,6 @@ export default function useArticles(category?: string) {
   // I didn't use `useEffect` since I've implemented it inside the used hook
   // plus the functionality to abort all asynchronous tasks on unmount.
   useHttpEffect(() => {
-    // Initial state.
     // If the articles aren't already loading, set them to loading.
     // This is useful when the user switches between categories.
     if (articles.status !== "loading") {

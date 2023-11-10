@@ -9,13 +9,13 @@ import React, { useEffect } from "react";
  * @param deps The array of dependancies.
  */
 export default function useHttpEffect(
-  effectHandler: React.EffectCallback,
+  effectHandler: (controller: AbortController) => void | (() => void),
   deps: React.DependencyList
 ) {
   useEffect(() => {
     const controller = new AbortController();
 
-    const handler = effectHandler();
+    const handler = effectHandler(controller);
 
     return () => {
       controller.abort();
