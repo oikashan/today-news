@@ -6,6 +6,7 @@ import { articleCategoryRoutes } from "./articles";
 import { HeaderComponent } from "~/widgets/header";
 import { FooterComponent } from "./widgets/footer";
 import {
+  Link,
   Outlet,
   RouterProvider,
   ScrollRestoration,

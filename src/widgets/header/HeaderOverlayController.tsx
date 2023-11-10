@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useHeaderOverlay } from "./useHeaderOverlay";
 
 export default function HeaderOverlayController({
   children,
@@ -8,7 +8,5 @@ export default function HeaderOverlayController({
     setIsOverlayOpen: (value: boolean) => void;
   }) => JSX.Element;
 }) {
-  const [isOverlayOpen, setIsOverlayOpen] = useState(false);
-
-  return children({ isOverlayOpen, setIsOverlayOpen });
+  return children(useHeaderOverlay());
 }

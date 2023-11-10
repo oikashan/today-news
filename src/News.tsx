@@ -6,8 +6,6 @@ import Loader from "./widgets/loader/LoaderComponent";
 export default function News({ category }: { category: ArticleCategory }) {
   const { articles, headings } = useArticles(category);
 
-  console.log(articles);
-
   return (
     <>
       {articles.status === "erred" ? (
