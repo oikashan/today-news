@@ -1,7 +1,6 @@
 .app-loader {
   width: 100%;
   height: 100vh;
-  transition: $transition-slow;
   background-color: var(--color-foreground);
   display: flex;
   flex-direction: column;
@@ -11,4 +10,8 @@
   font-family: $font-serif;
   font-size: $size-xl;
   height: calc(100vh - 20rem);
+
+  @include breakpoint-lg {
+    height: calc(100vh - 30rem);
+  }
 }
