@@ -1,3 +1,5 @@
+import gsap from "gsap";
+import { useEffect } from "react";
 import { useThemes } from "~/themes";
 import { LogoComponent } from "../logo";
 import { IconMenu, IconMoon } from "~/icons";
@@ -13,6 +15,24 @@ export default function HeaderComponent({
   ...props
 }: React.ComponentPropsWithoutRef<"header">) {
   const { toggleTheme } = useThemes();
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.fromTo(
+      [".app-header", ".app-header button", ".app-header a"],
+      {
+        opacity: 0,
+        y: -50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.1,
+      }
+    );
+  }, []);
 
   return (
     <>

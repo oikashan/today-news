@@ -1,8 +1,9 @@
+import { useEffect, useRef } from "react";
 import { IconClose } from "~/icons";
 import HeaderMenu from "./HeaderMenu";
 import { motion } from "framer-motion";
 import { MotionComponentProps } from "~/utils/types";
-import { useEffect } from "react";
+import { useDialogEvents } from "~/utils/hooks/useDialogEvents";
 
 type Props = MotionComponentProps & {
   onClose: () => void;
@@ -17,12 +18,16 @@ export default function HeaderOverlay({
   className = "",
   ...props
 }: Props) {
-  useEffect(() => {});
+  const { firstLinkRef, lastLinkRef } = useDialogEvents<
+    HTMLButtonElement,
+    HTMLAnchorElement
+  >(onClose);
 
   return (
     <motion.div
       {...props}
       id="overlay"
+      role="dialog"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -30,6 +35,7 @@ export default function HeaderOverlay({
     >
       <header className="container">
         <button
+          ref={firstLinkRef}
           onClick={onClose}
           title="Close navigation menu"
           className="button-transparent"
@@ -38,7 +44,10 @@ export default function HeaderOverlay({
           <span className="text-menu-md">Close</span>
         </button>
       </header>
-      <HeaderMenu className="column align-center justify-center" />
+      <HeaderMenu
+        lastLinkRef={lastLinkRef}
+        className="column align-center justify-center"
+      />
     </motion.div>
   );
 }
