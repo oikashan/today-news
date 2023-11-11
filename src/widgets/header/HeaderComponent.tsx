@@ -35,45 +35,44 @@ export default function HeaderComponent({
   }, []);
 
   return (
-    <>
-      <header {...props} className={`app-header ${className}`}>
-        <div className="app-header__menu">
-          <div>
-            <HeaderOverlayController>
-              {({ isOverlayOpen, setIsOverlayOpen }) => (
-                <>
-                  <button
-                    title="Show navigation menu"
-                    className="button-transparent"
-                    onClick={() => setIsOverlayOpen(!isOverlayOpen)}
-                  >
-                    <IconMenu />
-                    <span className="text-menu-md">Menu</span>
-                  </button>
-                  <AnimatePresence>
-                    {isOverlayOpen && (
-                      <HeaderOverlay onClose={() => setIsOverlayOpen(false)} />
-                    )}
-                  </AnimatePresence>
-                </>
-              )}
-            </HeaderOverlayController>
-            <button
-              title="Toggle theme"
-              className="button-transparent"
-              onClick={() => toggleTheme()}
-            >
-              <IconMoon />
-            </button>
-          </div>
-          <div>
-            <LogoComponent />
-          </div>
-        </div>
-        <nav className="app-header__nav hidden md:block">
-          <HeaderMenu className="justify-center" />
-        </nav>
-      </header>
-    </>
+    <HeaderOverlayController>
+      {({ isOverlayOpen, setIsOverlayOpen }) => (
+        <>
+          <header {...props} className={`app-header ${className}`}>
+            <div className="app-header__menu">
+              <div>
+                <button
+                  title="Show navigation menu"
+                  className="button-transparent"
+                  onClick={() => setIsOverlayOpen(!isOverlayOpen)}
+                >
+                  <IconMenu />
+                  <span className="text-menu-md">Menu</span>
+                </button>
+
+                <button
+                  title="Toggle theme"
+                  className="button-transparent"
+                  onClick={() => toggleTheme()}
+                >
+                  <IconMoon />
+                </button>
+              </div>
+              <div>
+                <LogoComponent />
+              </div>
+            </div>
+            <nav className="app-header__nav hidden md:block">
+              <HeaderMenu className="justify-center" />
+            </nav>
+          </header>
+          <AnimatePresence>
+            {isOverlayOpen && (
+              <HeaderOverlay onClose={() => setIsOverlayOpen(false)} />
+            )}
+          </AnimatePresence>
+        </>
+      )}
+    </HeaderOverlayController>
   );
 }

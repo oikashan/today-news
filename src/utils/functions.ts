@@ -2,6 +2,14 @@ export function isObject(value: any): value is object {
   return value && typeof value === "object" && Object.keys(value).length > 0;
 }
 
+export function turnOnScroll() {
+  document.body.style.overflowY = "auto";
+}
+
+export function turnOffScroll() {
+  document.body.style.overflowY = "hidden";
+}
+
 /**
  * Shuffles array in place. ES6 version
  * @param {Array} array items An array containing the items.

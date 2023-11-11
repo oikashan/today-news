@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { turnOffScroll, turnOnScroll } from "../functions";
 
 export function useDialogEvents<
   FirstLink extends HTMLElement,
@@ -62,6 +63,15 @@ export function useDialogEvents<
     return () => {
       window.removeEventListener("keydown", handleTab);
     };
+  }, []);
+
+  /**
+   * Effect: Turn off all scrollable elements when the dialog is open.
+   */
+  useEffect(() => {
+    turnOffScroll();
+
+    return turnOnScroll;
   }, []);
 
   return {

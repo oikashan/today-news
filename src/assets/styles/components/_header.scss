@@ -32,20 +32,20 @@
       gap: 71px;
     }
   }
+}
 
-  .app-header__overlay {
-    z-index: 10;
-    display: grid;
-    transition: $transition-slow;
-    grid-template-rows: auto 1fr;
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
+.app-header__overlay {
+  z-index: 10;
+  display: grid;
+  transition: $transition-slow;
+  grid-template-rows: auto 1fr;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 
-    // The overlay takes the whole viewport by a storm.
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-  }
+  // The overlay takes the whole viewport by a storm.
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
