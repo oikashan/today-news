@@ -1,8 +1,7 @@
-import { useEffect, useRef } from "react";
 import { IconClose } from "~/icons";
 import HeaderMenu from "./HeaderMenu";
-import { motion } from "framer-motion";
 import { MotionComponentProps } from "~/utils/types";
+import { m, LazyMotion, domAnimation } from "framer-motion";
 import { useDialogEvents } from "~/utils/hooks/useDialogEvents";
 
 type Props = MotionComponentProps & {
@@ -24,30 +23,32 @@ export default function HeaderOverlay({
   >(onClose);
 
   return (
-    <motion.div
-      {...props}
-      id="overlay"
-      role="dialog"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className={`app-header__overlay ${className}`}
-    >
-      <header className="container">
-        <button
-          ref={firstLinkRef}
-          onClick={onClose}
-          title="Close navigation menu"
-          className="button-transparent"
-        >
-          <IconClose />
-          <span className="text-menu-md">Close</span>
-        </button>
-      </header>
-      <HeaderMenu
-        lastLinkRef={lastLinkRef}
-        className="column align-center justify-center"
-      />
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        {...props}
+        id="overlay"
+        role="dialog"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className={`app-header__overlay ${className}`}
+      >
+        <header className="container">
+          <button
+            ref={firstLinkRef}
+            onClick={onClose}
+            title="Close navigation menu"
+            className="button-transparent"
+          >
+            <IconClose />
+            <span className="text-menu-md">Close</span>
+          </button>
+        </header>
+        <HeaderMenu
+          lastLinkRef={lastLinkRef}
+          className="column align-center justify-center"
+        />
+      </m.div>
+    </LazyMotion>
   );
 }

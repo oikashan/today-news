@@ -36,7 +36,11 @@ export default function ArticleComponent({
           {/* Thumbnail */}
           {thumbnailURL && (
             <ArticleThumbnail>
-              <ArticleImage {...thumbnailProps} src={thumbnailURL} />
+              <ArticleImage
+                {...thumbnailProps}
+                src={thumbnailURL}
+                alt={title}
+              />
             </ArticleThumbnail>
           )}
           {/* Preview */}
@@ -98,7 +102,7 @@ export default function ArticleComponent({
         href={url || "#"}
         className="app-article__anchor"
       >
-        Read More
+        {title}
       </a>
       {children}
     </article>

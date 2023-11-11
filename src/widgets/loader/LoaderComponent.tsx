@@ -1,14 +1,23 @@
-import React from "react";
 import { LogoComponent } from "../logo";
+import { m, LazyMotion, domAnimation } from "framer-motion";
+import { MotionComponentProps } from "~/utils/types";
 
 export default function Loader({
   className = "",
   ...props
-}: React.ComponentPropsWithoutRef<"div">) {
+}: MotionComponentProps) {
   return (
-    <div {...props} className={`app-loader ${className}`}>
-      <LogoComponent />
-      Loading...
-    </div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        {...props}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className={`app-loader ${className}`}
+      >
+        <LogoComponent />
+        Loading...
+      </m.div>
+    </LazyMotion>
   );
 }
