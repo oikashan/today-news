@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { articleCategoryNavItems } from "~/articles";
 
 type Props = React.ComponentPropsWithoutRef<"ul"> & {
@@ -17,15 +17,19 @@ export default function HeaderMenu({
     <ul {...props} className={`flex ${className}`}>
       {articleCategoryNavItems.map(({ to, label }, index) => (
         <li key={index}>
-          <Link to={to} className="text-menu text-contrast">
+          <NavLink to={to} className="nav-link text-menu text-contrast">
             {label}
-          </Link>
+          </NavLink>
         </li>
       ))}
       <li>
-        <Link to="/about" ref={lastLinkRef} className="text-menu text-contrast">
+        <NavLink
+          to="/about"
+          ref={lastLinkRef}
+          className="nav-link text-menu text-contrast"
+        >
           About
-        </Link>
+        </NavLink>
       </li>
     </ul>
   );

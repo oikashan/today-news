@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { articleCategoryNavItems } from "~/articles";
 
 export default function FooterComponent({
@@ -134,15 +134,18 @@ export default function FooterComponent({
         <ul>
           {articleCategoryNavItems.map(({ to, label }, index) => (
             <li key={index}>
-              <Link to={to} className="text-menu-sm text-contrast">
+              <NavLink to={to} className="nav-link text-menu-sm text-contrast">
                 {label}
-              </Link>
+              </NavLink>
             </li>
           ))}
           <li>
-            <Link to="/about" className="text-menu-sm text-contrast">
+            <NavLink
+              to="/about"
+              className="nav-link text-menu-sm text-contrast"
+            >
               About
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

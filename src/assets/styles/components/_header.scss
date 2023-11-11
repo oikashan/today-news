@@ -34,6 +34,30 @@
   }
 }
 
+a.nav-link {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: var(--color-success);
+    width: 0;
+    position: absolute;
+    bottom: -4px;
+    border-radius: 4px;
+    transition: $transition-slow;
+    left: 0;
+    opacity: 0;
+  }
+
+  &.active::before {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
 .app-header__overlay {
   z-index: 10;
   display: grid;
@@ -47,5 +71,9 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
+
+  ul {
+    gap: 0.5rem;
+  }
 }
