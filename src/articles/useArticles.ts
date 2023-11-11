@@ -87,7 +87,7 @@ export default function useArticles(category?: string) {
         .then((response) => response.json())
         .then(onSuccess)
         .catch(onFailure);
-    }, 3000);
+    }, 4500);
 
     return () => clearTimeout(timeout);
   }, [articleCategory]);

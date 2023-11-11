@@ -1,7 +1,9 @@
+import { useRef } from "react";
 import { IconArrowUpRight, IconStar } from "~/icons";
+import ArticleImage from "./components/ArticleImage";
 import type { ArticleComponentProps } from "./ArticleTypes";
 import ArticleThumbnail from "./components/ArticleThumbnail";
-import ArticleImage from "./components/ArticleImage";
+import { useGsapEffect } from "~/utils/hooks/useGsapEffect";
 
 /**
  * The component that renders an article.
@@ -28,8 +30,47 @@ export default function ArticleComponent({
   children,
   ...props
 }: ArticleComponentProps) {
+  const articleRef = useRef<HTMLElement>(null);
+
+  useGsapEffect((tl) => {
+    if (!articleRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const article = entry.target as HTMLElement;
+
+            // Stop observing this element.
+            observer.unobserve(entry.target);
+
+            tl.fromTo(
+              [
+                article,
+                article.querySelector(".app-article__media"),
+                article.querySelector(".app-article__badge"),
+                article.querySelector(".app-article__title"),
+                article.querySelector(".app-article__description"),
+                article.querySelector(".app-article__author"),
+              ],
+              { opacity: 0, y: 20 },
+              { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }
+            );
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(articleRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <article {...props} className={`app-article ${className}`}>
+    <article {...props} ref={articleRef} className={`app-article ${className}`}>
       {/* Render if there's at least one of these. */}
       {(rating !== undefined || previewURL || thumbnailURL) && (
         <div className="app-article__media">

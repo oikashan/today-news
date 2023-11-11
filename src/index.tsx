@@ -14,8 +14,32 @@ import {
 
 // Assets
 import "~/assets/styles/styles.scss";
+import { useGsapEffect } from "./utils/hooks/useGsapEffect";
 
 function App() {
+  useGsapEffect((tl) => {
+    tl.fromTo(
+      [
+        ".app-header",
+        ".app-header button",
+        ".app-header a",
+        ".app-footer",
+        ".app-footer a",
+        ".app-footer__menu > *",
+      ],
+      {
+        opacity: 0,
+        y: -50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.1,
+      }
+    );
+  }, []);
+
   return (
     <>
       <HeaderComponent />

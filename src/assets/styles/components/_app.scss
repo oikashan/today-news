@@ -9,7 +9,8 @@
   }
 }
 
-#app {
+#app,
+#app main {
   display: flex;
   gap: $size-3xl;
   flex-direction: column;

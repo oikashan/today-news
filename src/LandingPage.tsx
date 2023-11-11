@@ -1,5 +1,6 @@
-import { m, LazyMotion, domAnimation } from "framer-motion";
 import { Article } from "~/articles";
+import { getShuffled } from "./utils/functions";
+import { m, LazyMotion, domAnimation } from "framer-motion";
 import {
   ListArticlesView,
   StoryArticlesView,
@@ -14,7 +15,6 @@ import {
 
 // Assets
 import "~/assets/styles/styles.scss";
-import { getShuffled } from "./utils/functions";
 
 /**
  * Landing page.
