@@ -1,4 +1,23 @@
+import { useGsapEffect } from "./utils/hooks/useGsapEffect";
+
 export default function About() {
+  useGsapEffect((tl) => {
+    tl.fromTo(
+      ".about-content > *",
+      {
+        opacity: 0,
+        y: -20,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        stagger: 0.2,
+        duration: 0.5,
+        ease: "power2.out",
+      }
+    );
+  }, []);
+
   return (
     <div className="container about-container">
       <div className="about-content">
