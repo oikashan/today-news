@@ -3,6 +3,7 @@ import HeaderMenu from "./HeaderMenu";
 import { MotionComponentProps } from "~/utils/types";
 import { m, LazyMotion, domAnimation } from "framer-motion";
 import { useDialogEvents } from "~/utils/hooks/useDialogEvents";
+import { WEBSITE } from "~/utils/constants";
 
 type Props = MotionComponentProps & {
   onClose: () => void;
@@ -24,7 +25,7 @@ export default function HeaderOverlay({
 
   return (
     <LazyMotion features={domAnimation}>
-      <m.div
+      <m.section
         {...props}
         id="overlay"
         role="dialog"
@@ -48,7 +49,13 @@ export default function HeaderOverlay({
           lastLinkRef={lastLinkRef}
           className="column align-center justify-center"
         />
-      </m.div>
+        <footer className="container">
+          Made by{" "}
+          <a href={WEBSITE}>
+            <strong>Kashan</strong>
+          </a>
+        </footer>
+      </m.section>
     </LazyMotion>
   );
 }

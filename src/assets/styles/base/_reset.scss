@@ -32,8 +32,12 @@ button {
 a,
 button,
 input {
+  transition: $transition-fast;
+  border: 2px solid transparent !important;
+
   &:is(:hover, :focus) {
-    outline: 1px dotted var(--color-accent-tertiary);
+    outline: 0;
+    border-color: var(--color-success) !important;
   }
 }
 

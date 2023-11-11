@@ -19,7 +19,7 @@
         position: absolute;
         top: 0;
         left: 50%;
-        transform: translate(-50%);
+        transform: translateX(-50%) !important;
       }
     }
   }
@@ -75,5 +75,18 @@ a.nav-link {
 
   ul {
     gap: 0.5rem;
+  }
+
+  footer {
+    text-align: right;
+    @include text-serif(16px);
+
+    a {
+      color: var(--color-success);
+
+      &:visited {
+        color: var(--color-failure);
+      }
+    }
   }
 }
