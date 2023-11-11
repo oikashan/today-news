@@ -10,9 +10,10 @@ export default function Loader({
     <LazyMotion features={domAnimation}>
       <m.div
         {...props}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
         className={`app-loader ${className}`}
       >
         <LogoComponent />

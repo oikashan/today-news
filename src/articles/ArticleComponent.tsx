@@ -79,8 +79,8 @@ export default function ArticleComponent({
             <ArticleThumbnail>
               <ArticleImage
                 {...thumbnailProps}
-                src={thumbnailURL}
                 alt={title}
+                src={thumbnailURL}
               />
             </ArticleThumbnail>
           )}

@@ -1,6 +1,15 @@
 import { m, LazyMotion, domAnimation } from "framer-motion";
+import { useGsapEffect } from "./utils/hooks/useGsapEffect";
 
 export default function PageNotFound() {
+  useGsapEffect((tl) => {
+    tl.fromTo(
+      ".not-found-content > *",
+      { opacity: 0, y: -20 },
+      { opacity: 1, duration: 1, y: 0, stagger: 0.2 }
+    );
+  }, []);
+
   return (
     <LazyMotion features={domAnimation}>
       <m.div
