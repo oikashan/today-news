@@ -32,13 +32,17 @@ button {
 a,
 button,
 input {
+  outline: 0;
   transition: $transition-fast;
   border: 2px solid transparent !important;
 
-  &:is(:hover, :focus) {
-    outline: 0;
+  &:focus {
     border-color: var(--color-success) !important;
   }
+}
+
+a:hover {
+  border-color: var(--color-success) !important;
 }
 
 [data-theme="dark"] p a {
