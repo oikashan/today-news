@@ -8,6 +8,8 @@ import HeaderMenu from "./HeaderMenu";
 import HeaderOverlay from "./HeaderOverlay";
 import HeaderOverlayController from "./HeaderOverlayController";
 import ThemeDropdownController from "~/themes/ThemeDropdownController";
+import { DropdownComponent } from "../dropdown/DropdownComponent";
+import { ThemesMenu } from "~/themes/ThemesMenu";
 
 export default function HeaderComponent({
   className = "",
@@ -40,6 +42,13 @@ export default function HeaderComponent({
                       >
                         <IconMoon />
                       </button>
+                      <AnimatePresence>
+                        {isDropdownOpen && (
+                          <DropdownComponent ref={dropdownRef}>
+                            <ThemesMenu />
+                          </DropdownComponent>
+                        )}
+                      </AnimatePresence>
                     </>
                   )}
                 </ThemeDropdownController>
