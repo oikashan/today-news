@@ -1,29 +1,15 @@
 import { useEffect, useRef } from "react";
 import { turnOffScroll, turnOnScroll } from "../functions";
+import { useEscapeEvent } from "./useEscapeEvent";
 
 export function useDialogEvents<
   FirstLink extends HTMLElement,
   LastLink extends HTMLElement
 >(onClose: () => void) {
+  useEscapeEvent(onClose);
+
   const firstLinkRef = useRef<FirstLink>(null);
   const lastLinkRef = useRef<LastLink>(null);
-
-  /**
-   * Effect: Close the dialog when the escape key is pressed.
-   */
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        onClose();
-      }
-    };
-
-    window.addEventListener("keydown", handleEscape);
-
-    return () => {
-      window.removeEventListener("keydown", handleEscape);
-    };
-  }, [onClose]);
 
   /**
    * Effect: Trap focus inside the dialog.

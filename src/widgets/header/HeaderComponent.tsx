@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import HeaderMenu from "./HeaderMenu";
 import HeaderOverlay from "./HeaderOverlay";
 import HeaderOverlayController from "./HeaderOverlayController";
+import ThemeDropdownController from "~/themes/ThemeDropdownController";
 
 export default function HeaderComponent({
   className = "",
@@ -29,14 +30,19 @@ export default function HeaderComponent({
                   <IconMenu />
                   <span className="text-menu-md">Menu</span>
                 </button>
-
-                <button
-                  title="Toggle theme"
-                  className="button-transparent"
-                  onClick={() => toggleTheme()}
-                >
-                  <IconMoon />
-                </button>
+                <ThemeDropdownController>
+                  {({ dropdownRef, isDropdownOpen, toggleDropdown }) => (
+                    <>
+                      <button
+                        title="Toggle theme"
+                        onClick={toggleDropdown}
+                        className="button-transparent"
+                      >
+                        <IconMoon />
+                      </button>
+                    </>
+                  )}
+                </ThemeDropdownController>
               </div>
               <div>
                 <LogoComponent />
