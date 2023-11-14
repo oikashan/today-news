@@ -27,7 +27,7 @@ export default function HeaderComponent({
                   onClick={() => setIsOverlayOpen(!isOverlayOpen)}
                 >
                   <IconMenu />
-                  <span className="text-menu-md">Menu</span>
+                  <span className="text-menu-md neobrutalist:hidden">Menu</span>
                 </button>
                 <ThemeDropdownController>
                   {({ isDropdownOpen, toggleDropdown }) => (

@@ -91,3 +91,21 @@ a.nav-link {
     }
   }
 }
+
+// Neobrutalist theme
+[data-theme="neobrutalist"] {
+  .app-header {
+    padding: 0;
+    overflow: hidden;
+    border-bottom: none;
+    padding-left: $size-sm;
+    border-radius: $size-xs;
+    border: 1px solid var(--color-contrast);
+    background-color: var(--color-background);
+
+    &__menu {
+      align-items: center;
+      height: fit-content;
+    }
+  }
+}

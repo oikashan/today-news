@@ -2,4 +2,28 @@
   img {
     height: 100%;
   }
+
+  span {
+    display: none;
+  }
+}
+
+[data-theme="neobrutalist"] {
+  .app-logo {
+    border: 0;
+    padding: $size-md;
+    display: inline-block;
+    background-color: var(--color-success);
+    border-left: 1px solid var(--color-contrast);
+
+    img {
+      display: none;
+    }
+
+    span {
+      display: block;
+      color: var(--color-contrast);
+      @include text-lead($size-lg);
+    }
+  }
 }

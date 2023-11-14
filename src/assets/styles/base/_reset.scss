@@ -35,10 +35,10 @@ input {
   outline: 0;
   border-radius: 1px;
   transition: $transition-fast;
-  border: 2px solid transparent !important;
+  border: 2px solid transparent;
 
   &:focus {
-    border-color: var(--color-success) !important;
+    border-color: var(--color-success);
   }
 }
 

@@ -6,6 +6,7 @@ export default function LogoComponent(
 ) {
   return (
     <Link {...props} to="/" className="app-logo">
+      <span>Today</span>
       <img alt="The logo of today" src="/logo.svg" />
     </Link>
   );

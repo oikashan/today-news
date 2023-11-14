@@ -19,3 +19,8 @@
     gap: calc($size-3xl + $size-lg);
   }
 }
+
+// Neobrutalist theme
+[data-theme="neobrutalist"] #app {
+  padding: $size-sm;
+}
