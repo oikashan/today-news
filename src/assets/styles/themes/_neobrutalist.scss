@@ -33,4 +33,23 @@ body[data-theme="neobrutalist"] {
   --color-foreground: hsla(var(--color-foreground-hsl), 0.2);
   --color-background: hsl(var(--color-background-hsl));
   --color-overlay: hsl(var(--color-overlay-hsl));
+
+  // Sizes
+  --padding: #{$size-md};
+  --padding-desktop: #{$size-3xl};
+
+  // Radii
+  --radius: #{$size-xs};
+  --radius-desktop: #{$size-sm};
+
+  // Shadows
+  --shadow: 0 4px 0 0 var(--color-contrast);
+
+  @include breakpoint-md {
+    // Sizes
+    --padding: var(--padding-desktop);
+
+    // Radii
+    --radius: var(--radius-desktop);
+  }
 }

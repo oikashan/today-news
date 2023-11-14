@@ -11,10 +11,17 @@
 [data-theme="neobrutalist"] {
   .app-logo {
     border: 0;
-    padding: $size-md;
     display: inline-block;
+    padding: var(--padding);
     background-color: var(--color-success);
     border-left: 1px solid var(--color-contrast);
+    border-radius: 0 var(--radius) var(--radius) 0;
+
+    @include breakpoint-md {
+      padding: 0;
+      border-left: 0;
+      background-color: transparent;
+    }
 
     img {
       display: none;
@@ -24,6 +31,10 @@
       display: block;
       color: var(--color-contrast);
       @include text-lead($size-lg);
+
+      @include breakpoint-md {
+        @include text-lead($size-4xl);
+      }
     }
   }
 }

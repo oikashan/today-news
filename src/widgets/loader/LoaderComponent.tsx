@@ -16,7 +16,7 @@ export default function Loader({
         exit={{ opacity: 0, y: -20 }}
         className={`app-loader ${className}`}
       >
-        <LogoComponent />
+        <LogoComponent className="neobrutalist:hidden" />
         Loading...
       </m.div>
     </LazyMotion>

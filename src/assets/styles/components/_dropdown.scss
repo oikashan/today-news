@@ -6,6 +6,7 @@
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 20;
     border: 1px solid var(--color-contrast);
     background-color: var(--color-background);
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.4);

@@ -21,6 +21,12 @@
 }
 
 // Neobrutalist theme
-[data-theme="neobrutalist"] #app {
-  padding: $size-sm;
+[data-theme="neobrutalist"] {
+  .container {
+    max-width: 100%;
+  }
+
+  #app {
+    padding: var(--padding);
+  }
 }
