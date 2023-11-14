@@ -10,8 +10,6 @@ export default function useThemes() {
    * Switch to the specified theme.
    */
   function switchTheme(theme: Theme) {
-    theme = theme.toLowerCase() as Theme;
-
     // Store the specified theme in the local storage for revisits.
     localStorage.setItem("theme", theme);
 
@@ -28,11 +26,16 @@ export default function useThemes() {
       : switchTheme("light");
   }
 
+  /**
+   * Check if the current theme is the specified one.
+   */
   function isTheme(theme: Theme) {
     return document.body.getAttribute("data-theme") == theme;
   }
 
-  // Set initial theme.
+  /**
+   * Effect: Set initial theme.
+   */
   useEffect(() => {
     const existingTheme = localStorage.getItem("theme");
 
