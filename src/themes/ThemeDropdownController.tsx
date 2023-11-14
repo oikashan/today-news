@@ -8,7 +8,7 @@ export default function ThemeDropdownController({
     toggleDropdown: () => void;
   }) => JSX.Element;
 }) {
-  const { dropdownRef, ...props } = useThemeDropdown<HTMLDivElement>();
+  const { dropdownRef, ...props } = useThemeDropdown();
 
   return (
     <div ref={dropdownRef} className="app-dropdown">
