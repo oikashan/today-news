@@ -33,5 +33,5 @@ body[data-theme="light"] {
   --color-contrast: hsl(var(--color-contrast-hsl));
   --color-foreground: hsl(var(--color-foreground-hsl));
   --color-background: hsl(var(--color-background-hsl));
-  --color-overlay: hsl(var(--color-overlay-hsl));
+  --color-overlay: hsla(var(--color-overlay-hsl), 0.5);
 }

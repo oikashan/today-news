@@ -64,6 +64,7 @@ a.nav-link {
   transition: $transition-slow;
   grid-template-rows: auto 1fr;
   backdrop-filter: blur(50px);
+  background-color: var(--color-overlay);
   -webkit-backdrop-filter: blur(50px);
 
   // The overlay takes the whole viewport by a storm.

@@ -1,4 +1,4 @@
-export type Theme = "dark" | "light";
+export type Theme = "dark" | "light" | "neobrutalist";
 
 /**
  * Switch to the specified theme.

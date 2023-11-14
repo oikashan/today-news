@@ -57,7 +57,7 @@ export default function HeaderComponent({
                 <LogoComponent />
               </div>
             </div>
-            <nav className="app-header__nav hidden md:block">
+            <nav className="app-header__nav hidden lg:block">
               <HeaderMenu className="justify-center" />
             </nav>
           </header>

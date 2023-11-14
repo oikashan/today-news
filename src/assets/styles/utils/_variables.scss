@@ -95,27 +95,27 @@ $palette-hsl: (
 );
 
 $palette: (
-  contrast: var(--color-contrast),
-  foreground: var(--color-foreground),
-  background: var(--color-background),
-  overlay: var(--color-overlay),
-  accent: var(--color-accent),
-  failure: var(--color-failure),
-  success: var(--color-success),
   accent-secondary: var(--color-accent-secondary),
   accent-tertiary: var(--color-accent-tertiary),
+  accent: var(--color-accent),
+  background: var(--color-background),
+  contrast: var(--color-contrast),
+  failure: var(--color-failure),
+  foreground: var(--color-foreground),
+  overlay: var(--color-overlay),
+  success: var(--color-success),
 );
 
 $palette-hsl: (
-  contrast-hsl: var(--color-contrast-hsl),
-  foreground-hsl: var(--color-foreground-hsl),
-  background-hsl: var(--color-background-hsl),
-  overlay-hsl: var(--color-overlay-hsl),
   accent-hsl: var(--color-accent-hsl),
-  failure-hsl: var(--color-failure-hsl),
-  success-hsl: var(--color-success-hsl),
   accent-secondary-hsl: var(--color-accent-secondary-hsl),
   accent-tertiary-hsl: var(--color-accent-tertiary-hsl),
+  background-hsl: var(--color-background-hsl),
+  contrast-hsl: var(--color-contrast-hsl),
+  failure-hsl: var(--color-failure-hsl),
+  foreground-hsl: var(--color-foreground-hsl),
+  overlay-hsl: var(--color-overlay-hsl),
+  success-hsl: var(--color-success-hsl),
 );
 
 // Responsive gutters
