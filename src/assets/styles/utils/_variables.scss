@@ -2,6 +2,7 @@ $root-font-size: 16px;
 
 // Sizing.
 // Size in pixels / Root font size = Size in rems
+$size-2xs: 4px;
 $size-xs: 8px;
 $size-sm: 12px;
 $size-md: 16px;
@@ -11,6 +12,7 @@ $size-2xl: 28px;
 $size-3xl: 32px;
 $size-4xl: 36px;
 $sizes: (
+  2xs: $size-2xs,
   xs: $size-xs,
   sm: $size-sm,
   md: $size-md,
@@ -22,13 +24,14 @@ $sizes: (
 );
 
 // Typography.
-$font-sans: "Roboto", sans-serif;
-$font-serif: "Playfair Display", serif;
-$font-lead: "Roboto Condensed", sans-serif;
+// Each theme has a font stack that can be adjusted on the fly.
+$font-sans: var(--font-sans);
+$font-serif: var(--font-serif);
+$font-lead: var(--font-lead);
 
 // Weights.
-$weight-normal: 500;
-$weight-bold: 700;
+$weight-normal: var(--weight-normal);
+$weight-bold: var(--weight-bold);
 
 // Transitions.
 $transition-fast: all 0.1s ease;
@@ -91,85 +94,29 @@ $palette-hsl: (
   ),
 );
 
-$palette-light: (
-  contrast: hsl(0, 0%, 0%),
-  foreground: hsl(60, 25%, 98%),
-  background: hsl(0, 0%, 100%),
-  overlay: hsl(34, 53%, 94%),
+$palette: (
+  contrast: var(--color-contrast),
+  foreground: var(--color-foreground),
+  background: var(--color-background),
+  overlay: var(--color-overlay),
+  accent: var(--color-accent),
+  failure: var(--color-failure),
+  success: var(--color-success),
+  accent-secondary: var(--color-accent-secondary),
+  accent-tertiary: var(--color-accent-tertiary),
 );
 
-$palette-light-hsl: (
-  contrast-hsl: (
-    0,
-    0%,
-    0%,
-  ),
-  foreground-hsl: (
-    60,
-    25%,
-    98%,
-  ),
-  background-hsl: (
-    60,
-    25%,
-    98%,
-  ),
-  overlay-hsl: (
-    34,
-    53%,
-    94%,
-  ),
+$palette-hsl: (
+  contrast-hsl: var(--color-contrast-hsl),
+  foreground-hsl: var(--color-foreground-hsl),
+  background-hsl: var(--color-background-hsl),
+  overlay-hsl: var(--color-overlay-hsl),
+  accent-hsl: var(--color-accent-hsl),
+  failure-hsl: var(--color-failure-hsl),
+  success-hsl: var(--color-success-hsl),
+  accent-secondary-hsl: var(--color-accent-secondary-hsl),
+  accent-tertiary-hsl: var(--color-accent-tertiary-hsl),
 );
-
-$palette-dark: (
-  contrast: hsl(0, 0%, 100%),
-  foreground: hsl(0, 0%, 14%),
-  background: hsl(0, 0%, 0%),
-  overlay: hsla(34, 53%, 94%, 0.15),
-);
-
-$palette-dark-hsl: (
-  contrast-hsl: (
-    0,
-    0%,
-    100%,
-  ),
-  foreground-hsl: (
-    0,
-    0%,
-    14%,
-  ),
-  background-hsl: (
-    0,
-    0%,
-    0%,
-  ),
-  overlay-hsl: a(34, 53%, 94%, 0.15),
-);
-
-// Merging the palettes with their HSL variants.
-$palette-merged: map-merge($palette, $palette-hsl);
-$palette-light-merged: map-merge($palette-light, $palette-light-hsl);
-$palette-dark-merged: map-merge($palette-dark, $palette-dark-hsl);
-
-// Merging the common palette with a light or a dark palette results in a theme.
-$theme-light: map-merge($palette-merged, $palette-light-merged);
-$theme-dark: map-merge($palette-merged, $palette-dark-merged);
-
-// Applying a theme using CSS variables.
-body {
-  // The default/light theme.
-  @each $key, $value in $theme-light {
-    --color-#{$key}: #{$value};
-  }
-}
-
-[data-theme="dark"] {
-  // The dark theme.
-  @each $key, $value in $theme-dark {
-    --color-#{$key}: #{$value};
-  }
-}
 
 // Responsive gutters
 :root {

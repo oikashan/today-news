@@ -7,18 +7,19 @@
     "@fontsource/playfair-display": "^4.5.13",
     "@fontsource/roboto": "^4.5.8",
     "@fontsource/roboto-condensed": "^4.5.9",
+    "@fontsource/space-grotesk": "^5.0.15",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.18.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "sass": "^1.57.1",
-    "typescript": "^4.9.4",
-    "vite": "^4.0.4"
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "sass": "^1.69.5",
+    "typescript": "^4.9.5",
+    "vite": "^4.5.0"
   },
   "engines": {
     "node": ">=14.18.0"

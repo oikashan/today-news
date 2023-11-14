@@ -1,3 +1,5 @@
+import { Theme } from "~/themes";
+
 export function isObject(value: any): value is object {
   return value && typeof value === "object" && Object.keys(value).length > 0;
 }

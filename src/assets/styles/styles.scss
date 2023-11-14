@@ -2,9 +2,18 @@
 @import "@fontsource/roboto/500.css";
 @import "@fontsource/roboto-condensed/700.css";
 @import "@fontsource/playfair-display/500.css";
+@import "@fontsource/space-grotesk/400.css";
+@import "@fontsource/space-grotesk/700.css";
+
+// Variables.
+@import "./utils/variables";
+
+// Themes.
+@import "./themes/dark";
+@import "./themes/light";
+@import "./themes/neobrutalist";
 
 // Utils.
-@import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/helpers";

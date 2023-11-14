@@ -1,5 +1,5 @@
 import { themes } from "./themes";
-import useThemes from "./useThemes";
+import { isTheme, switchTheme } from ".";
 
 export function ThemesMenu({
   className = "",
@@ -8,8 +8,6 @@ export function ThemesMenu({
   className?: string;
   onClickMenuItem?: () => void;
 }) {
-  const { isTheme, switchTheme } = useThemes();
-
   return (
     <ul>
       {themes.map((theme, i) => (

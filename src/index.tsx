@@ -1,10 +1,12 @@
 import News from "./News";
 import About from "./About";
+import { initTheme } from "./themes";
 import PageNotFound from "./PageNotFound";
 import { createRoot } from "react-dom/client";
 import { articleCategoryRoutes } from "./articles";
 import { HeaderComponent } from "~/widgets/header";
 import { FooterComponent } from "./widgets/footer";
+import { useGsapEffect } from "./utils/hooks/useGsapEffect";
 import {
   Outlet,
   RouterProvider,
@@ -14,8 +16,13 @@ import {
 
 // Assets
 import "~/assets/styles/styles.scss";
-import { useGsapEffect } from "./utils/hooks/useGsapEffect";
 
+// Initialize theme
+initTheme();
+
+/**
+ * Main app component.
+ */
 function App() {
   useGsapEffect((tl) => {
     tl.fromTo(

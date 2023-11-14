@@ -108,7 +108,7 @@
 }
 
 // Utilities from the color palettes.
-@each $key, $value in map-merge($palette, $palette-light) {
+@each $key, $value in $palette {
   .text-#{$key} {
     color: var(--color-#{$key});
   }

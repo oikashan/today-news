@@ -14,6 +14,9 @@ dependencies:
   '@fontsource/roboto-condensed':
     specifier: ^4.5.9
     version: 4.5.9
+  '@fontsource/space-grotesk':
+    specifier: ^5.0.15
+    version: 5.0.15
   framer-motion:
     specifier: ^10.16.4
     version: 10.16.4(react-dom@18.2.0)(react@18.2.0)
@@ -27,24 +30,24 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   react-router-dom:
-    specifier: ^6.16.0
+    specifier: ^6.18.0
     version: 6.18.0(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
   '@types/react':
-    specifier: ^18.0.27
+    specifier: ^18.2.37
     version: 18.2.37
   '@types/react-dom':
-    specifier: ^18.0.10
+    specifier: ^18.2.15
     version: 18.2.15
   sass:
-    specifier: ^1.57.1
+    specifier: ^1.69.5
     version: 1.69.5
   typescript:
-    specifier: ^4.9.4
+    specifier: ^4.9.5
     version: 4.9.5
   vite:
-    specifier: ^4.0.4
+    specifier: ^4.5.0
     version: 4.5.0(sass@1.69.5)
 
 packages:
@@ -271,6 +274,10 @@ packages:
 
   /@fontsource/roboto@4.5.8:
     resolution: {integrity: sha512-CnD7zLItIzt86q4Sj3kZUiLcBk1dSk81qcqgMGaZe7SQ1P8hFNxhMl5AZthK1zrDM5m74VVhaOpuMGIL4gagaA==}
+    dev: false
+
+  /@fontsource/space-grotesk@5.0.15:
+    resolution: {integrity: sha512-9LaRK2f2B7X0Mx9F8UTuKuqW4w+Iv0RByoC5WyT7l3VSyepd2aJm+/s14tj8QJY+0gwfUG9P/6Gc8oDWy8+aeA==}
     dev: false
 
   /@remix-run/router@1.11.0:

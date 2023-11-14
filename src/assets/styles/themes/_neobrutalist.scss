@@ -1,0 +1,36 @@
+body[data-theme="neobrutalist"] {
+  // Typography.
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-serif: "Space Grotesk", sans-serif;
+  --font-lead: "Space Grotesk", sans-serif;
+
+  // Weights.
+  --weight-normal: 400;
+  --weight-bold: 700;
+
+  // Color HSLs
+  --color-accent-hsl: 38, 76%, 71%;
+  --color-failure-hsl: 13, 69%, 58%;
+  --color-success-hsl: 169, 36%, 60%;
+  --color-accent-secondary-hsl: 359, 61%, 85%;
+  --color-accent-tertiary-hsl: 60, 1%, 68%;
+
+  // Colors
+  --color-accent: hsl(var(--color-accent-hsl));
+  --color-failure: hsl(var(--color-failure-hsl));
+  --color-success: hsl(var(--color-success-hsl));
+  --color-accent-secondary: hsl(var(--color-accent-secondary-hsl));
+  --color-accent-tertiary: hsl(var(--color-accent-tertiary-hsl));
+
+  // Dark Color HSLs
+  --color-contrast-hsl: 0, 0%, 100%;
+  --color-foreground-hsl: 0, 0%, 14%;
+  --color-background-hsl: 0, 0%, 0%;
+  --color-overlay-hsl: 34, 53%, 94%;
+
+  // Dark Colors
+  --color-contrast: hsl(var(--color-contrast-hsl));
+  --color-foreground: hsl(var(--color-foreground-hsl));
+  --color-background: hsl(var(--color-background-hsl));
+  --color-overlay: hsla(var(--color-overlay-hsl), 0.15);
+}
