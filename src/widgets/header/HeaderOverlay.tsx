@@ -45,13 +45,10 @@ export default function HeaderOverlay({
             <span className="text-menu-md">Close</span>
           </button>
         </header>
-        <HeaderMenu
-          lastLinkRef={lastLinkRef}
-          className="column align-center justify-center"
-        />
+        <HeaderMenu className="column align-center justify-center" />
         <footer className="container">
           Made by{" "}
-          <a href={WEBSITE}>
+          <a href={WEBSITE} ref={lastLinkRef}>
             <strong>Kashan</strong>
           </a>
         </footer>

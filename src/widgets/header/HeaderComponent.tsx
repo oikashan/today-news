@@ -33,7 +33,7 @@ export default function HeaderComponent({
                   <span className="text-menu-md">Menu</span>
                 </button>
                 <ThemeDropdownController>
-                  {({ dropdownRef, isDropdownOpen, toggleDropdown }) => (
+                  {({ isDropdownOpen, toggleDropdown }) => (
                     <>
                       <button
                         title="Toggle theme"
@@ -44,7 +44,7 @@ export default function HeaderComponent({
                       </button>
                       <AnimatePresence>
                         {isDropdownOpen && (
-                          <DropdownComponent ref={dropdownRef}>
+                          <DropdownComponent>
                             <ThemesMenu />
                           </DropdownComponent>
                         )}

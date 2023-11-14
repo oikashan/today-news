@@ -6,8 +6,13 @@ export default function ThemeDropdownController({
   children: (props: {
     isDropdownOpen: boolean;
     toggleDropdown: () => void;
-    dropdownRef: React.RefObject<HTMLDivElement>;
   }) => JSX.Element;
 }) {
-  return <div className="app-dropdown">{children(useThemeDropdown())}</div>;
+  const { dropdownRef, ...props } = useThemeDropdown<HTMLDivElement>();
+
+  return (
+    <div ref={dropdownRef} className="app-dropdown">
+      {children(props)}
+    </div>
+  );
 }

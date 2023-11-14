@@ -33,6 +33,7 @@ a,
 button,
 input {
   outline: 0;
+  border-radius: 1px;
   transition: $transition-fast;
   border: 2px solid transparent !important;
 
@@ -42,7 +43,7 @@ input {
 }
 
 a:hover {
-  border-color: var(--color-success) !important;
+  text-decoration: underline;
 }
 
 [data-theme="dark"] p a {
