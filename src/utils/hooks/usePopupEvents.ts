@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useEscapeEvent } from "./useEscapeEvent";
 import { useClickOutsideEvent } from "./useClickOutsideEvent";
 

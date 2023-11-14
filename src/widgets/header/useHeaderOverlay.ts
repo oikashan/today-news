@@ -17,7 +17,7 @@ export function useHeaderOverlay() {
     if (value) {
       setParams({ menu: "open" });
     } else {
-      setParams({ menu: "close" });
+      setParams();
     }
   };
 
