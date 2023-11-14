@@ -42,7 +42,10 @@ export default function HeaderComponent({
                       <AnimatePresence>
                         {isDropdownOpen && (
                           <DropdownComponent>
-                            <ThemesMenu onClickMenuItem={toggleDropdown} />
+                            <ThemesMenu
+                              className="app-dropdown__item"
+                              onClickMenuItem={toggleDropdown}
+                            />
                           </DropdownComponent>
                         )}
                       </AnimatePresence>
