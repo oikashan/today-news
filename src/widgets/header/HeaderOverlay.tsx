@@ -1,9 +1,10 @@
+import { useRef } from "react";
 import { IconClose } from "~/icons";
 import HeaderMenu from "./HeaderMenu";
+import { WEBSITE } from "~/utils/constants";
 import { MotionComponentProps } from "~/utils/types";
 import { m, LazyMotion, domAnimation } from "framer-motion";
 import { useDialogEvents } from "~/utils/hooks/useDialogEvents";
-import { WEBSITE } from "~/utils/constants";
 
 type Props = MotionComponentProps & {
   onClose: () => void;
@@ -18,10 +19,14 @@ export default function HeaderOverlay({
   className = "",
   ...props
 }: Props) {
-  const { firstLinkRef, lastLinkRef } = useDialogEvents<
-    HTMLButtonElement,
-    HTMLAnchorElement
-  >(onClose);
+  const firstLinkRef = useRef<HTMLButtonElement>(null);
+  const lastLinkRef = useRef<HTMLAnchorElement>(null);
+
+  useDialogEvents({
+    onClose,
+    firstElement: firstLinkRef.current,
+    lastElement: lastLinkRef.current,
+  });
 
   return (
     <LazyMotion features={domAnimation}>

@@ -1,4 +1,3 @@
-import { useThemes } from "~/themes";
 import { LogoComponent } from "../logo";
 import { IconMenu, IconMoon } from "~/icons";
 import { AnimatePresence } from "framer-motion";
@@ -15,8 +14,6 @@ export default function HeaderComponent({
   className = "",
   ...props
 }: React.ComponentPropsWithoutRef<"header">) {
-  const { toggleTheme } = useThemes();
-
   return (
     <HeaderOverlayController>
       {({ isOverlayOpen, setIsOverlayOpen }) => (
@@ -45,7 +42,7 @@ export default function HeaderComponent({
                       <AnimatePresence>
                         {isDropdownOpen && (
                           <DropdownComponent>
-                            <ThemesMenu />
+                            <ThemesMenu onClickMenuItem={toggleDropdown} />
                           </DropdownComponent>
                         )}
                       </AnimatePresence>

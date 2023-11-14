@@ -1,23 +1,16 @@
 import { useEffect } from "react";
 
-export function useTrapFocusEffect<
-  FirstElement extends HTMLElement,
-  LastElement extends HTMLElement
->({
-  firstElementRef,
-  lastElementRef,
+export function useTrapFocusEffect({
+  firstElement,
+  lastElement,
 }: {
-  firstElementRef: React.RefObject<FirstElement>;
-  lastElementRef: React.RefObject<LastElement>;
+  firstElement?: HTMLElement | null;
+  lastElement?: HTMLElement | null;
 }) {
   /**
    * Effect: Trap focus inside the dialog.
    */
   useEffect(() => {
-    // Trap focus.
-    const firstElement = firstElementRef.current;
-    const lastElement = lastElementRef.current;
-
     if (firstElement) {
       // Initially, focus the first element.
       firstElement?.focus();

@@ -1,23 +1,21 @@
-import { useEffect, useRef } from "react";
-import { turnOffScroll, turnOnScroll } from "../functions";
+import { useEffect } from "react";
 import { useEscapeEvent } from "./useEscapeEvent";
 import { useTrapFocusEffect } from "./useTrapFocusEffect";
+import { turnOffScroll, turnOnScroll } from "../functions";
 
-export function useDialogEvents<
-  FirstLink extends HTMLElement,
-  LastLink extends HTMLElement
->(onClose: () => void) {
-  const firstLinkRef = useRef<FirstLink>(null);
-  const lastLinkRef = useRef<LastLink>(null);
-
+export function useDialogEvents({
+  onClose,
+  ...elements
+}: {
+  onClose: () => void;
+  firstElement?: HTMLElement | null;
+  lastElement?: HTMLElement | null;
+}) {
   // Close the dialog when user presses escape.
   useEscapeEvent(onClose);
 
   // Trap focus inside the dialog.
-  useTrapFocusEffect({
-    firstElementRef: firstLinkRef,
-    lastElementRef: lastLinkRef,
-  });
+  useTrapFocusEffect(elements);
 
   /**
    * Effect: Turn off all scrollable elements when the dialog is open.
@@ -27,9 +25,4 @@ export function useDialogEvents<
 
     return turnOnScroll;
   }, []);
-
-  return {
-    firstLinkRef,
-    lastLinkRef,
-  };
 }

@@ -1,7 +1,11 @@
 import { themes } from "./themes";
 import useThemes from "./useThemes";
 
-export function ThemesMenu() {
+export function ThemesMenu({
+  onClickMenuItem,
+}: {
+  onClickMenuItem?: () => void;
+}) {
   const { switchTheme } = useThemes();
 
   return (
@@ -11,7 +15,10 @@ export function ThemesMenu() {
           <button
             className="button-transparent"
             title={`Switch to ${theme} theme`}
-            onClick={() => switchTheme(theme)}
+            onClick={() => {
+              switchTheme(theme);
+              onClickMenuItem?.();
+            }}
           >
             <span className="text-menu-md">{theme}</span>
           </button>
