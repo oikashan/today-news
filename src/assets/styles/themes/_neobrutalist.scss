@@ -13,7 +13,7 @@ body[data-theme="neobrutalist"] {
   --color-failure-hsl: 0, 100%, 50%;
   --color-success-hsl: 158, 100%, 62%;
   --color-accent-secondary-hsl: 302, 100%, 93%;
-  --color-accent-tertiary-hsl: 302, 100%, 93%;
+  --color-accent-tertiary-hsl: 60, 100%, 50%;
 
   // Colors
   --color-accent: hsl(var(--color-accent-hsl));
@@ -37,10 +37,12 @@ body[data-theme="neobrutalist"] {
   // Sizes
   --padding: #{$size-md};
   --padding-desktop: #{$size-3xl};
+  --padding-half: calc(var(--padding) / 2);
 
   // Radii
   --radius: #{$size-xs};
   --radius-desktop: #{$size-sm};
+  --radius-half: calc(var(--radius) / 2);
 
   // Shadows
   --shadow: 0 4px 0 0 var(--color-contrast);

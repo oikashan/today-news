@@ -9,6 +9,7 @@
     font-size: 12px;
     color: var(--color-contrast);
     background-color: transparent;
+    font-family: var(--font-sans);
     padding: calc($size-md) calc($size-sm + 2px);
 
     &::placeholder {
@@ -31,5 +32,24 @@
   button {
     @include button(12px);
     text-transform: capitalize;
+  }
+}
+
+[data-theme="neobrutalist"] .text-field {
+  padding: $size-2xs;
+  padding-bottom: $size-xs;
+  border-radius: var(--radius-half);
+  background-color: var(--color-overlay);
+  border: 1px solid var(--color-contrast);
+  background-color: var(--color-background);
+
+  button {
+    @include button(12px);
+    text-transform: capitalize;
+    background-color: var(--color-accent);
+
+    &:is(:hover, :focus) {
+      background-color: hsla(var(--color-accent-hsl), 0.65);
+    }
   }
 }

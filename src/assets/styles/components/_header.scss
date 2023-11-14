@@ -110,6 +110,18 @@ a.nav-link {
     &__menu {
       align-items: center;
       height: fit-content;
+
+      button {
+        padding: calc(var(--padding-half) / 2) var(--padding-half);
+
+        &:first-child {
+          margin-right: $size-xs;
+        }
+
+        &:is(:hover, :focus):not(:disabled) {
+          background-color: var(--color-accent);
+        }
+      }
     }
 
     &__nav {

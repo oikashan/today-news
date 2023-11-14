@@ -17,3 +17,13 @@
 .badge-success {
   @include badge(14px, var(--color-success));
 }
+
+[data-theme="neobrutalist"] {
+  .badge {
+    background-color: var(--color-accent-tertiary) !important;
+  }
+
+  .badge-success {
+    background-color: var(--color-success) !important;
+  }
+}

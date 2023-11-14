@@ -51,3 +51,21 @@
     }
   }
 }
+
+// Neobrutalist theme
+[data-theme="neobrutalist"] {
+  .app-footer {
+    margin-bottom: 0;
+    padding: var(--padding);
+    border-radius: var(--radius);
+    border: 1px solid var(--color-contrast);
+
+    &__row > .app-footer__menu {
+      @include breakpoint-md {
+        padding: var(--padding);
+        border-radius: var(--radius);
+        border: 1px solid var(--color-contrast);
+      }
+    }
+  }
+}
