@@ -74,10 +74,6 @@ a.nav-link {
   width: 100vw;
   height: 100svh;
 
-  .container {
-    padding: var(--padding);
-  }
-
   ul {
     gap: 0.5rem;
   }
@@ -155,6 +151,10 @@ a.nav-link {
   }
 
   .app-header__overlay {
+    .container {
+      padding: var(--padding);
+    }
+
     button {
       padding: calc(var(--padding-half) / 2) var(--padding-half);
 

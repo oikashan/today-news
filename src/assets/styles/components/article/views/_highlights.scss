@@ -94,5 +94,15 @@
         }
       }
     }
+
+    .app-article__anchor {
+      align-self: flex-start;
+    }
+  }
+}
+
+[data-theme="neobrutalist"] .view-article__highlights {
+  .app-article__anchor {
+    align-self: flex-end;
   }
 }

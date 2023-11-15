@@ -141,9 +141,9 @@ export default function ArticleComponent({
         target="_blank"
         rel="noreferrer"
         href={url || "#"}
-        className="app-article__anchor"
+        className="app-article__anchor button button-primary"
       >
-        {title}
+        Read More
       </a>
       {children}
     </article>
