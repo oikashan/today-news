@@ -26,6 +26,10 @@
       align-items: center;
       padding: calc($size-3xl + $size-lg);
 
+      > * {
+        color: var(--color-background) !important;
+      }
+
       .app-article__title {
         text-align: center;
       }
@@ -33,6 +37,14 @@
       .app-article__description {
         display: none;
       }
+    }
+  }
+}
+
+@include when-theme-dark {
+  .view-article__full {
+    .app-article__body > * {
+      color: var(--color-contrast) !important;
     }
   }
 }
