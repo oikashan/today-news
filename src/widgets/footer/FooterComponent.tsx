@@ -70,7 +70,7 @@ export default function FooterComponent({
     <footer {...props} className={`app-footer ${className}`}>
       <div className="app-footer__logo text-menu-sm">
         <LogoComponent />
-        by{" "}
+        {" "}by{" "}
         <a
           href={WEBSITE}
           target="_blank"
