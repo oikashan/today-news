@@ -39,3 +39,10 @@
     }
   }
 }
+
+@include when-theme-neobrutalism {
+  .view-article__video {
+    padding: 0;
+    gap: var(--gutters);
+  }
+}

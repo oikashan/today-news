@@ -101,7 +101,7 @@ a.nav-link {
     padding-left: var(--padding);
     border-radius: var(--radius);
     border: 1px solid var(--color-contrast);
-    background-color: hsla(var(--color-accent-hsl), 0.5);
+    background-color: #cceeff !important;
 
     @include breakpoint-md {
       padding: var(--padding);

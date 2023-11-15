@@ -63,6 +63,7 @@
     padding: var(--padding);
     border-radius: var(--radius);
     border: 1px solid var(--color-contrast);
+    background-color: var(--color-background) !important;
 
     &__menus {
       width: 100%;

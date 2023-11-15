@@ -113,12 +113,12 @@ export default function ArticleComponent({
           </span>
         </div>
         {/* Title */}
-        <h2
+        <h3
           {...titleProps}
           className={`app-article__title ${titleProps?.className}`}
         >
           {title}
-        </h2>
+        </h3>
         {/* Description */}
         <div
           {...descriptionProps}

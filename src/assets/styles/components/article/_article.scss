@@ -152,6 +152,7 @@
 @include when-theme-neobrutalism {
   .app-article {
     @include neobrutalist-box();
+    background-color: var(--color-background);
 
     &:focus-within {
       box-shadow: var(--shadow-focus);

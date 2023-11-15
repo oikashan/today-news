@@ -3,11 +3,19 @@
   flex-direction: column;
 
   .app-section__heading {
-    @include text-lead(40px);
+    @include text-lead(24px);
     text-align: center;
     border-top: $border-xl;
     border-bottom: $border-xl;
     padding: 11px 0;
+
+    @include breakpoint-md {
+      font-size: 32px;
+    }
+
+    @include breakpoint-lg {
+      font-size: 40px;
+    }
   }
 
   // Margin the content if heading exists.
@@ -30,8 +38,47 @@
       }
     }
 
+    h2 {
+      border: 0;
+    }
+
     &:not(:first-child) {
       @include neobrutalist-box();
+    }
+
+    &:nth-child(2),
+    &:nth-child(5) {
+      background-color: #cceeff !important;
+    }
+
+    &:nth-child(3),
+    &:nth-child(7) {
+      background-color: #9effdc !important;
+
+      h2 {
+        color: darkgreen;
+      }
+    }
+
+    &:nth-child(4),
+    &:nth-child(8) {
+      background-color: #ffcccc !important;
+    }
+
+    &:nth-child(6) {
+      background-color: #fff0ff !important;
+
+      h2 {
+        color: darkmagenta;
+      }
+    }
+
+    &:nth-child(9) {
+      background-color: lightyellow !important;
+
+      h2 {
+        color: darkgoldenrod;
+      }
     }
   }
 }

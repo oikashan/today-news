@@ -20,6 +20,7 @@
 
   .app-article {
     width: 100%;
+    align-self: flex-start;
     flex-direction: column;
 
     .app-article__body {
@@ -49,8 +50,15 @@
     &:nth-of-type(2) {
       order: 3;
 
-      *:not(a, .app-article__badge, .app-article__badge *) {
+      .app-article__body {
         opacity: 0.5;
+        transition: $transition-slow;
+      }
+    }
+
+    &:is(:hover, :focus-within) {
+      .app-article__body {
+        opacity: 1 !important;
       }
     }
   }
@@ -60,6 +68,14 @@
     display: flex;
     filter: invert(1);
     mix-blend-mode: darken;
+  }
+}
+
+#stories {
+  &:is(:hover, :focus-within) {
+    .app-article__body {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -74,6 +90,11 @@
 
 @include when-theme-neobrutalism {
   .view-article__story {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    gap: var(--gutters);
+
     .app-article {
       align-self: stretch;
 

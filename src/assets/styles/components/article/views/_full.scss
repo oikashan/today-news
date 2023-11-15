@@ -36,3 +36,11 @@
     }
   }
 }
+
+@include when-theme-neobrutalism {
+  .view-article__full {
+    .app-article__body > * {
+      color: var(--color-background) !important;
+    }
+  }
+}
