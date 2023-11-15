@@ -46,6 +46,7 @@ body[data-theme="neobrutalist"] {
 
   // Shadows
   --shadow: 0 4px 0 0 var(--color-contrast);
+  --shadow-focus: var(--shadow), 0 0 0 4px violet;
 
   @include breakpoint-md {
     // Sizes

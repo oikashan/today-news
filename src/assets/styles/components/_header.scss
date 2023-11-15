@@ -74,6 +74,10 @@ a.nav-link {
   width: 100vw;
   height: 100svh;
 
+  .container {
+    padding: var(--padding);
+  }
+
   ul {
     gap: 0.5rem;
   }
@@ -125,42 +129,7 @@ a.nav-link {
     }
 
     &__nav {
-      border-radius: var(--radius);
-      border: 1px solid var(--color-contrast);
-
-      ul {
-        gap: 0;
-      }
-
-      li {
-        width: 100%;
-
-        a {
-          width: 100%;
-          display: inline-block;
-          padding: var(--padding);
-          box-shadow: var(--shadow);
-
-          &:is(:hover, :focus) {
-            text-decoration: none;
-            background-color: var(--color-overlay);
-          }
-        }
-
-        &:not(:last-child) a {
-          border-right: 1px solid var(--color-contrast);
-        }
-
-        &:first-child a {
-          border-top-left-radius: var(--radius);
-          border-bottom-left-radius: var(--radius);
-        }
-
-        &:last-child a {
-          border-top-right-radius: var(--radius);
-          border-bottom-right-radius: var(--radius);
-        }
-      }
+      @include nav();
     }
 
     .app-logo {
@@ -182,6 +151,16 @@ a.nav-link {
     &::before {
       content: "";
       display: none;
+    }
+  }
+
+  .app-header__overlay {
+    button {
+      padding: calc(var(--padding-half) / 2) var(--padding-half);
+
+      &:is(:hover, :focus):not(:disabled) {
+        background-color: var(--color-accent);
+      }
     }
   }
 }

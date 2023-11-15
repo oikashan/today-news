@@ -37,6 +37,10 @@
     gap: 8px;
   }
 
+  .newsletter {
+    min-width: 40%;
+  }
+
   > nav {
     @include breakpoint-sm {
       padding: 0 var(--gutters);
@@ -60,11 +64,49 @@
     border-radius: var(--radius);
     border: 1px solid var(--color-contrast);
 
-    &__row > .app-footer__menu {
+    &__menus {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      @include neobrutalist-box();
+      justify-content: space-between;
+
       @include breakpoint-md {
-        padding: var(--padding);
-        border-radius: var(--radius);
-        border: 1px solid var(--color-contrast);
+        border: 0;
+        padding: 0;
+        max-width: 40%;
+        box-shadow: none;
+      }
+
+      @include breakpoint-lg {
+        max-width: 30%;
+      }
+    }
+
+    .newsletter {
+      @include breakpoint-md {
+        @include neobrutalist-box();
+      }
+    }
+
+    nav {
+      padding: 0;
+      display: none;
+      @include nav();
+
+      @include breakpoint-md {
+        display: block;
+      }
+
+      ul {
+        gap: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+
+      a {
+        text-align: center;
       }
     }
   }

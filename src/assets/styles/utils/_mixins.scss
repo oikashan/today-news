@@ -59,6 +59,53 @@
   }
 }
 
+@mixin nav {
+  border-radius: var(--radius);
+  border: 1px solid var(--color-contrast);
+
+  ul {
+    gap: 0;
+  }
+
+  li {
+    width: 100%;
+
+    a {
+      width: 100%;
+      display: inline-block;
+      padding: var(--padding);
+      box-shadow: var(--shadow);
+
+      &:focus {
+        border-color: var(--color-failure);
+      }
+
+      &:is(:hover, :focus) {
+        text-decoration: none;
+        background-color: var(--color-overlay);
+      }
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+
+    &:not(:last-child) a {
+      border-right: 1px solid var(--color-contrast);
+    }
+
+    &:first-child a {
+      border-top-left-radius: var(--radius);
+      border-bottom-left-radius: var(--radius);
+    }
+
+    &:last-child a {
+      border-top-right-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
+    }
+  }
+}
+
 @mixin button-outlined($font-size: $root-font-size) {
   @include badge-outlined($font-size);
 
@@ -114,4 +161,21 @@
   -webkit-line-clamp: $lines; /* number of lines to show */
   line-clamp: $lines;
   -webkit-box-orient: vertical;
+}
+
+@mixin neobrutalist-box(
+  $padding: var(--padding),
+  $radius: var(--radius),
+  $is-focusable: false
+) {
+  padding: $padding;
+  border-radius: $radius;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--color-contrast);
+
+  @if $is-focusable {
+    &:is(:focus, :focus-within) {
+      box-shadow: var(--shadow-focus);
+    }
+  }
 }

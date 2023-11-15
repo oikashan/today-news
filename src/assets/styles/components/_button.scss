@@ -30,5 +30,9 @@
     background-color: var(--color-success);
     color: var(--color-contrast) !important;
     font-weight: var(--weight-bold) !important;
+
+    &:focus {
+      box-shadow: var(--shadow-focus);
+    }
   }
 }

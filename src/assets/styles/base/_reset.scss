@@ -36,13 +36,9 @@ input {
   border-radius: 1px;
   transition: $transition-fast;
   border: 2px solid transparent;
-
-  &:focus {
-    border-color: var(--color-success);
-  }
 }
 
-a:hover {
+a:is(:hover, :focus) {
   text-decoration: underline;
 }
 

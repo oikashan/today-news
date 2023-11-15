@@ -105,10 +105,10 @@ export default function FooterComponent({
             </ul>
           </div>
         </div>
-        <div className="app-footer__menu">
+        <div className="app-footer__menu newsletter">
           <div className="text-menu-sm">Subscribe</div>
           <div className="text-body-xs">
-            Get fresh updates about the fashion, beauty, and trends
+            Get fresh updates about all things today
           </div>
           <form
             onSubmit={(e) => {
