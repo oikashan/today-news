@@ -57,7 +57,7 @@
 }
 
 // Neobrutalist theme
-[data-theme="neobrutalist"] {
+@include when-theme-neobrutalism {
   .app-footer {
     margin-bottom: 0;
     padding: var(--padding);

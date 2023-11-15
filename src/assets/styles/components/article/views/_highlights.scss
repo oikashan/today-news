@@ -101,8 +101,10 @@
   }
 }
 
-[data-theme="neobrutalist"] .view-article__highlights {
-  .app-article__anchor {
-    align-self: flex-end;
+@include when-theme-neobrutalism {
+  .view-article__highlights {
+    .app-article__anchor {
+      align-self: flex-end;
+    }
   }
 }

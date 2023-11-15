@@ -26,16 +26,18 @@
   }
 }
 
-[data-theme="neobrutalist"] .app-dropdown {
-  &__menu {
-    padding: $size-sm;
-    box-shadow: var(--shadow);
-    border-radius: var(--radius);
-    top: calc(100% + #{$size-md});
-    border: 1px solid var(--color-contrast);
-  }
+@include when-theme-neobrutalism {
+  .app-dropdown {
+    &__menu {
+      padding: $size-sm;
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      top: calc(100% + #{$size-md});
+      border: 1px solid var(--color-contrast);
+    }
 
-  li:not(:last-child) {
-    margin-bottom: $size-sm;
+    li:not(:last-child) {
+      margin-bottom: $size-sm;
+    }
   }
 }

@@ -63,9 +63,23 @@
   }
 }
 
-[data-theme="dark"] .view-article__story {
-  .story__cover {
-    filter: invert(0);
-    mix-blend-mode: lighten;
+@include when-theme-dark {
+  .view-article__story {
+    .story__cover {
+      filter: invert(0);
+      mix-blend-mode: lighten;
+    }
+  }
+}
+
+@include when-theme-neobrutalism {
+  .view-article__story {
+    .app-article {
+      align-self: stretch;
+
+      .app-article__body {
+        margin: auto;
+      }
+    }
   }
 }

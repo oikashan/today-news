@@ -25,31 +25,35 @@
   }
 }
 
-[data-theme="dark"] .text-field {
-  background-color: transparent;
-  border: 1px solid var(--color-contrast);
+@include when-theme-dark {
+  .text-field {
+    background-color: transparent;
+    border: 1px solid var(--color-contrast);
 
-  button {
-    @include button(12px);
-    text-transform: capitalize;
+    button {
+      @include button(12px);
+      text-transform: capitalize;
+    }
   }
 }
 
-[data-theme="neobrutalist"] .text-field {
-  @include neobrutalist-box($radius: var(--radius-half), $is-focusable: true);
+@include when-theme-neobrutalism {
+  .text-field {
+    @include neobrutalist-box($radius: var(--radius-half), $is-focusable: true);
 
-  padding: $size-2xs;
-  padding-bottom: $size-xs;
-  background-color: var(--color-overlay);
-  background-color: var(--color-background);
+    padding: $size-2xs;
+    padding-bottom: $size-xs;
+    background-color: var(--color-overlay);
+    background-color: var(--color-background);
 
-  button {
-    @include button(12px);
-    text-transform: capitalize;
-    background-color: var(--color-accent);
+    button {
+      @include button(12px);
+      text-transform: capitalize;
+      background-color: var(--color-accent);
 
-    &:is(:hover, :focus) {
-      background-color: hsla(var(--color-accent-hsl), 0.65);
+      &:is(:hover, :focus) {
+        background-color: hsla(var(--color-accent-hsl), 0.65);
+      }
     }
   }
 }

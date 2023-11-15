@@ -21,7 +21,7 @@
 }
 
 // Neobrutalist theme
-[data-theme="neobrutalist"] {
+@include when-theme-neobrutalism {
   .container {
     max-width: 100%;
   }

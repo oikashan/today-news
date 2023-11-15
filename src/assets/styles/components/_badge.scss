@@ -18,7 +18,7 @@
   @include badge(14px, var(--color-success));
 }
 
-[data-theme="neobrutalist"] {
+@include when-theme-neobrutalism {
   .badge {
     background-color: var(--color-accent-tertiary) !important;
   }

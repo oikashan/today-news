@@ -179,3 +179,15 @@
     }
   }
 }
+
+@mixin when-theme-dark {
+  [data-theme="dark"] {
+    @content;
+  }
+}
+
+@mixin when-theme-neobrutalism {
+  [data-theme="neobrutalist"] {
+    @content;
+  }
+}

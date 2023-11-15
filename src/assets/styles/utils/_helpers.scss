@@ -8,8 +8,10 @@
   display: none !important;
 }
 
-[data-theme="neobrutalist"] .neobrutalist\:hidden {
-  display: none !important;
+@include when-theme-neobrutalism {
+  .neobrutalist\:hidden {
+    display: none !important;
+  }
 }
 
 .text-faded {

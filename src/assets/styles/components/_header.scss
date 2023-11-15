@@ -93,7 +93,7 @@ a.nav-link {
 }
 
 // Neobrutalist theme
-[data-theme="neobrutalist"] {
+@include when-theme-neobrutalism {
   .app-header {
     padding: 0;
     border-bottom: none;

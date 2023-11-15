@@ -8,7 +8,7 @@
   }
 }
 
-[data-theme="neobrutalist"] {
+@include when-theme-neobrutalism {
   .app-logo {
     border: 0;
     display: inline-block;

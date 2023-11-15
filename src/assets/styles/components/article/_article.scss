@@ -149,11 +149,30 @@
   }
 }
 
-[data-theme="neobrutalist"] {
+@include when-theme-neobrutalism {
   .app-article {
+    @include neobrutalist-box();
+
     &:is(:hover, :focus-within) {
       .app-article__arrow {
         transform: translateX(calc(100% - 8px)) !important;
+      }
+
+      .app-article__media {
+        img,
+        video {
+          transform: scale(1);
+        }
+      }
+    }
+
+    .app-article__thumbnail {
+      overflow: hidden;
+      border: 1px solid var(--color-contrast);
+
+      &,
+      img {
+        border-radius: var(--radius);
       }
     }
 

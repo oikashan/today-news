@@ -18,7 +18,7 @@
   @include button-transparent();
 }
 
-[data-theme="neobrutalist"] {
+@include when-theme-neobrutalism {
   button,
   .button,
   .badge {

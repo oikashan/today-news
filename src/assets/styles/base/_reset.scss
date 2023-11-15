@@ -42,7 +42,7 @@ input {
   }
 }
 
-[data-theme="neobrutalist"] {
+@include when-theme-neobrutalism {
   a,
   button,
   input {
@@ -56,11 +56,13 @@ a:is(:hover, :focus) {
   text-decoration: underline;
 }
 
-[data-theme="dark"] p a {
-  color: var(--color-success);
+@include when-theme-dark {
+  p a {
+    color: var(--color-success);
 
-  &:visited {
-    color: var(--color-failure);
+    &:visited {
+      color: var(--color-failure);
+    }
   }
 }
 
