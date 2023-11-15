@@ -1,5 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { articleCategoryNavItems } from "~/articles";
+import { LogoComponent } from "../logo";
+import { WEBSITE } from "~/utils/constants";
 
 export default function FooterComponent({
   className = "",
@@ -66,6 +68,18 @@ export default function FooterComponent({
 
   return (
     <footer {...props} className={`app-footer ${className}`}>
+      <div className="app-footer__logo text-menu-sm">
+        <LogoComponent />
+        by{" "}
+        <a
+          href={WEBSITE}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-failure"
+        >
+          Kashan
+        </a>
+      </div>
       <div className="app-footer__row">
         <div className="app-footer__menus">
           <div className="app-footer__menu">

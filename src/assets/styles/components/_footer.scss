@@ -8,6 +8,16 @@
   flex-direction: column;
   gap: var(--gutters);
 
+  &__logo {
+    align-self: flex-start;
+    text-transform: capitalize;
+
+    &,
+    a {
+      font-size: 16px;
+    }
+  }
+
   .app-footer__row {
     display: flex;
     gap: var(--gutters);
