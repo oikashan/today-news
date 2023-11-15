@@ -27,6 +27,17 @@
   }
 
   #app {
+    background-color: #e5e5f7;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #ffffff 10px
+      ),
+      repeating-linear-gradient(#d1ffee55, #ffa9f8);
     padding: var(--padding);
+
+    main {
+      gap: var(--gutters) !important;
+    }
   }
 }

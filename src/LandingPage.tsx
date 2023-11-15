@@ -58,7 +58,7 @@ export default function LandingPage({
           <GalleriedArticlesView  articles={slicedArticles.splice(0, 4)} />
         </div>
       </section> */}
-        <section id="squares" className="app-section">
+        <section id="squares" className="app-section bg-success-200">
           <h2 className="app-section__heading text-success">{headings[2]}</h2>
           <div className="app-section__content padded bg-overlay">
             <SquaredArticlesView articles={slicedArticles.splice(0, 4)} />

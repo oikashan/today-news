@@ -121,5 +121,9 @@
 
   .bg-#{$key} {
     background-color: var(--color-#{$key});
+
+    &-200 {
+      background-color: hsla(var(--color-#{$key}), 0.2);
+    }
   }
 }

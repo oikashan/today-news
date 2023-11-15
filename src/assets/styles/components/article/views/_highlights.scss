@@ -103,6 +103,10 @@
 
 @include when-theme-neobrutalism {
   .view-article__highlights {
+    .app-article {
+      background-color: hsla(var(--color-accent-secondary-hsl), 1);
+    }
+
     .app-article__anchor {
       align-self: flex-end;
     }

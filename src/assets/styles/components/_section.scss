@@ -19,3 +19,19 @@
     padding: var(--gutters);
   }
 }
+
+@include when-theme-neobrutalism {
+  .app-section {
+    &__content {
+      background-color: transparent;
+
+      &.padded {
+        padding: 0;
+      }
+    }
+
+    &:not(:first-child) {
+      @include neobrutalist-box();
+    }
+  }
+}

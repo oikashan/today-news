@@ -77,6 +77,8 @@
 
 @include when-theme-neobrutalism {
   .view-article__circles {
+    padding: 0;
+    gap: var(--gutters);
     align-items: stretch;
 
     .app-article {

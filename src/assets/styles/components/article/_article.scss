@@ -153,6 +153,10 @@
   .app-article {
     @include neobrutalist-box();
 
+    &:focus-within {
+      box-shadow: var(--shadow-focus);
+    }
+
     &:is(:hover, :focus-within) {
       .app-article__arrow {
         transform: translateX(calc(100% - 8px)) !important;

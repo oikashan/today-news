@@ -34,10 +34,15 @@ body[data-theme="neobrutalist"] {
   --color-background: hsl(var(--color-background-hsl));
   --color-overlay: hsl(var(--color-overlay-hsl));
 
-  // Sizes
+  // Padding
   --padding: #{$size-md};
   --padding-desktop: #{$size-3xl};
   --padding-half: calc(var(--padding) / 2);
+
+  // Gutters
+  --gutters: #{$size-md};
+  --gutters-desktop: #{$size-3xl};
+  --gutters-half: calc(var(--gutters) / 2);
 
   // Radii
   --radius: #{$size-xs};
@@ -49,8 +54,11 @@ body[data-theme="neobrutalist"] {
   --shadow-focus: var(--shadow), 0 0 0 4px violet;
 
   @include breakpoint-md {
-    // Sizes
+    // Padding
     --padding: var(--padding-desktop);
+
+    // Gutters
+    --gutters: var(--gutters-desktop);
 
     // Radii
     --radius: var(--radius-desktop);
