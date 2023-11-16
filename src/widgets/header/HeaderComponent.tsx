@@ -1,5 +1,5 @@
 import { LogoComponent } from "../logo";
-import { IconMenu, IconMoon } from "~/icons";
+import { IconBulb, IconMenu } from "~/icons";
 import { AnimatePresence } from "framer-motion";
 
 // Features.
@@ -37,7 +37,7 @@ export default function HeaderComponent({
                         onClick={toggleDropdown}
                         className="button-transparent"
                       >
-                        <IconMoon />
+                        <IconBulb />
                       </button>
                       <AnimatePresence>
                         {isDropdownOpen && (
