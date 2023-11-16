@@ -27,11 +27,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "npm run test"
+    "test": "npm run test",
+    "release:patch": "npm version patch && git push --follow-tags",
+    "release:minor": "npm version minor && git push --follow-tags",
+    "release:major": "npm version major && git push --follow-tags"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kashan-ahmad/today-news.git"
+    "url": "git+https://github.com/oikashan/today-news.git"
   },
   "keywords": [
     "news",
@@ -42,9 +45,9 @@
     "trending"
   ],
   "license": "ISC",
-  "author": "kashan-ahmad",
+  "author": "oikashan",
   "bugs": {
-    "url": "https://github.com/kashan-ahmad/today-news/issues"
+    "url": "https://github.com/oikashan/today-news/issues"
   },
-  "homepage": "https://today-news.pages.io"
+  "homepage": "https://today-news.pages.dev"
 }
