@@ -23,7 +23,7 @@
     align-self: flex-start;
     flex-direction: column;
 
-    .app-article__body {
+    &__body {
       align-items: center;
 
       * {
@@ -36,10 +36,14 @@
           text-align: left;
         }
       }
+    }
 
-      .app-article__description {
-        @include text-truncate(2);
-      }
+    &__description {
+      @include text-truncate(2);
+    }
+
+    &__media {
+      display: none;
     }
 
     // Reordering.

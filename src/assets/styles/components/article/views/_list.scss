@@ -12,19 +12,24 @@
     gap: 30px;
     width: 100%;
 
-    .app-article__media {
-      .app-article__thumbnail {
-        height: 100px;
-        width: 116px;
-      }
+    &__thumbnail {
+      height: 100px;
+      width: 116px;
     }
 
-    .app-article__body {
+    &__body {
       flex-grow: 1;
+    }
 
-      .app-article__description {
-        display: none !important;
-      }
+    &__description {
+      display: none !important;
+    }
+
+    &__anchor {
+      top: 0;
+      right: 0;
+      position: absolute;
+      padding: $size-xs $size-sm !important;
     }
   }
 }
@@ -33,5 +38,28 @@
   .view-article__list {
     padding: 0;
     gap: var(--gutters);
+
+    .app-article {
+      &__media {
+        margin-bottom: 3rem;
+
+        @include breakpoint-md {
+          margin-bottom: 4rem;
+        }
+
+        @include breakpoint-lg {
+          margin-bottom: 0;
+        }
+      }
+
+      &__anchor {
+        top: auto;
+        right: auto;
+        width: 116px;
+        left: var(--padding);
+        bottom: var(--padding);
+        justify-content: center;
+      }
+    }
   }
 }

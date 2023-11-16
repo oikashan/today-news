@@ -71,37 +71,33 @@ export default function ArticleComponent({
 
   return (
     <article {...props} ref={articleRef} className={`app-article ${className}`}>
-      {/* Render if there's at least one of these. */}
-      {(rating !== undefined || previewURL || thumbnailURL) && (
-        <div className="app-article__media">
-          {/* Thumbnail */}
-          {thumbnailURL && (
-            <ArticleThumbnail>
-              <ArticleImage
-                {...thumbnailProps}
-                alt={title}
-                src={thumbnailURL}
-              />
-            </ArticleThumbnail>
-          )}
-          {/* Preview */}
-          {previewURL && (
-            <div className="app-article__preview">
-              <video {...previewProps} src={previewURL} />
-            </div>
-          )}
-          {/* Rating */}
-          {rating !== undefined && (
-            <div
-              {...ratingProps}
-              className={`app-article__rating badge ${ratingProps?.className}`}
-            >
-              <IconStar width={16} height={16} />
-              {rating}
-            </div>
-          )}
-        </div>
-      )}
+      <div className="app-article__media">
+        {/* Thumbnail */}
+        <ArticleThumbnail>
+          <ArticleImage {...thumbnailProps} alt={title} src={thumbnailURL} />
+        </ArticleThumbnail>
+        {/* Render if there's at least one of these. */}
+        {(rating !== undefined || previewURL) && (
+          <>
+            {/* Preview */}
+            {previewURL && (
+              <div className="app-article__preview">
+                <video {...previewProps} src={previewURL} />
+              </div>
+            )}
+            {/* Rating */}
+            {rating !== undefined && (
+              <div
+                {...ratingProps}
+                className={`app-article__rating badge ${ratingProps?.className}`}
+              >
+                <IconStar width={16} height={16} />
+                {rating}
+              </div>
+            )}
+          </>
+        )}
+      </div>
       <div className="app-article__body">
         <div {...labelProps} className="app-article__badge">
           {/* Label */}

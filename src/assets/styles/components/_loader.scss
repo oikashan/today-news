@@ -11,6 +11,10 @@
   font-size: $size-xl;
   height: calc(100vh - 20rem);
 
+  img {
+    display: none !important;
+  }
+
   @include breakpoint-lg {
     height: calc(100vh - 30rem);
   }
