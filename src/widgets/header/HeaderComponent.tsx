@@ -19,6 +19,7 @@ export default function HeaderComponent({
       {({ isOverlayOpen, setIsOverlayOpen }) => (
         <>
           <header {...props} className={`app-header ${className}`}>
+            {/* Menu */}
             <div className="app-header__menu">
               <div>
                 <button

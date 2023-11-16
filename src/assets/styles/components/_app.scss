@@ -9,7 +9,7 @@
   }
 }
 
-#app,
+#app > .container,
 #app main {
   display: flex;
   gap: $size-3xl;
@@ -20,9 +20,33 @@
   }
 }
 
+.app-banner {
+  width: 100vw;
+  height: 5rem;
+  display: grid;
+  padding: 0 1rem;
+  place-items: center;
+  font-family: var(--font-sans);
+  background: linear-gradient(90deg, #ff00cc 0%, #3333ff 50%, #00ffcc 100%);
+
+  button.button {
+    padding: 0;
+    border: 0 !important;
+    color: lightyellow !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    background-color: transparent !important;
+
+    &:is(:hover, :focus) {
+      text-decoration: underline;
+    }
+  }
+}
+
 // Neobrutalist theme
 @include when-theme-neobrutalism {
   .container {
+    padding: 0;
     max-width: 100%;
   }
 

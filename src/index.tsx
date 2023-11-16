@@ -1,6 +1,6 @@
 import News from "./News";
 import About from "./About";
-import { initTheme } from "./themes";
+import { initTheme, isTheme, switchTheme } from "./themes";
 import PageNotFound from "./PageNotFound";
 import { createRoot } from "react-dom/client";
 import { articleCategoryRoutes } from "./articles";
@@ -27,6 +27,7 @@ function App() {
   useGsapEffect((tl) => {
     tl.fromTo(
       [
+        ".app-banner",
         ".app-header",
         ".app-header button",
         ".app-header a",
@@ -49,10 +50,29 @@ function App() {
 
   return (
     <>
-      <HeaderComponent />
-      <Outlet />
-      <FooterComponent />
-      <ScrollRestoration />
+      {/* Banner */}
+      {!isTheme("neobrutalist") && (
+        <div role="alert" data-theme="neobrutalist" className="app-banner">
+          <p>
+            We have a lovely new theme,{" "}
+            <button
+              className="button button-transparent"
+              onClick={(e) => {
+                switchTheme("neobrutalist");
+                e.currentTarget.parentElement?.parentElement?.remove();
+              }}
+            >
+              click here to try! 🚀
+            </button>
+          </p>
+        </div>
+      )}
+      <div className="container">
+        <HeaderComponent />
+        <Outlet />
+        <FooterComponent />
+        <ScrollRestoration />
+      </div>
     </>
   );
 }
